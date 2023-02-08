@@ -26,7 +26,7 @@
 
 
 </script>
-<style>
+<style lang="scss">
 	button{
 		outline: none;
 		border: 0;
@@ -40,6 +40,6 @@
 		border: 1px solid #f0f0f0;
 	}
 	.lbutton-success{
-		background-color: red;
+		background-color:$success;
 	}
 </style>
