@@ -1,4 +1,5 @@
 <template>
+	<lbutton type="default" icon="true"></lbutton>
 	<lbutton type="success" icon=true></lbutton>
 	<lbutton type="primary" icon=true></lbutton>
 	<lbutton type="info" icon=true></lbutton>

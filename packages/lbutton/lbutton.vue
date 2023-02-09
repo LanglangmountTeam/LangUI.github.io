@@ -25,11 +25,24 @@
 		icon:{
 			icon:Boolean,
 			default:false
+		},
+		sizes:{
+			size:String,
+			default:""
+		},
+		dis:{
+			dis:Boolean,
+			default:false
 		}
 	});
 	const lclass=computed(()=>{
 		return [
-			"lbutton",`lbutton-${props.type}`,props.round?"lbutton-round":"",props.tsy?`lbutton-tsy`:"",props.icon?"lbutton-icon":""
+			"lbutton",`lbutton-${props.type}`,
+			props.round?"lbutton-round":"",
+			props.tsy?`lbutton-tsy`:"",
+			props.icon?"lbutton-icon":"",
+			`lbutton-sizes-${props.sizes}`,
+			props.dis?"dis":""
 		]
 	});
 
@@ -70,12 +83,15 @@
 			width: 3vw;
 			height: 3vw;
 			padding: 0;
-			border-radius: 50%;
+			border-radius:50%;
 			background-image: url(./btnimg/btnicon2.png);
 			background-size: 1vw;
 			background-repeat: no-repeat;
 			background-position:center;
 		};
+		&.lbutton-sizes-small{padding: 0;width: 5vw;height: 4vh;};
+		&.lbutton-sizes-big{width: 12vw;height: 10vh;};
+		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.lbutton-primary{
 		color: white;
@@ -99,7 +115,10 @@
 			background-size: 1vw;
 			background-repeat: no-repeat;
 			background-position:center;
-		}
+		};
+		&.lbutton-sizes-small{padding: 0;width: 5vw;height: 4vh;};
+		&.lbutton-sizes-big{width: 12vw;height: 10vh;};
+		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.lbutton-warning{
 		color: white;
@@ -123,7 +142,10 @@
 			background-size: 1vw;
 			background-repeat: no-repeat;
 			background-position:center;
-		}
+		};
+		&.lbutton-sizes-small{padding: 0;width: 5vw;height: 4vh;};
+		&.lbutton-sizes-big{width: 12vw;height: 10vh;};
+		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.lbutton-danger{
 		color: white;
@@ -147,7 +169,10 @@
 			background-size: 1vw;
 			background-repeat: no-repeat;
 			background-position:center;
-		}
+		};
+		&.lbutton-sizes-small{padding: 0;width: 5vw;height: 4vh;};
+		&.lbutton-sizes-big{width: 12vw;height: 10vh;};
+		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.lbutton-info{
 		color: white;
@@ -170,7 +195,10 @@
 			background-size: 1vw;
 			background-repeat: no-repeat;
 			background-position:center;
-		}
+		};
+		&.lbutton-sizes-small{padding: 0;width: 5vw;height: 4vh;};
+		&.lbutton-sizes-big{width: 12vw;height: 10vh;};
+		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.lbutton-default{
 		border: 1px solid #f0f0f0;
@@ -181,7 +209,7 @@
 			color: $info;
 			&:hover{
 				background-color: #f0f0f0;
-				color: white;
+				color: black;
 			}
 		};
 		&.lbutton-icon{
@@ -189,11 +217,14 @@
 			height: 3vw;
 			padding: 0;
 			border-radius: 50%;
-			background-image: url(./btnimg/btnicon2.png);
+			background-image: url(./btnimg/btnicon1.png);
 			background-size: 1vw;
 			background-repeat: no-repeat;
 			background-position:center;
-		}
+		};
+		&.lbutton-sizes-small{padding: 0;width: 5vw;height: 4vh;};
+		&.lbutton-sizes-big{width: 12vw;height: 10vh;};
+		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.btncon{
 		display: inline-block;

@@ -1,10 +1,21 @@
-在这里对button演示。
+<div>在这里对按钮的基本演示</div>
 <script setup>
 import demo1 from './demo1.vue';
 import demo2 from './demo2.vue';
 import demo3 from './demo3.vue';
 import demo4 from './demo4.vue';
+import demo5 from './demo5.vue';
+import demo6 from './demo6.vue';
+import DOC from '@/components/docview.vue';
 import codeds from '../../../src/components/codeds.vue';
+const propDoc =  [
+  [ "type","类型","string","default / primary / info / success / warning / danger","default",],
+  ["tsy", "是否虚线为按钮", "boolean", "-", "false"],
+  ["sizes", "大小", "string", "small /  large", "default"],
+  ["round", "是否为圆角按钮", "boolean", "-", "false"],
+  ["icon", "图标按钮", "boolean", "-", "false"],
+  ["dis", "是否禁用", "boolean", "-", "fasle"],
+];
 </script>
 <div class="btndoc1">基本按钮</div>
 <div class="btndoc2">
@@ -21,6 +32,19 @@ import codeds from '../../../src/components/codeds.vue';
 <div class="btndoc1">图标按钮</div>
 <div class="btndoc2">
 <demo4></demo4>
+</div>
+<div class="btndoc1">尺寸按钮</div>
+<div class="btndoc2">
+<demo5></demo5>
+</div>
+<div class="btndoc1">禁用按钮</div>
+<div class="btndoc2">
+<demo6></demo6>
+</div>
+<div>
+<div class="btndoc1">
+<DOC title="属性" type=prop :body="propDoc"></DOC>
+</div>
 </div>
 <style>
     .btndoc2{
