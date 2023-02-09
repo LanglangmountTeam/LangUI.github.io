@@ -11,7 +11,7 @@ import codeds from '../../../src/components/codeds.vue';
 const propDoc =  [
   [ "type","类型","string","default / primary / info / success / warning / danger","default",],
   ["tsy", "是否虚线为按钮", "boolean", "-", "false"],
-  ["sizes", "大小", "string", "small /  large", "default"],
+  ["sizes", "大小", "string", "small /  big", "default"],
   ["round", "是否为圆角按钮", "boolean", "-", "false"],
   ["icon", "图标按钮", "boolean", "-", "false"],
   ["dis", "是否禁用", "boolean", "-", "fasle"],
