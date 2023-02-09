@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vicons/ionicons5": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
     "sass": "^1.58.0",
     "vite-plugin-md": "^0.22.5",
     "vue": "^3.2.45",
