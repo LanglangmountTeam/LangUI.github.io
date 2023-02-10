@@ -1,9 +1,11 @@
 import { App } from "vue";
 import lbutton from './lbutton/lbutton.vue';
 import licon from './licon/licon.vue';
+import ltable from './ltable/ltable.vue';
 const allcom=[
 	lbutton,
-	licon
+	licon,
+	ltable
 ]
 
 const recom =function(app:App){
@@ -11,5 +13,5 @@ const recom =function(app:App){
 		app.component(allco.name,allco)
 	}
 };
-export {lbutton,licon};
+export {lbutton,licon,ltable};
 export default recom;
