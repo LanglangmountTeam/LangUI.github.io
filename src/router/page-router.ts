@@ -2,7 +2,7 @@ import index from '../views/index.vue';
 import home from '../views/home.vue';
 import lbuttondoc from '../../packages/lbutton/doc/doc.md';
 import licon from '../../packages/licon/doc/doc.md';
-import llayout  from '../../packages/llayout/doc/doc.md';
+import lgrid  from '../../packages/lgrid/doc/doc.md';
 export default[
 	{
 		path:"/",
@@ -25,9 +25,9 @@ export default[
 				component:licon,
 			},
 			{
-				path:"llayout",
-				name:"layout 布局",
-				component:llayout,
+				path:"lgrid",
+				name:"lgrid 布局",
+				component:lgrid,
 			}
 		]
 	}
