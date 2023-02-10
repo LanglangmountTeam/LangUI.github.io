@@ -2,6 +2,7 @@ import index from '../views/index.vue';
 import home from '../views/home.vue';
 import lbuttondoc from '../../packages/lbutton/doc/doc.md';
 import licon from '../../packages/licon/doc/doc.md';
+import llayout  from '../../packages/llayout/doc/doc.md';
 export default[
 	{
 		path:"/",
@@ -15,13 +16,18 @@ export default[
 		children:[
 			{
 				path:"",
-				name:"按钮",
+				name:"button 按钮",
 				component:lbuttondoc,
 			},
 			{
 				path:"licon",
-				name:"图标",
+				name:"icon 图标",
 				component:licon,
+			},
+			{
+				path:"llayout",
+				name:"layout 布局",
+				component:llayout,
 			}
 		]
 	}
