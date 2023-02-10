@@ -2,10 +2,12 @@ import { App } from "vue";
 import lbutton from './lbutton/lbutton.vue';
 import licon from './licon/licon.vue';
 import llayout from './llayout/llayout.vue';
+import mrow from './llayout/mrow.vue';
 const allcom=[
 	lbutton,
 	licon,
-	llayout
+	llayout,
+	mrow
 ]
 
 const recom =function(app:App){
@@ -13,5 +15,5 @@ const recom =function(app:App){
 		app.component(allco.name,allco)
 	}
 };
-export {lbutton,licon,llayout};
+export {lbutton,licon,llayout,mrow};
 export default recom;

@@ -46,7 +46,7 @@ const propDoc =  [
 <DOC title="属性" type=prop :body="propDoc"></DOC>
 </div>
 </div>
-<style>
+<style scoped>
     .btndoc2{
         display:"block";
         border:1px solid #f0f0f0;
