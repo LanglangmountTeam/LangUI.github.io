@@ -4,7 +4,7 @@
 
 <script lang="ts">
 	export default{
-		name:"licon"
+		name:"l-icon"
 	}
 	
 </script>

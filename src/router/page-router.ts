@@ -3,6 +3,7 @@ import home from '../views/home.vue';
 import lbuttondoc from '../../packages/lbutton/doc/doc.md';
 import licon from '../../packages/licon/doc/doc.md';
 import lgrid  from '../../packages/lgrid/doc/doc.md';
+import lprogress from '../../packages/lprogress/doc/doc.md';
 export default[
 	{
 		path:"/",
@@ -26,8 +27,13 @@ export default[
 			},
 			{
 				path:"lgrid",
-				name:"lgrid 布局",
+				name:"grid 布局",
 				component:lgrid,
+			},
+			{
+				path:"lprogress",
+				name:"progress 进度条",
+				component:lprogress,
 			}
 		]
 	}

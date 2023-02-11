@@ -3,26 +3,26 @@ import { lgrid } from '../..';
 
 <template>
     <m-row>
-      <lgrid :span="12"><div class="col-box-2 col-box">12</div></lgrid>
-      <lgrid :span="12"><div class="col-box-1 col-box">12</div></lgrid>
+      <l-grid :span="12"><div class="col-box-2 col-box">12</div></l-grid>
+      <l-grid :span="12"><div class="col-box-1 col-box">12</div></l-grid>
     </m-row>
     <m-row>
-      <lgrid :span="8"><div class="col-box-1 col-box">8</div></lgrid>
-      <lgrid :span="8"><div class="col-box-2 col-box">8</div></lgrid>
-      <lgrid :span="8"><div class="col-box-1 col-box">8</div></lgrid>
+      <l-grid :span="8"><div class="col-box-1 col-box">8</div></l-grid>
+      <l-grid :span="8"><div class="col-box-2 col-box">8</div></l-grid>
+      <l-grid :span="8"><div class="col-box-1 col-box">8</div></l-grid>
     </m-row>
     <m-row>
-      <lgrid :span="6"><div class="col-box-2 col-box">6</div></lgrid>
-      <lgrid :span="6"><div class="col-box-1 col-box">6</div></lgrid>
-      <lgrid :span="6"><div class="col-box-2 col-box">6</div></lgrid>
-      <lgrid :span="6"><div class="col-box-1 col-box">6</div></lgrid>
+      <l-grid :span="6"><div class="col-box-2 col-box">6</div></l-grid>
+      <l-grid :span="6"><div class="col-box-1 col-box">6</div></l-grid>
+      <l-grid :span="6"><div class="col-box-2 col-box">6</div></l-grid>
+      <l-grid :span="6"><div class="col-box-1 col-box">6</div></l-grid>
     </m-row>
     <m-row>
-      <lgrid :span="4"><div class="col-box-1 col-box">4</div></lgrid>
-      <lgrid :span="2"><div class="col-box-2 col-box">2</div></lgrid>
-      <lgrid :span="4"><div class="col-box-1 col-box">4</div></lgrid>
-      <lgrid :span="6"><div class="col-box-2 col-box">6</div></lgrid>
-      <lgrid :span="8"><div class="col-box-1 col-box">8</div></lgrid>
+      <l-grid :span="4"><div class="col-box-1 col-box">4</div></l-grid>
+      <l-grid :span="2"><div class="col-box-2 col-box">2</div></l-grid>
+      <l-grid :span="4"><div class="col-box-1 col-box">4</div></l-grid>
+      <l-grid :span="6"><div class="col-box-2 col-box">6</div></l-grid>
+      <l-grid :span="8"><div class="col-box-1 col-box">8</div></l-grid>
     </m-row>
   </template>
   

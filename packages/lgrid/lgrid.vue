@@ -5,7 +5,7 @@
 </template>
 <script lang="ts">
 export default {
-    name: "lgrid"
+    name: "l-grid"
 }
 </script>
 <script setup lang="ts">
