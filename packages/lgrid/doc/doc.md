@@ -39,6 +39,7 @@
 <style scoped>
 .llayout-demo1{
     border:1px solid #f0f0f0;
-    padding:1vw
+    padding:1vw;
+    width:85vw;
 }
 </style>

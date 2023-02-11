@@ -98,6 +98,6 @@ const propDoc =  [
     .lprogressdeom1{
         border:1px solid #f0f0f0;
         padding:1vw;
-        width:80vw;
+        width:85vw;
     }
 </style>

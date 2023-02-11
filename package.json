@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
     "@vicons/ionicons5": "^0.12.0",
     "@vicons/utils": "^0.1.4",
+    "highlight.js": "^11.7.0",
     "sass": "^1.58.0",
     "vite-plugin-md": "^0.22.5",
     "vue": "^3.2.45",
