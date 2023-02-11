@@ -29,7 +29,7 @@ export default[
 				path:"ltable",
 				name:"表格",
 				component:ltable,
-			}
+			},
 			{
 				path:"lgrid",
 				name:"grid 布局",
