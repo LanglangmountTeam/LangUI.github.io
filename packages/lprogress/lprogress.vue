@@ -12,15 +12,16 @@
         </div>
         <div class="white">{{percent}}%</div>
     </div>
+    <div id="ss"></div>
 </template>
 
-<script lang="ts">
+<script >
 export default {
     name: "l-progress"
 }
 </script>
-<script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+<script setup>
+import { ref, computed, onMounted,watch } from 'vue';
 const props = defineProps({
     circle: {
         type: Boolean,
@@ -68,10 +69,18 @@ const itemleftclass = computed(() => {
 const itemrightclass = computed(() => {
     return ['itemright', `circle-${props.color}`]
 })
-const ileft = ref(null)
-const iright = ref(null)
+const ileft = ref()
+const iright = ref()
 onMounted(() => {
-    setInterval(() => {
+    if (props.percent > 50) {
+            ileft.value.style.transform = `rotate(-${(1 - (props.percent / 100)) * 360}deg)`;
+            iright.value.style.transform = `rotate(0deg)`;
+        }
+        else {
+            iright.value.style.transform = `rotate(-${(0.5 - (props.percent / 100)) * 360}deg)`;
+            ileft.value.style.transform = `rotate(180deg)`;
+        }
+    watch(()=>props.percent,(newvalue,oldvalue)=>{
         if (props.percent > 50) {
             ileft.value.style.transform = `rotate(-${(1 - (props.percent / 100)) * 360}deg)`;
             iright.value.style.transform = `rotate(0deg)`;
@@ -80,8 +89,7 @@ onMounted(() => {
             iright.value.style.transform = `rotate(-${(0.5 - (props.percent / 100)) * 360}deg)`;
             ileft.value.style.transform = `rotate(180deg)`;
         }
-    }, 100)
-
+    })
 })
 </script>
 <style lang="scss" scoped>

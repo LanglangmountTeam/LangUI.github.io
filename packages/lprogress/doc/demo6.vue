@@ -7,7 +7,7 @@
 <script setup>
     import {ref} from 'vue';
     const p=ref(0);
-    p.value=30;
+    p.value=60;
     function es(){
         p.value=p.value+1;
     }
