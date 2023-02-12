@@ -1,0 +1,30 @@
+.l-from-item {
+  display: flex;
+  .label {
+    display: inline-block;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 12px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    width: auto;
+    
+    .hide {
+      color: $danger;
+    }
+  }
+  .content {
+    display: flex;
+    flex: 1;
+    position: relative;
+    .error {
+      position: absolute;
+      left: 1%;
+      bottom: -45%;
+      color: $danger;
+      font-size: 12px;
+    }
+  }
+  
+}

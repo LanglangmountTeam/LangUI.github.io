@@ -39,6 +39,7 @@
 		overflow-y: auto;
 	}
 	.rigth{
+		flex: 1;
 		margin-top: 10px;
 		margin-left: 10px;
 		height: auto;
