@@ -1,5 +1,5 @@
 <template>
-         <l-progress circle length=10 color="success" :percent=p></l-progress>
+         <l-progress circle :length=10 color="success" :percent=p></l-progress>
          <br/>
          <l-button type="default" @click="start">开始</l-button>
          <l-button type="default" @click="stop">暂停</l-button>

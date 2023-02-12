@@ -5,12 +5,14 @@ import ltable from './ltable/ltable.vue';
 import lgrid from './lgrid/lgrid.vue';
 import mrow from './lgrid/mrow.vue';
 import lprogress from './lprogress/lprogress.vue';
+import ldivider from './ldivider/ldivider.vue';
 const allcom=[
 	lbutton,
 	licon,
 	ltable,lgrid,
 	mrow,
-	lprogress
+	lprogress,
+	ldivider
 ]
 
 const recom =function(app:App){
@@ -18,5 +20,5 @@ const recom =function(app:App){
 		app.component(allco.name,allco)
 	}
 };
-export {lbutton,licon,ltable,lgrid,mrow,lprogress};
+export {lbutton,licon,ltable,lgrid,mrow,lprogress,ldivider};
 export default recom;
