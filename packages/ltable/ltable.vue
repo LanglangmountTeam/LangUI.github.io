@@ -1,5 +1,5 @@
 <template>
-    <div :class="[`mzl-table-${size}`, customClass]">
+    <div :class="[`lang-table-${size}`, customClass]">
         <table>
             <thead v-if="showHeader">
                 <tr>
@@ -65,7 +65,7 @@ const $slot = useSlots()
 </script>
 
 <style lang="scss" scoped>
-.mzl-table-default {
+.lang-table-default {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -73,7 +73,6 @@ const $slot = useSlots()
     table {
         width: 100%;
         border-radius: 2px;
-        // border:1px solid #f0f0f0;
         box-sizing: border-box;
         border-spacing: 0;
 
@@ -120,16 +119,69 @@ const $slot = useSlots()
                     background: rgba(240, 240, 240, .2)
                 }
             }
+        }
+    }
+}
 
-            tr:last-child {
-                td {}
+.lang-table-big {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 
+    table {
+        width: 100%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        border-spacing: 0;
+
+        thead {
+            th {
+                padding: 15px 13px;
+                box-sizing: border-box;
+                text-align: left;
+                line-height: 20px;
+                color: #646468;
+                font-weight: 550;
+                font-size: 16px;
+                border: 1px solid #f0f0f0;
+                border-right: 0;
+                background-color: #fafafa;
+            }
+
+            th:last-child {
+                border-right: 1px solid #f0f0f0;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 15px 13px;
+                    box-sizing: border-box;
+                    text-align: left;
+                    line-height: 20px;
+                    color: #505050;
+                    font-weight: 500;
+                    font-size: 16px;
+                    border: 1px solid #f0f0f0;
+                    border-right: 0;
+                    border-top: 0;
+                }
+
+                td:last-child {
+                    border-bottom: 1px solid #f0f0f0;
+                    border-right: 1px solid #f0f0f0;
+                }
+
+                &:hover {
+                    background: rgba(240, 240, 240, .2)
+                }
             }
         }
     }
 }
 
-.mzl-table-small {
+.lang-table-small {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -146,76 +198,10 @@ const $slot = useSlots()
                 padding: 10px 10px;
                 box-sizing: border-box;
                 text-align: left;
-                line-height: 20px;
-                color: #646468;
-                font-weight: 550;
-                font-size: 14px;
-                border: 1px solid #f0f0f0;
-                border-right: 0;
-                background-color: #fafafa;
-            }
-
-            th:last-child {
-                border-right: 1px solid #f0f0f0;
-            }
-        }
-
-        tbody {
-            tr {
-                td {
-                    padding: 9.5px 10px;
-                    box-sizing: border-box;
-                    text-align: left;
-                    line-height: 20px;
-                    color: #505050;
-                    font-weight: 500;
-                    font-size: 14px;
-                    border: 1px solid #f0f0f0;
-                    border-right: 0;
-                    border-top: 0;
-                }
-
-                td:last-child {
-                    border-bottom: 1px solid #f0f0f0;
-                    border-right: 1px solid #f0f0f0;
-                }
-
-                &:hover {
-                    background: rgba(240, 240, 240, .2)
-                }
-            }
-
-            tr:last-child {
-                td {
-                    // border:1px solid #f0f0f0;
-                }
-
-            }
-        }
-    }
-}
-
-.mzl-table-mini {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-
-    table {
-        width: 100%;
-        border-radius: 2px;
-        // border:1px solid #f0f0f0;
-        box-sizing: border-box;
-        border-spacing: 0;
-
-        thead {
-            th {
-                padding: 8px 10px;
-                box-sizing: border-box;
-                text-align: left;
                 line-height: 18px;
                 color: #646468;
                 font-weight: 550;
-                font-size: 12px;
+                font-size: 13.5px;
                 border: 1px solid #f0f0f0;
                 border-right: 0;
                 background-color: #fafafa;
@@ -229,13 +215,13 @@ const $slot = useSlots()
         tbody {
             tr {
                 td {
-                    padding: 7.5px 10px;
+                    padding: 10px 10px;
                     box-sizing: border-box;
                     text-align: left;
                     line-height: 18px;
                     color: #505050;
                     font-weight: 500;
-                    font-size: 12px;
+                    font-size: 13.5px;
                     border: 1px solid #f0f0f0;
                     border-right: 0;
                     border-top: 0;
@@ -251,12 +237,6 @@ const $slot = useSlots()
                 }
             }
 
-            tr:last-child {
-                td {
-                    // border-bottom:0;
-                }
-
-            }
         }
     }
 }

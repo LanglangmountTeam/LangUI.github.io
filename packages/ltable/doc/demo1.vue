@@ -16,10 +16,10 @@ const state = reactive({
       { field: 'from', title: '籍贯', align: 'center' }
     ],
     datas: [
-      { id: 10, name: '张三', job: '前端开发工程师', salary: '18k', from: "北京" },
-      { id: 13, name: '李四', job: '后端开发工程师', salary: '18k', from: "上海" },
-      { id: 2, name: '王五', job: '前端开发实习生', salary: '9k', from: "深圳" },
-      { id: 11, name: '赵六', job: '后端开发实习生', salary: '9k', from: "杭州" },
+      { id: 1, name: '张三', job: '前端开发工程师', salary: '18k', from: "北京" },
+      { id: 2, name: '李四', job: '后端开发工程师', salary: '18k', from: "上海" },
+      { id: 3, name: '王五', job: '前端开发实习生', salary: '9k', from: "深圳" },
+      { id: 4, name: '赵六', job: '后端开发实习生', salary: '9k', from: "杭州" },
     ]
   },
 });
