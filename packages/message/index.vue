@@ -1,8 +1,16 @@
 <template>
+  
   <Transition name="slide-fade">
-    <div :class="['mzl-message', customClass]" :style="style[type]" v-show="isShow">
+    <div
+      :class="['mzl-message', customClass]"
+      :style="style[type]"
+      v-show="isShow"
+    >
       <template v-if="isText">
-        <i :class="[style[type].icon]"></i>
+        <lIcon>
+          <component :is="style[type].icon" />
+        </lIcon>
+        <!-- <i :class="[style[type].icon]"></i> -->
         <span class="text">{{ text }}</span>
       </template>
       <template v-else>
@@ -14,67 +22,73 @@
 
 <script>
 export default {
-  name: "lmessage",
+  name: "l-message",
 };
 </script>
 <script setup>
-import { onMounted, ref, reactive, computed } from 'vue'
+import { onMounted, ref, reactive, computed } from "vue";
+import {InformationCircle,Warning,Bug,TicketSharp,Cloudy,Flash,Football} from '@vicons/ionicons5';
+import lIcon from "../licon/licon.vue"
+
 const props = defineProps({
   text: {
     type: [String, Object],
-    default: ''
+    default: "",
   },
   type: {
     type: String,
-    default: 'info'
+    default: "info",
   },
-  icon: String,
+  icon: {
+    type:Object,
+    default:''
+  },
   textColor: String,
   bgColor: String,
-  customClass: String
-})
+  customClass: String,
+});
 const state = reactive({
   style: {
     info: {
-      icon: props.icon || 'm-icon-prompt-filling',
-      color: '#505050',
-      backgroundColor: 'rgb(229 227 224)',
-      borderColor: 'rgb(229 227 224)'
+      icon: props.icon || InformationCircle,
+      color: "#505050",
+      backgroundColor: "rgb(229 227 224)",
+      borderColor: "rgb(229 227 224)",
     },
     warn: {
-      icon: props.icon || 'm-icon-warning',
-      color: '#f57b29',
-      backgroundColor: 'rgb(243 233 220)',
-      borderColor: 'rgb(243 233 220)'
+      icon: props.icon || Warning,
+      color: "#f57b29",
+      backgroundColor: "rgb(243 233 220)",
+      borderColor: "rgb(243 233 220)",
     },
     error: {
-      icon: props.icon || 'm-icon-delete-filling',
-      color: '#ec3437',
-      backgroundColor: 'rgb(251 228 228)',
-      borderColor: 'rgb(251 228 228)'
+      icon: props.icon || Bug,
+      color: "#ec3437",
+      backgroundColor: "rgb(251 228 228)",
+      borderColor: "rgb(251 228 228)",
     },
     success: {
-      icon: props.icon || 'm-icon-success',
-      color: '#09b63d',
-      backgroundColor: 'rgb(223 243 212)',
-      borderColor: 'rgb(223 243 212)'
+      icon: props.icon || Cloudy,
+      color: "#09b63d",
+      backgroundColor: "rgb(223 243 212)",
+      borderColor: "rgb(223 243 212)",
     },
     custom: {
       icon: props.icon,
       color: props.textColor,
       backgroundColor: props.bgColor,
-      borderColor: props.bgColor
-    }
-  }
-})
-const isShow = ref(false)
-const { style } = state
+      borderColor: props.bgColor,
+    },
+  },
+});
+const isShow = ref(false);
+const { style } = state;
 const isText = computed(() => {
-  return typeof props.text === 'string'
-})
+  return typeof props.text === "string";
+});
 onMounted(() => {
-  isShow.value = true
-})
+  isShow.value = true;
+});
 </script>
 <style scoped lang="scss">
 .slide-fade-enter-active {

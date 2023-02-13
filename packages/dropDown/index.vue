@@ -1,7 +1,7 @@
 <template>
   <div :class="[`mzl-dropdown-${size}`,customClass]" @mouseover="mouseover" @mouseleave="mouseleave" @click="handleClick">
     <div :class="[`mzl-dropdown-${size}-menu`]">
-			<slot name="Img"></slot><div class="setclassdrop">{{title}} <licon size="15" del="10"><ChevronDown/></licon></div> 
+			<slot name="Img"></slot><div class="setclassdrop">{{title}} <l-icon size="15" del="10"><ChevronDown/></l-icon></div> 
 		</div>
 		<transition name="slide-fade">
 			<div class="mzl-dropdown-item" v-if="isShow">
@@ -15,12 +15,11 @@
 				</div>
 			</div>
 		</transition>
-		
   </div>
 </template>
 <script>
 export default{
-  name:"ldropdown"
+  name:"l-dropdown"
 }
 </script>
 <script setup>

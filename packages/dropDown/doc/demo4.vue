@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
   <div class="setstyle">
-    <ldropdown title="hover唤醒" :options="dorpoptions"></ldropdown>
-    <ldropdown
+    <l-dropdown title="hover唤醒" :options="dorpoptions"></l-dropdown>
+    <l-dropdown
       title="click唤醒"
       :options="dorpoptions"
       trigger="click"
-    ></ldropdown>
+    ></l-dropdown>
   </div>
 </template>
 

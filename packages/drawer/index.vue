@@ -10,8 +10,8 @@
           <i class="m-icon-close" v-if="showClose" @click="close"></i>
           <span v-if="!$slot['header']">{{title}}</span>
           <div class="mzl-drawer-header-btn" v-if="!$slot['header']">
-            <lbutton size="small" :style="{'margin-right':confirmShow?'10px':'0'}" v-if="cancelShow" @click="cancelBtn">{{cancelText}}</lbutton>
-            <lbutton size="small" type="primary" v-if="confirmShow" @click="confirmBtn">{{confirmText}}</lbutton>
+            <l-button size="small" :style="{'margin-right':confirmShow?'10px':'0'}" v-if="cancelShow" @click="cancelBtn">{{cancelText}}</l-button>
+            <l-button size="small" type="primary" v-if="confirmShow" @click="confirmBtn">{{confirmText}}</l-button>
           </div>
         </div>
         <div class="mzl-drawer-contain-box-content" :style="{'height':showHeader?(showFooter?'calc(100% - 110px)':'calc(100% - 55px)'):showFooter?'calc(100% - 55px)':'100%'}">
@@ -19,7 +19,7 @@
         </div>
         <div class="mzl-drawer-contain-box-footer" v-if="showFooter">
           <slot name="footer" v-if="$slot['footer']"></slot>
-          <span v-else>你，我生命中一个重要的过客，之所以是过客，因为你未曾为我停留！</span>
+          <span v-else>在这里面,浪浪山代表人生山峰,是人生一辈子的缩影,尽管跌宕起伏,但是大家却都希望可以翻过浪浪山。</span>
         </div>
       </div> 
     </div>
@@ -27,7 +27,7 @@
 </template>
 <script>
 export default{
-  name:"ldrawer"
+  name:"l-drawer"
 }
 </script>
 <script setup>

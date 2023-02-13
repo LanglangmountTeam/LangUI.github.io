@@ -1,7 +1,7 @@
 <!-- html -->
 <template>
-  <lbutton @click="openDrawer" type="primary">基本使用</lbutton>
-  <ldrawer
+  <l-button @click="openDrawer" type="primary">基本使用</l-button>
+  <l-drawer
     v-model="drawerShow"
     title="基本使用"
     @confirm="confirmFn"
@@ -12,7 +12,7 @@
       <div>这是内容区域...</div>
       <div>这是内容区域...</div>
     </template>
-  </ldrawer>
+  </l-drawer>
 </template>
 
 <!-- js -->

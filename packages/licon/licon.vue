@@ -4,7 +4,7 @@
 
 <script lang="ts">
 	export default{
-		name:"licon"
+		name:"l-icon"
 	}
 	
 </script>
@@ -14,15 +14,15 @@ import { useAttrs,computed } from "vue";
 import { Icon } from '@vicons/utils';
 const props=defineProps({
 	color:{
-		color:String,
+		type:String,
 		default:""
 	},
 	size:{
-		size:Number,
+		type:Number,
 		default:""
 	},
 	del:{
-		del:Number,
+		type:Number,
 		default:10
 	}
 })
@@ -37,7 +37,7 @@ const del=computed(()=>{
 });
 const attrs = useAttrs();
 </script>
-<style>
+<style scoped>
 .ico{
 	margin-right: 1vw;
 }

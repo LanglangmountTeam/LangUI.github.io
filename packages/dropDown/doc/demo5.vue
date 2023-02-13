@@ -1,33 +1,33 @@
 <!-- html -->
 <template>
   <div class="setstyle">
-    <ldropdown title="下拉菜单" :options="dorpoptions">
+    <l-dropdown title="下拉菜单" :options="dorpoptions">
       <template #Img>
-        <img src="https://mzlui.codeym.com/head.png" alt="" />
+        <img src="https://q1.qlogo.cn/g?b=qq&nk=(2827459285)&s=640" alt="" />
       </template>
-    </ldropdown>
+    </l-dropdown>
 
-    <ldropdown
+    <l-dropdown
       title="下拉菜单"
       :options="dorpoptions"
       @change="dropchange"
       size="small"
     >
       <template #Img>
-        <img src="https://mzlui.codeym.com/head.png" alt="" />
+        <img src="https://q1.qlogo.cn/g?b=qq&nk=(2827459286)&s=640" alt="" />
       </template>
-    </ldropdown>
+    </l-dropdown>
 
-    <ldropdown
+    <l-dropdown
       title="下拉菜单"
       :options="dorpoptions"
       @change="dropchange"
       size="mini"
     >
       <template #Img>
-        <img src="https://mzlui.codeym.com/head.png" alt="" />
+        <img src="https://p.qlogo.cn/gh/(877277040)/(877277040)/640/" alt="" />
       </template>
-    </ldropdown>
+    </l-dropdown>
   </div>
 </template>
 

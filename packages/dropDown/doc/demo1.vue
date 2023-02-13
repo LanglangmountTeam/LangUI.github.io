@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <ldropdown
+  <l-dropdown
     title="下拉菜单"
     :options="dorpoptions"
     @change="dropchange"
-  ></ldropdown>
+  ></l-dropdown>
 </template>
 
 <!-- js -->

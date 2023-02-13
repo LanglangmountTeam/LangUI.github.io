@@ -1,14 +1,14 @@
 <!-- html -->
 <template>
-  <lbutton @click="openDrawer" type="primary">自定义</lbutton>
-  <ldrawer v-model="drawerShow">
+  <l-button @click="openDrawer" type="primary">自定义</l-button>
+  <l-drawer v-model="drawerShow">
     <template #header>
       这是头部自定义信息
-      <lbutton
+      <l-button
         size="small"
         type="primary"
         style="position: absolute; right: 20px"
-        >自定义</lbutton
+        >自定义</l-button
       >
     </template>
     <template #content>
@@ -17,7 +17,7 @@
       <div>这是内容区域...</div>
     </template>
     <template #footer> 这是底部自定义信息 </template>
-  </ldrawer>
+  </l-drawer>
 </template>
 
 <!-- js -->

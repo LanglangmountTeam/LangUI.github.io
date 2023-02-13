@@ -1,8 +1,8 @@
 <!-- html -->
 <template>
   <div>
-    <lbutton @click="openMsg">消息提示</lbutton>
-    <lbutton @click="openVNodeMsg">消息提示(VNode)</lbutton>
+    <l-button @click="openMsg">消息提示</l-button>
+    <l-button @click="openVNodeMsg">消息提示(VNode)</l-button>
   </div>
 </template>
 
@@ -10,6 +10,7 @@
 <script setup>
 import Message from '../index.js' //此处为本地示例，请使用import {Message} from "mzl-ui";引入
 import { h } from 'vue'
+
 const openMsg = () => {
   Message({
     text: '默认消息提示'

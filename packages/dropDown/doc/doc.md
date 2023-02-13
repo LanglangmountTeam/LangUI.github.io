@@ -15,7 +15,7 @@
 
 
 <div class='btndoc1'>图标类型</div>
-<div class='btndoc1'>通过设置 _options_ 数据的 _icon_ 属性展示图标</div>
+<div class='btndoc1'>通过具名插槽设置下拉菜单头像</div>
 
 <div class="btndoc2">
   <demo3/>
@@ -63,8 +63,8 @@ import DOC from '@/components/docview.vue';
 const dataAPI = [
   {
         attr: "label",
-        type: "String",
         red: "固定值，菜单名称",
+        type: "String",
         sel: "——",
         def: "——",
       },
@@ -82,22 +82,22 @@ const datasevent = [
 const datasAtt = [
   {
         attr: "title",
-        type: "String",
         red: "下拉菜单标题",
+        type: "String",
         sel: "——",
         def: "——",
       },
       {
         attr: "size",
-        type: "String",
         red: "尺寸大小",
+        type: "String",
         sel: "default / small / mini",
         def: "default",
       },
       {
         attr: "options",
-        type: "Array",
         red: "下拉菜单数据配置，具体见下方 options API",
+        type: "Array",
         sel: "——",
         def: "[]",
       },
@@ -110,8 +110,8 @@ const datasAtt = [
       },
       {
         attr: "customClass",
-        type: "String",
         red: "自定义下拉菜单类名",
+        type: "String",
         sel: "——",
         def: "——",
       },

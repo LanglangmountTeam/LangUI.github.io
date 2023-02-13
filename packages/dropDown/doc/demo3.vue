@@ -1,19 +1,19 @@
 <!-- html -->
 <template>
-  <ldropdown title="下拉菜单" :options="dorpoptions">
+  <l-dropdown title="下拉菜单" :options="dorpoptions">
     <template #CameraOutline>
-      <licon size="20"><CameraOutline/></licon>
+      <l-icon size="20"><CameraOutline/></l-icon>
     </template>
     <template #DesktopOutline>
-      <licon size="20"><DesktopOutline/></licon>
+      <l-icon size="20"><DesktopOutline/></l-icon>
     </template>
     <template #FishOutline>
-      <licon size="20"><FishOutline/></licon>
+      <l-icon size="20"><FishOutline/></l-icon>
     </template>
     <template #CloudDownloadOutline>
-      <licon size="20"><CloudDownloadOutline/></licon>
+      <l-icon size="20"><CloudDownloadOutline/></l-icon>
     </template>
-  </ldropdown>
+  </l-dropdown>
 </template>
 
 <!-- js -->
