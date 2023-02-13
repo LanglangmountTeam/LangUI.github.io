@@ -9,7 +9,9 @@
     <licon size="30" color="green" del="8"><Camera/></licon>
     <licon size="30" color="green" del="9"><Camera/></licon>
     <licon size="30" color="green" del="10"><Camera/></licon>
+    
 </template>
 <script setup>
-import {Camera} from '@vicons/ionicons5';
+import {Camera,ChevronDown} from '@vicons/ionicons5';
+
 </script>
