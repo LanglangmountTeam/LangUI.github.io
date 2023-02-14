@@ -3,6 +3,9 @@ import home from '../views/home.vue';
 import lbuttondoc from '../../packages/lbutton/doc/doc.md';
 import licon from '../../packages/licon/doc/doc.md';
 import ltable from '../../packages/ltable/doc/doc.md';
+import llist from '../../packages/llist/doc/doc.md';
+import lavatar from '../../packages/lavatar/doc/doc.md';
+import ldialog from '../../packages/ldialog/doc/doc.md';
 import lgrid  from '../../packages/lgrid/doc/doc.md';
 import lprogress from '../../packages/lprogress/doc/doc.md';
 import ldivider from '../../packages/ldivider/doc/doc.md';
@@ -28,8 +31,23 @@ export default[
 				component:licon,
 			},{
 				path:"ltable",
-				name:"表格",
+				name:"table 表格",
 				component:ltable,
+			},
+			{
+				path:"llist",
+				name:"list 列表",
+				component:llist,
+			},
+			{
+				path:"lavatar",
+				name:"avatar 头像",
+				component:lavatar,
+			},
+			{
+				path:"ldialog",
+				name:"dialog 对话框",
+				component:ldialog,
 			},
 			{
 				path:"lgrid",
