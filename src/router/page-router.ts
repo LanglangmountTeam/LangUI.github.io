@@ -1,5 +1,3 @@
-import index from '../views/index.vue';
-import home from '../views/home.vue';
 import lbuttondoc from '../../packages/lbutton/doc/doc.md';
 import licon from '../../packages/licon/doc/doc.md';
 import ltable from '../../packages/ltable/doc/doc.md';
@@ -8,14 +6,6 @@ import lprogress from '../../packages/lprogress/doc/doc.md';
 import ldivider from '../../packages/ldivider/doc/doc.md';
 export default[
 	{
-		path:"/",
-		name:"index",
-		component:index,
-	},
-	{
-		path:"/home",
-		name:"home",
-		component:home,
 		children:[
 			{
 				path:"",

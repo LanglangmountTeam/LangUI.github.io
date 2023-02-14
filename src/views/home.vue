@@ -1,7 +1,7 @@
 <template>
 	<div class="con">
 	<div class="left">
-		<li v-for="(item,index) in leftlist[1].children" :key="index" :class="{active:actind==index}" @click="jump(item,index)">
+		<li v-for="(item,index) in arr1" :key="index" :class="{active:actind==index}" @click="jump(item,index)">
 			{{item.name}}
 		</li>
 	</div>
@@ -11,19 +11,26 @@
 	</div>
 </template>
 
-<script setup>
-	import leftlist from '../router/page-router.ts';
+<script setup lang="ts">
+	import leftlist from '../router/page-router';
 	import {useRouter} from 'vue-router';
 	import {ref} from 'vue';
+	const arr1:any=[];
+	arr1.push(leftlist[0].children[0]);
+	arr1.push(leftlist[0].children[1]);
+	arr1.push(leftlist[0].children[2]);
+	arr1.push(leftlist[0].children[3]);
+	arr1.push(leftlist[0].children[4]);
+	arr1.push(leftlist[0].children[5]);
+	console.log(arr1);
 	const router=useRouter();
 	const actind=ref(0);
-	const jump=function(item,index){
+	const jump=function(item:any,index:any){
 		actind.value=index,
 		router.push({
 			name:item.name
 		})
 	}
-	// console.log(leftlist[1].children);
 </script>
 
 <style>
