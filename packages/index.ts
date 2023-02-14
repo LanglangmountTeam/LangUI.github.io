@@ -25,7 +25,10 @@ const allcom=[
 	lprogress,
 	ldivider,
 	lavatar,
-	ldialog
+	ldialog,
+	lbreadcrumb,
+	lbreadcrumbitem,
+	lmenu,
 ]
 
 const recom =function(app:App){
@@ -33,5 +36,5 @@ const recom =function(app:App){
 		app.component(allco.name,allco)
 	}
 };
-export {lbutton,licon,ltable,lgrid,mrow,lprogress,ldivider,lavatar,ldialog};
+export {lbutton,licon,ltable,lgrid,mrow,lprogress,ldivider,lavatar,ldialog,lbreadcrumb,lbreadcrumbitem,lmenu,ldrawer,lmessage,ldropdown};
 export default recom;
