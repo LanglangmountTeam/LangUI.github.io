@@ -1,6 +1,7 @@
 <div>在这里对表格的基本演示</div>
 <script setup>
-import demo1 from './demo1.vue'
+import demo1 from './demo1.vue';
+import codeds from '@/components/codeds.vue';
 // import demo2 from './demo2.vue'
 // import demo3 from './demo3.vue'
 // import demo4 from './demo4.vue'
@@ -13,7 +14,7 @@ import demo1 from './demo1.vue'
 <div class="tabdoc2">
 <demo1></demo1>
 </div>
-
+<Suspense><codeds compname="ltable" demoname="demo1"></codeds></Suspense>
 <style>
   .tabdoc1{
       margin-top:2vh;

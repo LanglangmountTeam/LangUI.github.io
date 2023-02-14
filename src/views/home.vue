@@ -22,7 +22,6 @@
 	arr1.push(leftlist[0].children[3]);
 	arr1.push(leftlist[0].children[4]);
 	arr1.push(leftlist[0].children[5]);
-	console.log(arr1);
 	const router=useRouter();
 	const actind=ref(0);
 	const jump=function(item:any,index:any){

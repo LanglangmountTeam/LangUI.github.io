@@ -9,6 +9,7 @@
     import demo1 from './demo1.vue';
      import demo2 from './demo2.vue';
      import DOC from '@/components/docview.vue';
+     import codeds from '@/components/codeds.vue';
      const propDoc =  [
   [ "span","占用行数","Number","1-24","24"],
   ["offset", "列偏移量", "Number", "-", "0"],
@@ -18,7 +19,7 @@
 <div class="llayout-demo1">
 <demo1></demo1>
 </div>
-
+<Suspense><codeds compname="lgrid" demoname="demo1"></codeds></Suspense>
 <br/>
 
 位置偏移
@@ -30,7 +31,7 @@
 <div class="llayout-demo1">
 <demo2></demo2>
 </div>
-
+<Suspense><codeds compname="lgrid" demoname="demo2"></codeds></Suspense>
 <br/>
 
 <div>
