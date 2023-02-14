@@ -5,36 +5,37 @@
 <div class='btndoc1'>基本使用</div>
 <div class='btndoc1'>Dropdown 下拉菜单的基本使用，需要一个主要的 _options_ 参数。</div>
 <div class='btndoc2'><demo1/></div>
+<Suspense><codeds compname="dropDown" demoname="demo1"></codeds></Suspense>
 
 <div class='btndoc1'>不同大小</div>
 <div class='btndoc1'>通过设置 _size_ 属性适应不同大小。</div>
-
 <div class="btndoc2">
   <demo2/>
 </div>
+<Suspense><codeds compname="dropDown" demoname="demo2"></codeds></Suspense>
 
 
 <div class='btndoc1'>图标类型</div>
 <div class='btndoc1'>通过具名插槽设置下拉菜单头像</div>
-
 <div class="btndoc2">
   <demo3/>
 </div>
+<Suspense><codeds compname="dropDown" demoname="demo3"></codeds></Suspense>
 
 <div class='btndoc1'>唤醒方式</div>
 <div class='btndoc1'>通过设置 _trigger_ 属性设置不同的唤醒方式</div>
-
 <div class="btndoc2">
   <demo4/>
 </div>
+<Suspense><codeds compname="dropDown" demoname="demo4"></codeds></Suspense>
 
 
 <div class='btndoc1'>头像类型</div>
 <div class='btndoc1'>通过插槽 _#Img_ 设置头像类型的下拉菜单。</div>
-
 <div class="btndoc2">
   <demo5/>
 </div>
+<Suspense><codeds compname="dropDown" demoname="demo5"></codeds></Suspense>
 
 <div class="btndoc1">
 <DOC title="属性" type=prop :body="datasAtt"></DOC>
@@ -55,10 +56,7 @@ import demo3 from './demo3.vue'
 import demo4 from './demo4.vue'
 import demo5 from './demo5.vue'
 import DOC from '@/components/docview.vue';
-// import Attributes from './Attributes.vue'
-// import Options from './options.vue'
-// import Event from './Events.vue'
-// import preview from '@/components/preview.vue'
+import codeds from "@/components/codeds.vue"
 
 const dataAPI = [
   {

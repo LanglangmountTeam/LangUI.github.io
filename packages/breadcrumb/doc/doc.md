@@ -5,12 +5,14 @@
 <div class="btndoc2">
   <demo1/>
 </div>
+<Suspense><codeds compname="breadcrumb" demoname="BreadcrumbPreview1.preview"></codeds></Suspense>
 
 <br/>
 <div class='btndoc1'>图标分隔符</div>
 <div class="btndoc2">
   <demo2/>
 </div>
+<Suspense><codeds compname="breadcrumb" demoname="BreadcrumbPreview2.preview"></codeds></Suspense>
 
 <br/><br/>
 <div class="btndoc1">
@@ -36,7 +38,7 @@
 import demo1 from './BreadcrumbPreview1.preview.vue'
 import demo2 from './BreadcrumbPreview2.preview.vue'
 import DOC from '@/components/docview.vue';
-
+import codeds from '@/components/codeds.vue'
 
 const bdpPropsData1 = [
   {
@@ -83,3 +85,17 @@ const bdqSlotdata2 = [
   }
 ]
 </script>
+
+<style scoped>
+    .btndoc2{
+        display:"block";
+        border:1px solid #f0f0f0;
+        /* height:20vh; */
+        padding-top:2vw;
+        padding-bottom:2vw;
+       margin-top:2vh;
+    }
+    .btndoc1{
+        margin-top:2vh;
+    }
+</style>

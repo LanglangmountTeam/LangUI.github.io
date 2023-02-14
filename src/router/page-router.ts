@@ -9,7 +9,8 @@ import ltable from "../../packages/ltable/doc/doc.md";
 import lgrid from "../../packages/lgrid/doc/doc.md";
 import lprogress from "../../packages/lprogress/doc/doc.md";
 import ldivider from "../../packages/ldivider/doc/doc.md";
-import lbreadcyumb from "../../packages/breadcrumb/doc/doc.md"
+import lbreadcyumb from "../../packages/breadcrumb/doc/doc.md";
+import lmenu from "../../packages/menu/doc/doc.md";
 export default [
   {
     path: "/",
@@ -66,10 +67,15 @@ export default [
         name: "Divider 分割线",
         component: ldivider,
       },
-	  {
+      {
         path: "lbreadcrumb",
         name: "Breadcrumb 面包屑",
         component: lbreadcyumb,
+      },
+      {
+        path: "lmenu",
+        name: "Menu 菜单",
+        component: lmenu,
       },
     ],
   },

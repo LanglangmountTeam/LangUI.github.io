@@ -3,28 +3,28 @@
 # Drawer 抽屉
 
 <br/>
-
 <div class='btndoc1'>基本抽屉</div>
 <div class='btndoc1'>基础抽屉，点击触发按钮抽屉从右滑出，点击遮罩区关闭</div>
 <div class="btndoc2">
   <demo1/>
 </div>
+<Suspense><codeds compname="drawer" demoname="demo1"></codeds></Suspense>
 
 <br/>
-
 <div class='btndoc1'>自定义位置</div>
 <div class='btndoc1'>自定义位置，点击触发按钮抽屉从相应的位置滑出，点击遮罩区关闭。</div>
 <div class="btndoc2">
   <demo2/>
 </div>
+<Suspense><codeds compname="drawer" demoname="demo2"></codeds></Suspense>
 
 <br/>
-
 <div class="btndoc1">自定义位置，点击触发按钮抽屉从相应的位置滑出，点击遮罩区关闭。</div>
 <div class="btndoc1">使用具名插槽 _#header_ 、 _#content_ 、_#footer_ 可对模态框整体根据需要自定义。你也可以通过 _showHeader_ 和 _showFooter_ 属性动态控制是否显示顶部和底部。</div>
 <div class="btndoc2">
   <demo3/>
 </div>
+<Suspense><codeds compname="drawer" demoname="demo3"></codeds></Suspense>
 
 <br/>
 <div class="btndoc1">
@@ -42,6 +42,7 @@ import demo1 from './demo1.vue'
 import demo2 from './demo2.vue'
 import demo3 from './demo3.vue'
 import DOC from '@/components/docview.vue';
+import codeds from '@/components/codeds.vue';
 
 const eventDoc=[
   {
