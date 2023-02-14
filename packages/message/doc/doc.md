@@ -7,6 +7,7 @@
 <div class="btndoc2">
   <demo1/>
 </div>
+<Suspense><codeds compname="message" demoname="demo1"></codeds></Suspense>
 
 <br/>
 <div class='btndoc1'>不同状态</div>
@@ -14,6 +15,7 @@
 <div class="btndoc2">
   <demo3/>
 </div>
+<Suspense><codeds compname="message" demoname="demo3"></codeds></Suspense>
 
 <br/>
 <div class='btndoc1'>拓展自定义配置</div>
@@ -21,10 +23,10 @@
 <div class="btndoc2">
   <demo4/>
 </div>
+<Suspense><codeds compname="message" demoname="demo4"></codeds></Suspense>
 
 <br/>
 <br/>
-
 <div class="btndoc1">
 <DOC title="Breadcrumb 属性" type=prop :body="mgPropsData"></DOC>
 </div>
@@ -34,6 +36,7 @@ import demo1 from './demo1.vue'
 import demo3 from './demo3.vue'
 import demo4 from './demo4.vue'
 import DOC from '@/components/docview.vue';
+import codeds from '@/components/codeds.vue'
 
 const mgPropsData = [
   {
@@ -87,3 +90,17 @@ const mgPropsData = [
       }
 ] 
 </script>
+
+<style scoped>
+    .btndoc2{
+        display:"block";
+        border:1px solid #f0f0f0;
+        /* height:20vh; */
+        padding-top:2vw;
+        padding-bottom:2vw;
+       margin-top:2vh;
+    }
+    .btndoc1{
+        margin-top:2vh;
+    }
+</style>

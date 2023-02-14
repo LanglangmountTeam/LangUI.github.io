@@ -11,6 +11,7 @@ import lmessage from './message/index.vue'
 import ldropdown from './dropDown/index.vue'
 import lbreadcrumbitem from './breadcrumb/breadcrumb-item.vue'
 import lbreadcrumb from './breadcrumb/breadcrumb.vue'
+import lmenu from './menu/index.vue'
 const allcom=[
 	lbutton,
 	licon,
@@ -22,7 +23,8 @@ const allcom=[
 	lprogress,
 	ldivider,
 	lbreadcrumb,
-	lbreadcrumbitem
+	lbreadcrumbitem,
+	lmenu,
 ]
 
 const recom =function(app:App){
@@ -30,5 +32,5 @@ const recom =function(app:App){
 		app.component(allco.name,allco)
 	}
 };
-export {lbutton,licon,ldrawer,lmessage,ldropdown,ltable,lgrid,mrow,lprogress,ldivider,lbreadcrumb,lbreadcrumbitem};
+export {lbutton,licon,ldrawer,lmessage,ldropdown,ltable,lgrid,mrow,lprogress,ldivider,lbreadcrumb,lbreadcrumbitem,lmenu,ldialog};
 export default recom;
