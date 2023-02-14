@@ -6,9 +6,15 @@ import ltable from '../../packages/ltable/doc/doc.md';
 import llist from '../../packages/llist/doc/doc.md';
 import lavatar from '../../packages/lavatar/doc/doc.md';
 import ldialog from '../../packages/ldialog/doc/doc.md';
+import drawer from "../../packages/drawer/doc/doc.md";
+import lmessage from "../../packages/message/doc/doc.md";
+import ldropdown from "../../packages/dropDown/doc/doc.md";
 import lgrid  from '../../packages/lgrid/doc/doc.md';
 import lprogress from '../../packages/lprogress/doc/doc.md';
 import ldivider from '../../packages/ldivider/doc/doc.md';
+import drawer from "../../packages/drawer/doc/doc.md";
+import lbreadcyumb from "../../packages/breadcrumb/doc/doc.md";
+import lmenu from "../../packages/menu/doc/doc.md";
 export default[
 	{
 		path:"/",
