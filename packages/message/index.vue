@@ -1,11 +1,7 @@
 <template>
-  
+
   <Transition name="slide-fade">
-    <div
-      :class="['mzl-message', customClass]"
-      :style="style[type]"
-      v-show="isShow"
-    >
+    <div :class="['l-message', customClass]" :style="style[type]" v-show="isShow">
       <template v-if="isText">
         <lIcon>
           <component :is="style[type].icon" />
@@ -27,7 +23,7 @@ export default {
 </script>
 <script setup>
 import { onMounted, ref, reactive, computed } from "vue";
-import {InformationCircle,Warning,Bug,TicketSharp,Cloudy,Flash,Football} from '@vicons/ionicons5';
+import { InformationCircle, Warning, Bug, TicketSharp, Cloudy, Flash, Football } from '@vicons/ionicons5';
 import lIcon from "../licon/licon.vue"
 
 const props = defineProps({
@@ -40,8 +36,8 @@ const props = defineProps({
     default: "info",
   },
   icon: {
-    type:Object,
-    default:''
+    type: Object,
+    default: ''
   },
   textColor: String,
   bgColor: String,
@@ -103,7 +99,8 @@ div.slide-fade-enter-from,
 div.slide-fade-leave-to {
   transform: translate3d(-50%, -75px, 0);
 }
-.mzl-message {
+
+.l-message {
   position: fixed;
   z-index: 9999;
   left: 50%;
@@ -118,6 +115,7 @@ div.slide-fade-leave-to {
   background: #f5f5f5;
   color: #999;
   border-radius: 4px;
+
   i {
     margin-right: 8px;
     vertical-align: middle;
@@ -126,6 +124,7 @@ div.slide-fade-leave-to {
     display: inline-block;
     float: left;
   }
+
   .text {
     vertical-align: middle;
     font-size: 14px;
