@@ -1,3 +1,4 @@
+
 .l-select-input-box,
 .l-select-default {
   width: 100%;
@@ -30,18 +31,18 @@
       color: #606266;
       cursor: pointer;
       border: 1px solid $inputBorder;
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
       &:focus {
         border-color: $primary;
         box-shadow: $boxShadowColor;
       }
     }
     .l-select-input::placeholder {
-      color: $inputBorder;
+      color: $inputPlaceholder;
       font-size: 14px;
     }
     .l-select-input-value::placeholder {
-      color: $info;
+      color: #626262;
       font-size: 14px;
     }
     .select-icon {
@@ -67,7 +68,7 @@
     bottom: 0;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color:  $backGroundColor;
+    background-color: $backGroundColor;
     top: 100%;
     z-index: 99;
     .l-select-option-find {
@@ -78,7 +79,7 @@
       margin-top: 13px;
       padding: 4px 0px;
       box-sizing: border-box;
-      background-color:  $backGroundColor;
+      background-color: $backGroundColor;
       border: 1px solid $inputBorder;
       border-radius: 3px;
       transition: all 0.1s ease;
@@ -91,7 +92,7 @@
         top: -15.7px;
         right: 50.27%;
         padding: 0;
-        border-bottom: 8px solid  $backGroundColor;
+        border-bottom: 8px solid $backGroundColor;
         border-top: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -129,7 +130,7 @@
           line-height: 40px;
           font-size: 14px;
           cursor: pointer;
-          color: $info;
+          color: #626262;
           user-select: none;
           white-space: nowrap;
           i {
@@ -146,7 +147,7 @@
           color: $liColor;
           cursor: no-drop;
           &:hover {
-            background-color:  $backGroundColor;
+            background-color: $backGroundColor;
           }
         }
       }
@@ -162,7 +163,7 @@
 
       ul::-webkit-scrollbar-track {
         border-radius: 8px;
-        background:  $backGroundColor;
+        background: $backGroundColor;
       }
     }
   }
@@ -200,11 +201,11 @@
       }
     }
     .l-select-input::placeholder {
-      color: $inputBorder;
+      color: $inputPlaceholder;
       font-size: 14px;
     }
     .l-select-input-value::placeholder {
-      color: $info;
+      color: #626262;
       font-size: 14px;
     }
     .select-icon {
@@ -230,7 +231,7 @@
     bottom: 0;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color:  $backGroundColor;
+    background-color: $backGroundColor;
     top: 100%;
     z-index: 99;
     .l-select-option-find {
@@ -241,7 +242,7 @@
       margin-top: 13px;
       padding: 4px 0px;
       box-sizing: border-box;
-      background-color:  $backGroundColor;
+      background-color: $backGroundColor;
       border: 1px solid $inputBorder;
       border-radius: 3px;
       transition: all 0.1s ease;
@@ -254,7 +255,7 @@
         top: -15.7px;
         right: 50.27%;
         padding: 0;
-        border-bottom: 8px solid  $backGroundColor;
+        border-bottom: 8px solid $backGroundColor;
         border-top: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -292,7 +293,7 @@
           line-height: 35px;
           font-size: 13px;
           cursor: pointer;
-          color: $info;
+          color: #626262;
           user-select: none;
           white-space: nowrap;
           i {
@@ -309,7 +310,7 @@
           color: $liColor;
           cursor: no-drop;
           &:hover {
-            background-color:  $backGroundColor;
+            background-color: $backGroundColor;
           }
         }
       }
@@ -325,7 +326,7 @@
 
       ul::-webkit-scrollbar-track {
         border-radius: 8px;
-        background:  $backGroundColor;
+        background: $backGroundColor;
       }
     }
   }
@@ -363,11 +364,11 @@
       }
     }
     .l-select-input::placeholder {
-      color: $inputBorder;
+      color: $inputPlaceholder;
       font-size: 12px;
     }
     .l-select-input-value::placeholder {
-      color: $info;
+      color: #626262;
       font-size: 12px;
     }
     .select-icon {
@@ -393,7 +394,7 @@
     bottom: 0;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color:  $backGroundColor;
+    background-color: $backGroundColor;
     top: 100%;
     z-index: 99;
     .l-select-option-find {
@@ -404,7 +405,7 @@
       margin-top: 13px;
       padding: 4px 0px;
       box-sizing: border-box;
-      background-color:  $backGroundColor;
+      background-color: $backGroundColor;
       border: 1px solid $inputBorder;
       border-radius: 3px;
       transition: all 0.1s ease;
@@ -417,7 +418,7 @@
         top: -15.7px;
         right: 50.27%;
         padding: 0;
-        border-bottom: 8px solid  $backGroundColor;
+        border-bottom: 8px solid $backGroundColor;
         border-top: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -455,7 +456,7 @@
           line-height: 32px;
           font-size: 12px;
           cursor: pointer;
-          color: $info;
+          color: #626262;
           user-select: none;
           white-space: nowrap;
           i {
@@ -472,7 +473,7 @@
           color: $liColor;
           cursor: no-drop;
           &:hover {
-            background-color:  $backGroundColor;
+            background-color: $backGroundColor;
           }
         }
       }
@@ -488,7 +489,7 @@
 
       ul::-webkit-scrollbar-track {
         border-radius: 8px;
-        background:  $backGroundColor;
+        background: $backGroundColor;
       }
     }
   }
@@ -502,7 +503,7 @@
       cursor: no-drop;
     }
     .l-select-input-value::placeholder {
-      color: $inputBorder;
+      color: $inputPlaceholder;
       font-size: 14px;
     }
   }
@@ -513,10 +514,10 @@
     cursor: no-drop;
     input {
       cursor: no-drop;
-      color: $inputBorder;
+      color: $inputPlaceholder;
     }
     .l-select-input-value::placeholder {
-      color: $inputBorder;
+      color: $inputPlaceholder;
       font-size: 14px;
     }
   }
@@ -529,30 +530,30 @@
       cursor: no-drop;
     }
     .l-select-input-value::placeholder {
-      color: $inputBorder;
+      color: $inputPlaceholder;
       font-size: 12px;
     }
   }
 }
 input::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: $inputBorder;
+  color: $inputPlaceholder;
 }
 input:-moz-placeholder {
   /* Mozilla Firefox 4 ~ 18 */
-  color: $inputBorder;
+  color: $inputPlaceholder;
 }
 input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: $inputBorder;
+  color: $inputPlaceholder;
 }
 input:-ms-input-placeholder {
   /* Internet Explorer 10 ~ 11 */
-  color: $inputBorder;
+  color: $inputPlaceholder;
 }
 input::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: $inputBorder;
+  color: $inputPlaceholder;
 }
 .slide-fade-enter-active {
   transition: all 0.2s ease-out;

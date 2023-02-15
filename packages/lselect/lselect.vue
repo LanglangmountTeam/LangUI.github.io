@@ -52,13 +52,13 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "l-select",
 };
 </script>
 
-<script setup>
+<script setup lang="ts">
 import { selectProps, selectEmit, useSelect } from './lselect'
 import { ref, reactive } from "vue"
 
@@ -66,7 +66,7 @@ import { ref, reactive } from "vue"
 const fixIcon = reactive({})
 
 const emit = defineEmits(selectEmit)
-const props = defineProps(selectProps)
+const props: any = defineProps(selectProps)
 const {
   iconClass,
   customStyle,
@@ -102,7 +102,7 @@ const selVal = ref(
 )
 
 
-const blur = (e) => {
+const blur = () => {
   isShow.value = false
   rotate.value = "rotate(0deg)"
 }
@@ -171,8 +171,8 @@ const vClickOutside = {
 }
 
 // 选择事件
-let labels = []
-let indexs = []
+let labels: any = []
+let indexs: any = []
 
 const selChange = (item, index) => {
   if (!props.multiple) {
