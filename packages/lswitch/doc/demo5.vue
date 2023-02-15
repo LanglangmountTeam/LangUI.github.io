@@ -3,7 +3,7 @@
     v-model="switchVal"
     :showTipsText="true"
     closeColor="#bc3457"
-    activeColor="#b4563d"
+    activeColor="#45d426"
   ></l-switch>
 </template>
 

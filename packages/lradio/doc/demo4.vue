@@ -15,7 +15,7 @@ const state = reactive({
     { name: "金克丝", id: 0 },
     { name: "拉克丝", id: 1 },
     { name: "霞", id: 2 },
-    { name: "小王", id: 3 },
+    { name: "ikun", id: 3 },
   ],
 });
 const { radioOptions } = state;

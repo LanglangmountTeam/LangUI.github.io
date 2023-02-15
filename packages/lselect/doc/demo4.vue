@@ -11,14 +11,15 @@
 
 <script setup>
 import { reactive, ref } from "vue";
-const selVal = ref("132");
+const selVal = ref("111");
 const state = reactive({
   selOptions: [
-    { cityName: "北京", cityCode: "131" },
-    { cityName: "天津", cityCode: "332" },
-    { cityName: "上海", cityCode: "289", disabled: true },
-    { cityName: "重庆", cityCode: "132" },
-    { cityName: "深圳", cityCode: "340" },
+    { cityName: "北京", cityCode: "111" },
+    { cityName: "上海", cityCode: "222" },
+    { cityName: "广州", cityCode: "333", disabled: true },
+    { cityName: "深圳", cityCode: "444" },
+    { cityName: "成都", cityCode: "555" },
+    { cityName: "我不是小黑子", cityCode: "666"}
   ],
 });
 const selchange = (item, index) => {

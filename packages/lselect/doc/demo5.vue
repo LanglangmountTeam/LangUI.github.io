@@ -28,11 +28,11 @@ import { reactive, ref } from "vue";
 const selVal1 = ref("");
 const state = reactive({
   selOptions: [
-    { label: "中国", value: "zhongguo" },
-    { label: "俄罗斯", value: "eluosi" },
-    { label: "美国", value: "meiguo" },
-    { label: "澳大利亚", value: "aodaliya" },
-    { label: "巴基斯坦", value: "bajisitan" },
+    { label: "PHP是世界上最好的语言", value: "PHP" },
+    { label: "python才是最好的语言", value: "python" },
+    { label: "Java天下第一", value: "Java" },
+    { label: "C++说第二没人敢说第一", value: "C++" },
+    { label: "你是ikun吗", value: "ikun" },
   ],
 });
 const { selOptions } = state;
