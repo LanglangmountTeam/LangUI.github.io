@@ -62,6 +62,15 @@ select 下拉框基本使用示例,需要一个主要的 options 参数
 
 
 <div class="doc1">
+多选
+通过设置 multiple 属性来开启多选
+</div>
+<div class="doc2">
+  <demo8></demo8>
+</div>
+
+
+<div class="doc1">
 自定义宽高
 通过设置 width 和 height 自定义宽高
 </div>
@@ -69,13 +78,7 @@ select 下拉框基本使用示例,需要一个主要的 options 参数
   <demo7></demo7>
 </div>
 
-<div class="doc1">
-多选
-通过设置 multiple 属性来开启多选
-</div>
-<div class="doc2">
-  <demo8></demo8>
-</div>
+
 
 
 <style>

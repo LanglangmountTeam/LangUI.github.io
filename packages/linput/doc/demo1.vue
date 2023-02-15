@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <l-input prefixIcon="IP" suffixIcon="IS"   />
+    <l-input prefixIcon="IP" />
+    <l-input suffixIcon="IS" />
   </div>
 </template>
 

@@ -3,12 +3,12 @@ import lbutton from './lbutton/lbutton.vue';
 import licon from './licon/licon.vue';
 import linput from './linput/linput.vue';
 import ltextarea from './textarea/ltextarea.vue';
-import lformItem from './lform/lform-item.vue'
-import lform from './lform/lform.vue'
+import lformItem from './lform/lform-item.vue';
+import lform from './lform/lform.vue';
 import lselect from './lselect/lselect.vue';
-import lradio from './lradio/lradio.vue'
-import lswitch from './lswitch/lswitch.vue'
-import lupload from './lupload/lupload.vue'
+import lradio from './lradio/lradio.vue';
+import lswitch from './lswitch/lswitch.vue';
+import lupload from './lupload/lupload.vue';
 
 export type FormInstance = InstanceType<typeof lform>
 

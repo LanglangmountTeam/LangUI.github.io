@@ -29,18 +29,19 @@
       border-radius: 4px;
       color: #606266;
       cursor: pointer;
-      border: 1px solid #dcdfe6f6;
-      transition: all 0.2s ease;
+      border: 1px solid $inputBorder;
+      transition: all 0.5s ease;
       &:focus {
-        border-color: #0e80eb;
+        border-color: $primary;
+        box-shadow: $boxShadowColor;
       }
     }
     .l-select-input::placeholder {
-      color: #c6c8cc;
+      color: $inputBorder;
       font-size: 14px;
     }
     .l-select-input-value::placeholder {
-      color: #626262;
+      color: $info;
       font-size: 14px;
     }
     .select-icon {
@@ -66,7 +67,7 @@
     bottom: 0;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color:  $backGroundColor;
     top: 100%;
     z-index: 99;
     .l-select-option-find {
@@ -77,8 +78,8 @@
       margin-top: 13px;
       padding: 4px 0px;
       box-sizing: border-box;
-      background-color: #ffffff;
-      border: 1px solid #dcdfe6f6;
+      background-color:  $backGroundColor;
+      border: 1px solid $inputBorder;
       border-radius: 3px;
       transition: all 0.1s ease;
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -90,7 +91,7 @@
         top: -15.7px;
         right: 50.27%;
         padding: 0;
-        border-bottom: 8px solid #ffffff;
+        border-bottom: 8px solid  $backGroundColor;
         border-top: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -106,7 +107,7 @@
         top: -18px;
         right: 50%;
         padding: 0;
-        border-bottom: 9px solid #dcdfe6f6;
+        border-bottom: 9px solid $inputBorder;
         border-top: 9px solid transparent;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
@@ -128,7 +129,7 @@
           line-height: 40px;
           font-size: 14px;
           cursor: pointer;
-          color: #626262;
+          color: $info;
           user-select: none;
           white-space: nowrap;
           i {
@@ -139,13 +140,13 @@
           }
         }
         li.l-select-active {
-          color: #0e80eb;
+          color: $primary;
         }
         li.l-select-disabled {
-          color: #9d9d9d;
+          color: $liColor;
           cursor: no-drop;
           &:hover {
-            background-color: #fff;
+            background-color:  $backGroundColor;
           }
         }
       }
@@ -161,7 +162,7 @@
 
       ul::-webkit-scrollbar-track {
         border-radius: 8px;
-        background: #fff;
+        background:  $backGroundColor;
       }
     }
   }
@@ -191,18 +192,19 @@
       border-radius: 4px;
       color: #606266;
       cursor: pointer;
-      border: 1px solid #dcdfe6f6;
+      border: 1px solid $inputBorder;
       transition: all 0.2s ease;
       &:focus {
-        border-color: #0e80eb;
+        border-color: $primary;
+        box-shadow: $boxShadowColor;
       }
     }
     .l-select-input::placeholder {
-      color: #c6c8cc;
+      color: $inputBorder;
       font-size: 14px;
     }
     .l-select-input-value::placeholder {
-      color: #626262;
+      color: $info;
       font-size: 14px;
     }
     .select-icon {
@@ -228,7 +230,7 @@
     bottom: 0;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color:  $backGroundColor;
     top: 100%;
     z-index: 99;
     .l-select-option-find {
@@ -239,8 +241,8 @@
       margin-top: 13px;
       padding: 4px 0px;
       box-sizing: border-box;
-      background-color: #ffffff;
-      border: 1px solid #dcdfe6f6;
+      background-color:  $backGroundColor;
+      border: 1px solid $inputBorder;
       border-radius: 3px;
       transition: all 0.1s ease;
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -252,7 +254,7 @@
         top: -15.7px;
         right: 50.27%;
         padding: 0;
-        border-bottom: 8px solid #ffffff;
+        border-bottom: 8px solid  $backGroundColor;
         border-top: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -268,7 +270,7 @@
         top: -18px;
         right: 50%;
         padding: 0;
-        border-bottom: 9px solid #dcdfe6f6;
+        border-bottom: 9px solid $inputBorder;
         border-top: 9px solid transparent;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
@@ -290,7 +292,7 @@
           line-height: 35px;
           font-size: 13px;
           cursor: pointer;
-          color: #626262;
+          color: $info;
           user-select: none;
           white-space: nowrap;
           i {
@@ -301,13 +303,13 @@
           }
         }
         li.l-select-active {
-          color: #0e80eb;
+          color: $primary;
         }
         li.l-select-disabled {
-          color: #9d9d9d;
+          color: $liColor;
           cursor: no-drop;
           &:hover {
-            background-color: #fff;
+            background-color:  $backGroundColor;
           }
         }
       }
@@ -323,7 +325,7 @@
 
       ul::-webkit-scrollbar-track {
         border-radius: 8px;
-        background: #fff;
+        background:  $backGroundColor;
       }
     }
   }
@@ -353,18 +355,19 @@
       border-radius: 4px;
       color: #606266;
       cursor: pointer;
-      border: 1px solid #dcdfe6f6;
+      border: 1px solid $inputBorder;
       transition: all 0.2s ease;
       &:focus {
-        border-color: #0e80eb;
+        border-color: $primary;
+        box-shadow: $boxShadowColor;
       }
     }
     .l-select-input::placeholder {
-      color: #c6c8cc;
+      color: $inputBorder;
       font-size: 12px;
     }
     .l-select-input-value::placeholder {
-      color: #626262;
+      color: $info;
       font-size: 12px;
     }
     .select-icon {
@@ -390,7 +393,7 @@
     bottom: 0;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color:  $backGroundColor;
     top: 100%;
     z-index: 99;
     .l-select-option-find {
@@ -401,8 +404,8 @@
       margin-top: 13px;
       padding: 4px 0px;
       box-sizing: border-box;
-      background-color: #ffffff;
-      border: 1px solid #dcdfe6f6;
+      background-color:  $backGroundColor;
+      border: 1px solid $inputBorder;
       border-radius: 3px;
       transition: all 0.1s ease;
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -414,7 +417,7 @@
         top: -15.7px;
         right: 50.27%;
         padding: 0;
-        border-bottom: 8px solid #ffffff;
+        border-bottom: 8px solid  $backGroundColor;
         border-top: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
@@ -430,7 +433,7 @@
         top: -18px;
         right: 50%;
         padding: 0;
-        border-bottom: 9px solid #dcdfe6f6;
+        border-bottom: 9px solid $inputBorder;
         border-top: 9px solid transparent;
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
@@ -452,7 +455,7 @@
           line-height: 32px;
           font-size: 12px;
           cursor: pointer;
-          color: #626262;
+          color: $info;
           user-select: none;
           white-space: nowrap;
           i {
@@ -463,13 +466,13 @@
           }
         }
         li.l-select-active {
-          color: #0e80eb;
+          color: $primary;
         }
         li.l-select-disabled {
-          color: #9d9d9d;
+          color: $liColor;
           cursor: no-drop;
           &:hover {
-            background-color: #fff;
+            background-color:  $backGroundColor;
           }
         }
       }
@@ -485,7 +488,7 @@
 
       ul::-webkit-scrollbar-track {
         border-radius: 8px;
-        background: #fff;
+        background:  $backGroundColor;
       }
     }
   }
@@ -499,7 +502,7 @@
       cursor: no-drop;
     }
     .l-select-input-value::placeholder {
-      color: #c6c8cc;
+      color: $inputBorder;
       font-size: 14px;
     }
   }
@@ -510,10 +513,10 @@
     cursor: no-drop;
     input {
       cursor: no-drop;
-      color: #c6c8cc;
+      color: $inputBorder;
     }
     .l-select-input-value::placeholder {
-      color: #c6c8cc;
+      color: $inputBorder;
       font-size: 14px;
     }
   }
@@ -526,30 +529,30 @@
       cursor: no-drop;
     }
     .l-select-input-value::placeholder {
-      color: #c6c8cc;
+      color: $inputBorder;
       font-size: 12px;
     }
   }
 }
 input::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #c6c8cc;
+  color: $inputBorder;
 }
 input:-moz-placeholder {
   /* Mozilla Firefox 4 ~ 18 */
-  color: #c6c8cc;
+  color: $inputBorder;
 }
 input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #c6c8cc;
+  color: $inputBorder;
 }
 input:-ms-input-placeholder {
   /* Internet Explorer 10 ~ 11 */
-  color: #c6c8cc;
+  color: $inputBorder;
 }
 input::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #c6c8cc;
+  color: $inputBorder;
 }
 .slide-fade-enter-active {
   transition: all 0.2s ease-out;

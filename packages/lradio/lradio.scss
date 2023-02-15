@@ -22,17 +22,17 @@
       height: 14px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:3px 8px 0 0 ;
-      background:#fff ;
+      background:$backGroundColor ;
       transition: transform .15s ease-in;
       box-sizing: border-box;
       &::after{
         width: 5px;
         height: 5px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: $backGroundColor;
         content: "";
         position: absolute;
         left: 50%;
@@ -53,23 +53,23 @@
     margin-right:15px;
     span{
       float: left;
-      color:#b4b6b9
+      color:$info
     }
     span.l-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:3px 8px 0 0 ;
-      background:#ebebeb ;
+      background:$inputBorder ;
       transition: transform .15s ease-in;
       &::after{
         width: 4px;
         height: 4px;
         border-radius: 100%;
-        background-color: #999999;
+        background-color: $info;
         content: "";
         position: absolute;
         left: 50%;
@@ -82,23 +82,23 @@
   label.l-radio-active{
     span{
       float: left;
-      color:#0e80eb
+      color:$primary
     }
     span.l-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
       position: relative;
-      border:1px solid #0e80eb;
+      border:1px solid $primary;
       border-radius: 50%;
       margin:3px 8px 0 0 ;
-      background:#0e80eb ;
+      background:$primary ;
       transition: transform .15s ease-in;
       &::after{
         width: 4px;
         height: 4px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: $backGroundColor;
         content: "";
         position: absolute;
         left: 50%;
@@ -112,17 +112,17 @@
     cursor: no-drop;
     span{
       float: left;
-      color:#b4b6b9
+      color:$info
     }
     span.l-radio-round{
       width: 14px;
       height: 14px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:3px 8px 0 0 ;
-      background:#ebebeb ;
+      background:$inputBorder ;
       transition: transform .15s ease-in;
       &::after{
         width: 4px;
@@ -164,17 +164,17 @@
       height: 12px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:4px 7px 0 0 ;
-      background:#fff ;
+      background:$backGroundColor ;
       transition: transform .15s ease-in;
       box-sizing: border-box;
       &::after{
         width: 4px;
         height: 4px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: $backGroundColor;
         content: "";
         position: absolute;
         left: 50%;
@@ -192,23 +192,23 @@
     margin-right:13px;
     span{
       float: left;
-      color:#b4b6b9
+      color:$info
     }
     span.l-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:4px 7px 0 0 ;
-      background:#ebebeb ;
+      background:$inputBorder ;
       transition: transform .15s ease-in;
       &::after{
         width: 4px;
         height: 4px;
         border-radius: 100%;
-        background-color: #999999;
+        background-color: $info;
         content: "";
         position: absolute;
         left: 50%;
@@ -221,23 +221,23 @@
   label.l-radio-active{
     span{
       float: left;
-      color:#0e80eb
+      color:$primary
     }
     span.l-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
       position: relative;
-      border:1px solid #0e80eb;
+      border:1px solid $primary;
       border-radius: 50%;
       margin:4px 7px 0 0 ;
-      background:#0e80eb ;
+      background:$primary ;
       transition: transform .15s ease-in;
       &::after{
         width: 4px;
         height: 4px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: $backGroundColor;
         content: "";
         position: absolute;
         left: 50%;
@@ -251,17 +251,17 @@
     cursor: no-drop;
     span{
       float: left;
-      color:#b4b6b9
+      color:$info
     }
     span.l-radio-round{
       width: 12px;
       height: 12px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:4px 7px 0 0 ;
-      background:#ebebeb ;
+      background:$inputBorder ;
       transition: transform .15s ease-in;
       &::after{
         width: 4px;
@@ -303,17 +303,17 @@
       height: 11px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:5px 6px 0 0 ;
-      background:#fff ;
+      background:$backGroundColor ;
       transition: transform .15s ease-in;
       box-sizing: border-box;
       &::after{
         width: 3px;
         height: 3px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: $backGroundColor;
         content: "";
         position: absolute;
         left: 50%;
@@ -331,23 +331,23 @@
     margin-right:12px;
     span{
       float: left;
-      color:#b4b6b9
+      color:$info
     }
     span.l-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:5px 6px 0 0 ;
-      background:#ebebeb ;
+      background:$inputBorder ;
       transition: transform .15s ease-in;
       &::after{
         width: 3px;
         height: 3px;
         border-radius: 100%;
-        background-color: #999999;
+        background-color: $info;
         content: "";
         position: absolute;
         left: 50%;
@@ -360,23 +360,23 @@
   label.l-radio-active{
     span{
       float: left;
-      color:#0e80eb
+      color:$primary
     }
     span.l-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;
       position: relative;
-      border:1px solid #0e80eb;
+      border:1px solid $primary;
       border-radius: 50%;
       margin:5px 6px 0 0 ;
-      background:#0e80eb ;
+      background:$primary ;
       transition: transform .15s ease-in;
       &::after{
         width: 3px;
         height: 3px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: $backGroundColor;
         content: "";
         position: absolute;
         left: 50%;
@@ -390,17 +390,17 @@
     cursor: no-drop;
     span{
       float: left;
-      color:#b4b6b9
+      color:$info
     }
     span.l-radio-round{
       width: 11px;
       height: 11px;
       display: inline-block;
       position: relative;
-      border:1px solid #b9b9b9;
+      border:1px solid $liColor;
       border-radius: 50%;
       margin:5px 6px 0 0 ;
-      background:#ebebeb ;
+      background:$inputBorder ;
       transition: transform .15s ease-in;
       &::after{
         width: 3px;

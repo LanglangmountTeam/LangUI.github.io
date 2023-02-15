@@ -54,6 +54,7 @@ const handleSwitch = () =>{
     
   }
 }
+
 watchEffect(()=>{
   roundStyle.left = props.modelValue?props.width-20+'px':'2px'
   flagTextStyle.left = props.modelValue?'6px':props.width-20+'px'

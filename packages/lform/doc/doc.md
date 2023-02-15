@@ -14,7 +14,7 @@ import demo2 from './demo2.vue';
 <demo1></demo1>
 </div>
 
-<div class="doc1">表单基本用法</div>
+<div class="doc1">正则校验</div>
 <div class="doc2">
 <demo2></demo2>
 </div>

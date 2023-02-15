@@ -1,10 +1,8 @@
 <template>
   <l-form
     :model="state"
-    ref="formRef"
   >
     <l-form-item 
-      prop="username" 
     >
       <l-input  placeholder="请输入用户名" v-model="state.username"/>
       <template #label>用户名</template>

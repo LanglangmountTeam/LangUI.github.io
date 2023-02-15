@@ -57,12 +57,22 @@ export default {
   name: "l-select",
 };
 </script>
+
 <script setup>
-import { selectProps, selectEmit } from './lselect'
-import { ref, computed, reactive } from "vue"
+import { selectProps, selectEmit, useSelect } from './lselect'
+import { ref, reactive } from "vue"
+
+//增加选择框width和height属性的大小限制 高度最小是25px,width属性最小是100px,动态计算下拉图标的行高
+const fixIcon = reactive({})
 
 const emit = defineEmits(selectEmit)
 const props = defineProps(selectProps)
+const {
+  iconClass,
+  customStyle,
+  selectClass,
+  selectInputClass
+} = useSelect(props,emit, fixIcon)
 
 props.options.forEach((item, index) => {
   if (!props.multiple) {
@@ -90,48 +100,12 @@ const selVal = ref(
       })[0][props.labelFiled]
     : ""
 )
-/*1.增加选择框width和height属性的大小限制 高度最小是25px,width属性最小是100px
- *2.动态计算下拉图标的行高
- */
-const fixIcon = reactive({})
-
-// icon class
-const iconClass = computed(() => {
-  return ["select-icon iconfont m-icon-arrow-down"]
-})
-
-//根据自定义的组件尺寸适配组件里面的下拉框相对位置以及图标居中
-const customStyle = computed(() => {
-  let styles = {}
-  if (props.height) {
-    let height = parseInt(props.height) < 25 ? "25px" : props.height
-    styles.height = height
-    fixIcon.lineHeight = height
-    fixIcon.top = 0
-    fixIcon.height = "100%"
-  }
-  return styles
-});
 
 
-const selectClass = computed(() => {
-  return [
-    `l-select-${props.size}`,
-    props.disabled ? `l-select-${props.size}-disabled` : ""
-  ];
-});
-
-const selectInputClass = computed(() => {
-  return [
-    "l-select-input-box",
-    `l-select-input-${props.size}`,
-    props.disabled ? `l-select-input-${props.size}-disabled` : ""
-  ];
-});
 const blur = (e) => {
   isShow.value = false
   rotate.value = "rotate(0deg)"
-};
+}
 
 const input = (e) => {
   selVal.value = e.target.value
@@ -142,7 +116,8 @@ const input = (e) => {
   filterList.forEach((item, index) => {
     optionsData.value.push(item)
   });
-};
+}
+
 const vClickOutside = {
   beforeMount(el) {
     let handler = (e) => {
@@ -198,6 +173,7 @@ const vClickOutside = {
 // 选择事件
 let labels = []
 let indexs = []
+
 const selChange = (item, index) => {
   if (!props.multiple) {
     if (!item.disabled) {
@@ -229,7 +205,8 @@ const selChange = (item, index) => {
       emit("change", { lable: labels, value: selVal.value, index: indexs })
     }
   }
-};
+}
+
 </script>
 
 <style lang="scss" scoped>

@@ -43,10 +43,43 @@ export const selectEmit = [
   "change"
 ]
 
-export const useSelect = (props, emits) => {
+export const useSelect = (props, emits, fixIcon) => {
+  const iconClass = computed(() => {
+    return ["select-icon iconfont m-icon-arrow-down"]
+  })
 
+  //根据自定义的组件尺寸适配组件里面的下拉框相对位置以及图标居中
+  const customStyle = computed(() => {
+    let styles = {}
+    if (props.height) {
+      let height = parseInt(props.height) < 25 ? "25px" : props.height
+      styles.height = height
+      fixIcon.lineHeight = height
+      fixIcon.top = 0
+      fixIcon.height = "100%"
+    }
+    return styles
+  });
+
+  const selectClass = computed(() => {
+    return [
+      `l-select-${props.size}`,
+      props.disabled ? `l-select-${props.size}-disabled` : ""
+    ];
+  });
+
+  const selectInputClass = computed(() => {
+    return [
+      "l-select-input-box",
+      `l-select-input-${props.size}`,
+      props.disabled ? `l-select-input-${props.size}-disabled` : ""
+    ];
+  });
 
   return {
-
+    iconClass,
+    customStyle,
+    selectClass,
+    selectInputClass
   }
 }
