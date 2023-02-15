@@ -1,51 +1,52 @@
-import { computed, PropType } from "vue";
+import { computed } from "vue";
 
-interface optionsProps {
-  label: String,
-  value: String,
-  disabled: Boolean
+export const selectProps = {
+  modelValue: [String , Array],
+  placeholder: String,
+  customClass: String,
+  disabled: Boolean,
+  searchable: Boolean,
+  size: {
+    type: String,
+    default: "default",
+  },
+  width: {
+    type: String,
+    default: "260px",
+  },
+  height: {
+    type: String,
+    default: "",
+  },
+  options: {
+    type: [String, Object],
+    default: () => {
+      return [];
+    },
+  },
+  //默认需要显示的label字段
+  labelFiled: {
+    type: String,
+    default: "label",
+  },
+  //默认需要显示的value字段
+  valueFiled: {
+    type: String,
+    default: "value",
+  },
+  multiple: Boolean,
 }
 
 
-export const selectProps = {
-  options: {
-    type: Array as PropType<optionsProps[]> ,
-    default: () => []
-  },
-  disabled: {
-    type: Boolean
-  },
-  filedLabel: {
-    type: String,
-    default: 'label'
-  },
-  filedValue: {
-    type: String,
-    default: 'value'
-  },
-  placeholder: {
-    type: String,
-  },
-  selectValue: {
-    type: String,
-  }
-
-} 
-
-
 export const selectEmit = [
-  "change",
-  "update:modelValue"
-];
+  "update:modelValue",
+  "change"
+]
 
 export const useSelect = (props, emits) => {
-  const lClass = computed(() => {
-    return [
-      'l-select',
-    ]
-  })
+
 
   return {
-    lClass
+
   }
 }

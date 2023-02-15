@@ -52,7 +52,14 @@
       <template #label>密码</template>
       
     </l-form-item>
-    <lbutton class="btn" type="primary" @click="validateForm" >按钮</lbutton>
+    <l-switch class="item" v-model="switchVal" @change="switchChange"></l-switch>
+    <l-radio
+      class="item"
+      v-model="radioVal"
+      :options="state.radioOptions"
+      @change="radioChange"
+    ></l-radio>
+    <lbutton class="item" type="primary" @click="validateForm" >按钮</lbutton>
   </l-form>
 
 </template>
@@ -60,9 +67,17 @@
 <script lang="ts" setup>
 import { ref, reactive } from 'vue';
 import { FormInstance } from '../../index';
+const radioVal = ref("python");
+const switchVal = ref(false);
 const state = reactive({
   username: '',
-  password: ''
+  password: '',
+  radioOptions: [
+    { label: "java编程", value: "java" },
+    { label: "js编程", value: "js" },
+    { label: "php编程", value: "php" },
+    { label: "python编程", value: "python" },
+  ],
 })
 
 const formRef = ref<FormInstance>()
@@ -73,13 +88,22 @@ const validateForm = () => {
     console.log(valid, errors)
   })
 }
+
+const radioChange = (e) => {
+  console.log(e.value, e.index);
+};
+
+const switchChange = (e) => {
+  console.log(e);
+};
+
 </script>
 
 <style scoped>
 .l-from-item {
   margin-top: 20px;
 }
-.btn {
+.item {
   margin-top: 20px;
 }
 </style>

@@ -1,50 +1,23 @@
 <template>
-  <div>
-    <l-select 
-      :options="options"
-      v-model="selectValue"
-      filedLabel="name"
-      filedValue="id"
-      @change="change"
-    >
-    </l-select>
-  </div>
+  <l-select
+    v-model="selVal"
+    placeholder="请选择"
+    :options="selOptions"
+    disabled
+  ></l-select>
 </template>
 
-<script lang="ts" setup>
-import { ref, reactive } from 'vue'
-
+<script setup>
+import { reactive, ref } from "vue";
+const selVal = ref("");
 const state = reactive({
-  options:[
-    {
-      name: '中国',
-      id: 'china',
-    },
-    {
-      name: '美国',
-      id: 'america',
-    },
-    {
-      name: '日本',
-      id: 'japan'
-    },
-    {
-      name: '俄罗斯',
-      id: 'russian'
-    }
-  ]
-})
-const { options } = state
-const selectValue = ref()
-
-const change = (e) => {
-  console.log(e)
-}
-
-
-
+  selOptions: [
+    { label: "中国", value: "zhongguo" },
+    { label: "俄罗斯", value: "eluosi" },
+    { label: "美国", value: "meiguo" },
+    { label: "澳大利亚", value: "aodaliya" },
+    { label: "巴基斯坦", value: "bajisitan" },
+  ],
+});
+const { selOptions } = state;
 </script>
-
-<style lang="scss" scoped>
-
-</style>

@@ -1,6 +1,6 @@
 import { computed, PropType } from "vue";
 
-interface radioProps {
+interface optionsProps {
   label: String,
   value: String,
   disabled: Boolean
