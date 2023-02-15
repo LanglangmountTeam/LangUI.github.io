@@ -1,7 +1,7 @@
 <template>
-	<lbutton type="default" sizes="small">小尺寸</lbutton>
-	<lbutton type="success" sizes="default">默认按钮</lbutton>
-	<lbutton type="primary" sizes="big">大按钮</lbutton>
+	<l-button type="default" sizes="small">小尺寸</l-button>
+	<l-button type="success" sizes="default">默认按钮</l-button>
+	<l-button type="primary" sizes="big">大按钮</l-button>
 </template>
 
 <script>

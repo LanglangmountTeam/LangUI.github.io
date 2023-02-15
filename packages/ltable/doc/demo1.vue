@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <ltable :options="options"></ltable>
+  <l-table :options="options"></l-table>
 </template>
 
 <!-- js -->

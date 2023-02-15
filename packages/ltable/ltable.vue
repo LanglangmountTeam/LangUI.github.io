@@ -24,11 +24,11 @@
 </template>
 <script>
 export default {
-    name: 'ltable'
+    name: 'l-table'
 }
 </script>
 <script setup>
-import { ref, useSlots } from 'vue'
+import {useSlots} from 'vue'
 const props = defineProps({
     options: {
         type: Object,

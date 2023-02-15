@@ -30,7 +30,7 @@ const propDoc =  [
         border:1px solid #f0f0f0;
         padding:2vw;
         display:block;
-        width:70vw;
+        width:85vw;
     }
     .icon2{
         margin-top:2vh;

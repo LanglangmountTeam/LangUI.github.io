@@ -6,7 +6,7 @@
 
 <script lang="ts">
 	export default{
-		name:"lbutton"
+		name:"l-button"
 	}
 </script>
 
@@ -19,19 +19,19 @@
 		},
 		round:Boolean,
 		tsy:{
-			tsy:Boolean,
+			type:Boolean,
 			default:false
 		},
 		icon:{
-			icon:Boolean,
+			type:Boolean,
 			default:false
 		},
 		sizes:{
-			size:String,
+			type:String,
 			default:""
 		},
 		dis:{
-			dis:Boolean,
+			type:Boolean,
 			default:false
 		}
 	});
@@ -48,7 +48,7 @@
 
 
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 	button{
 		outline: none;
 		border: 0;

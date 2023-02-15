@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
   <p>大的</p>
-  <ltable :options="options" size="big"></ltable>
+  <l-table :options="options" size="big"></l-table>
   <p>适中</p>
-  <ltable :options="options" size="default"></ltable>
+  <l-table :options="options" size="default"></l-table>
   <p>小的</p>
-  <ltable :options="options" size="small"></ltable>
+  <l-table :options="options" size="small"></l-table>
 </template>
 
 <!-- js -->
