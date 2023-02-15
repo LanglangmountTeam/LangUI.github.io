@@ -1,4 +1,4 @@
-<div>在这里对对话框进行演示</div>
+# Dialog 对话框
 
 <script setup>
 import demo1 from './demo1.vue';

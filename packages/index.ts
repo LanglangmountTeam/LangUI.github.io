@@ -14,13 +14,16 @@ import lbreadcrumb from './breadcrumb/breadcrumb.vue'
 import lmenu from './menu/index.vue'
 import lavatar from './lavatar/lavatar.vue';
 import ldialog from './ldialog/ldialog.vue';
+import llist from './llist/llist.vue';
+import llistitem from './llist/llistitem.vue';
 const allcom=[
 	lbutton,
 	licon,
 	ldrawer,
 	lmessage,
 	ldropdown,
-	ltable,lgrid,
+	ltable,
+	lgrid,
 	mrow,
 	lprogress,
 	ldivider,
@@ -29,6 +32,8 @@ const allcom=[
 	lbreadcrumb,
 	lbreadcrumbitem,
 	lmenu,
+	llist,
+	llistitem
 ]
 
 const recom =function(app:App){
@@ -36,5 +41,5 @@ const recom =function(app:App){
 		app.component(allco.name,allco)
 	}
 };
-export {lbutton,licon,ltable,lgrid,mrow,lprogress,ldivider,lavatar,ldialog,lbreadcrumb,lbreadcrumbitem,lmenu,ldrawer,lmessage,ldropdown};
+export {lbutton,licon,ltable,lgrid,mrow,lprogress,ldivider,lavatar,ldialog,lbreadcrumb,lbreadcrumbitem,lmenu,ldrawer,lmessage,ldropdown,llist,llistitem};
 export default recom;
