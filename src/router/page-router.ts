@@ -11,6 +11,14 @@ import lselect from '../../packages/lselect/doc/doc.md';
 import lraido from '../../packages/lradio/doc/doc.md';
 import lswitch from '../../packages/lswitch/doc/doc.md';
 import lupload from '../../packages/lupload/doc/doc.md';
+import llist from '../../packages/llist/doc/doc.md';
+import lavatar from '../../packages/lavatar/doc/doc.md';
+import ldialog from '../../packages/ldialog/doc/doc.md';
+import ldrawer from "../../packages/drawer/doc/doc.md";
+import lmessage from "../../packages/message/doc/doc.md";
+import ldropdown from "../../packages/dropDown/doc/doc.md";
+import lbreadcrumb from "../../packages/breadcrumb/doc/doc.md";
+import lmenu from "../../packages/menu/doc/doc.md";
 export default[
 	{
 		children:[
@@ -77,7 +85,47 @@ export default[
 				path:"lupload",
 				name:"upload 文件上传",
 				component:lupload
-			}
+			},
+			{
+				path:"llist",
+				name:"list 列表",
+				component:llist,
+			},
+			{
+				path:"lavatar",
+				name:"avatar 头像",
+				component:lavatar,
+			},
+			{
+				path:"ldialog",
+				name:"dialog 对话框",
+				component:ldialog,
+			},
+			{
+				path:"lbreadcrumb",
+				name:"breadcrumb 面包屑",
+				component:lbreadcrumb
+			},
+			{
+				path:"lmenu",
+				name:"menu 菜单",
+				component:lmenu
+			},
+			{
+				path:"ldrawer",
+				name:"drawer 抽屉",
+				component:ldrawer
+			},
+			{
+				path:"ldropdown",
+				name:"dropdown 下拉菜单",
+				component:ldropdown
+			},
+			{
+				path:"lmessage",
+				name:"message 消息",
+				component:lmessage
+			},
 		]
 	}
 ]

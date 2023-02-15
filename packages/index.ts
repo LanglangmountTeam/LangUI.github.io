@@ -14,6 +14,16 @@ import lradio from './lradio/lradio.vue';
 import lswitch from './lswitch/lswitch.vue';
 import lupload from './lupload/lupload.vue';
 import linput from './linput/linput.vue';
+import ldrawer from './drawer/index.vue'
+import lmessage from './message/index.vue'
+import ldropdown from './dropDown/index.vue'
+import lbreadcrumbitem from './breadcrumb/breadcrumb-item.vue'
+import lbreadcrumb from './breadcrumb/breadcrumb.vue'
+import lmenu from './menu/index.vue'
+import lavatar from './lavatar/lavatar.vue';
+import ldialog from './ldialog/ldialog.vue';
+import llist from './llist/llist.vue';
+import llistitem from './llist/llistitem.vue';
 const allcom = [
 	lbutton,
 	licon,
@@ -28,7 +38,17 @@ const allcom = [
 	lselect,
 	lradio,
 	lswitch,
-	lupload
+	lupload,
+	ldrawer,
+	lmessage,
+	ldropdown,
+	lavatar,
+	ldialog,
+	lbreadcrumb,
+	lbreadcrumbitem,
+	lmenu,
+	llist,
+	llistitem,
 
 ]
 
@@ -52,6 +72,18 @@ export {
 	lselect,
 	lradio,
 	lswitch,
-	lupload
+	lupload,
+	ldrawer,
+	lmessage,
+	ldropdown,
+	lavatar,
+	ldialog,
+	lbreadcrumb,
+	lbreadcrumbitem,
+	lmenu,
+	llist,
+	llistitem,
+
+
 };
 export default recom;

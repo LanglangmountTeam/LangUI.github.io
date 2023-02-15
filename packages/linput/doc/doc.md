@@ -1,26 +1,10 @@
 <h1>input<h1>
 
 # input 输入框
-属性          说明            类型              可选值                默认值
-type          类型            string           text/password         text
-readonly      只读            boolean          -                     false
-size          大小            string           large/medium/small    medium
-maxLength     输入最大长度     number            -                       -
-showpwd       是否显示密码     boolean           -                    false
-placeholder   input提示内容    string            -                    Basic usage
-disabled      是否禁用         boolean           -                    false          
-v-model       双向绑定         string/number      -                    -
+属性          说明            类型              可选值                默认值            
 clearable     是否可清除        boolean           - false or            false
 prefixIcon    前面添加icon      string            -                     -
 suffixIcon    后面添加icon      string            -                     -
-
-事件
-focus         获取焦点
-blur          失去焦点
-clear         清除input
-input         输入时的行为
-change        输入结束时触发
-
 <script setup>
 import demo1 from './demo1.vue';
 import demo2 from './demo2.vue';
@@ -30,6 +14,26 @@ import demo5 from './demo5.vue';
 import demo6 from './demo6.vue';
 import demo7 from './demo7.vue';
 import codeds from '@/components/codeds.vue';
+import DOC from '@/components/docview.vue';
+const propDoc =  [
+  [ "type","类型","string","text/password","text"],
+  ["readonly", "只读", "boolean", "large/medium/small ", "false"],
+  ["size", "大小", "string", "", "medium"],
+  ["maxLength", "输入最大长度", "number", "-", "-"],
+  ["placeholder", "提示内容", "string", "-", "Basic usage"],
+  ["showpwd", "是否显示密码", "boolean", "-", "fasle"],
+  ["v-model", "双向绑定", "string/number", "-", "-"],
+  ["clearable", "是否可清除", "boolean", "false/or", "false"],
+  ["prefixIcon", "前面添加icon", "string", "-", "-"],
+  ["suffixIcon", "后面添加icon", "string", "-", "-"],
+];
+const eventDoc = [
+  ["input", "输入时行为","-"],
+  ["focus", "获取焦点","-"] ,
+  ["blur", "失去焦点","-"],
+   ["clear", "清楚input","-"],
+    ["change", "输入结束时触发","-"],
+];
 </script>
 
 <div class="doc1">基本使用 icon</div>
@@ -69,6 +73,16 @@ import codeds from '@/components/codeds.vue';
   <demo7></demo7>
 </div>
 <Suspense><codeds compname="linput" demoname="demo7"></codeds></Suspense>
+
+
+<br/>
+
+<DOC title="属性" type=prop :body="propDoc"></DOC>
+
+<br/>
+
+
+<DOC title="input 事件" type=event :body="eventDoc"></DOC>
 <style>
 .doc2{
     display:"block";

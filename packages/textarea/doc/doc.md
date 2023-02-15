@@ -1,20 +1,6 @@
 <h1>textarea文本域<h1>
 
 # input 输入框
-属性          说明            类型              可选值                默认值
-rows          文本域宽度      number                                  10
-cols          文本域长度       number                                  30
-readonly      只读            boolean          -                     false
-maxLength     输入最大长度     number            -                       -
-placeholder   提示内容         string            -                    Basic usage
-disabled      是否禁用         boolean           -                    false          
-v-model       双向绑定         string/number      -                    -
-resize        是否可以拖拽      boolean
-
-事件
-focus         获取焦点
-blur          失去焦点
-input         输入时的行为
 
 <script setup>
 import demo1 from './demo1.vue';
@@ -22,6 +8,23 @@ import demo2 from './demo2.vue';
 import demo3 from './demo3.vue';
 import demo4 from './demo4.vue';
 import codeds from '@/components/codeds.vue';
+import DOC from '@/components/docview.vue';
+
+const propDoc =  [
+  [ "row","文本域宽度","number","","10"],
+  ["cols", "文本域长度", "number", "-", "30"],
+  ["readonly", "只读", "boolean", "-", "false"],
+  ["maxLength", "输入最大长度", "number", "-", "-"],
+  ["placeholder", "提示内容", "string", "-", "Basic usage"],
+  ["disabled", "是否禁用", "boolean", "-", "fasle"],
+  ["v-model", "双向绑定", "string/number", "-", "-"],
+  ["resize", "是否可以拖拽", "boolean", "-", "-"],
+];
+const eventDoc = [
+  ["input", "输入时行为","-"],
+  ["focus", "获取焦点","-"] ,
+  ["blur", "失去焦点","-"],
+];
 </script>
 
 <div class="doc1">基本使用</div>
@@ -46,6 +49,14 @@ import codeds from '@/components/codeds.vue';
 </div>
 <Suspense><codeds compname="textarea" demoname="demo1"></codeds></Suspense>
 
+<br/>
+
+<DOC title="属性" type=prop :body="propDoc"></DOC>
+
+<br/>
+
+
+<DOC title="input 事件" type=event :body="eventDoc"></DOC>
 <style>
 .doc2{
     display:"block";

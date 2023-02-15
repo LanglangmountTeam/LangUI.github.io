@@ -78,7 +78,47 @@ const router=createRouter({
 					path:"lupload",
 					name:"upload 文件上传",
 					component:()=>import('../../packages/lupload/doc/doc.md')
-				}
+				},
+				{
+					path:"llist",
+					name:"list 列表",
+					component:()=>import('../../packages/llist/doc/doc.md'),
+				},
+				{
+					path:"lavatar",
+					name:"avatar 头像",
+					component:()=>import('../../packages/lavatar/doc/doc.md'),
+				},
+				{
+					path:"ldialog",
+					name:"dialog 对话框",
+					component:()=>import('../../packages/ldialog/doc/doc.md'),
+				},
+				{
+					path:"lbreadcrumb",
+					name:"breadcrumb 面包屑",
+					component:()=>import('../../packages/breadcrumb/doc/doc.md')
+				},
+				{
+					path:"lmenu",
+					name:"menu 菜单",
+					component:()=>import('../../packages/menu/doc/doc.md')
+				},
+				{
+					path:"ldrawer",
+					name:"drawer 抽屉",
+					component:()=>import('../../packages/drawer/doc/doc.md')
+				},
+				{
+					path:"ldropdown",
+					name:"dropdown 下拉菜单",
+					component:()=>import('../../packages/dropDown/doc/doc.md')
+				},
+				{
+					path:"lmessage",
+					name:"message 消息",
+					component:()=>import('../../packages/message/doc/doc.md')
+				},
 			]
 		}
 	]
