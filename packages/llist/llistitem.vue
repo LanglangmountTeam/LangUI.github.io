@@ -2,8 +2,9 @@
     <div :class="['l-list-item', desc ? 'l-list-item-lg' : '']" :hover="state.hover">
         <slot name="left">
             <transition name="l-scalein">
-                <custom-icon @click="emits('left-click')" :fill="iconLeftColor" class="l-li-ileft" :name="iconLeft"
-                    v-if="iconLeft" />
+                <l-icon size="20" @click="emits('left-click')" :fill="iconLeftColor" class="l-li-ileft" v-if="iconLeft">
+                    <CheckmarkCircleOutline />
+                </l-icon>
             </transition>
         </slot>
         <div class="l-li-content" @click="emits('item-click')">
@@ -15,10 +16,14 @@
         <div class="l-li-action">
             <slot name="right">
                 <template v-if="detail">
-                    <custom-icon @click="emits('detail')" :fill="iconRightColor" class="l-li-iright" :name="iconRight"
-                        v-if="iconRight" />
+                    <l-icon size="20" @click="emits('detail')" :fill="iconRightColor" class="l-li-iright"
+                        v-if="iconRight">
+                        <ColorWandOutline />
+                    </l-icon>
                     <span @click="emits('detail')" class="l-li-detail" v-else>详细信息</span>
-                    <arrow @click="emits('detail')" direction="right" />
+                    <l-icon @click="emits('detail')" direction="right">
+                        <ChevronForwardOutline />
+                    </l-icon>
                 </template>
             </slot>
         </div>
@@ -33,15 +38,14 @@ export default {
 
 <script lang="ts" setup>
 import { defineProps, defineEmits, reactive } from 'vue'
-// import { Arrow, CustomIcon} from '../icon'
-
+import { CheckmarkCircleOutline, ChevronForwardOutline, ColorWandOutline } from '@vicons/ionicons5';
 const emits = defineEmits(['detail', 'item-click', 'left-click'])
 const props = defineProps({
     title: String,
     desc: String,
     detail: Boolean,
-    iconRight: String,
-    iconLeft: String,
+    iconRight: Boolean,
+    iconLeft: Boolean,
     iconLeftColor: String,
     iconRightColor: String,
 })
@@ -55,14 +59,14 @@ const state = reactive({
     align-items: center;
     margin-top: -1px;
     min-height: 16px;
-    padding: 14px;
+    padding: 12px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-left-width: 0;
     border-right-width: 0;
 
     &-lg {
-        min-height: 70px;
+        min-height: 45px;
     }
 
     &[hover=true] {

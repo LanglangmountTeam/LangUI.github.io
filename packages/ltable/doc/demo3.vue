@@ -3,7 +3,7 @@
   <l-table :options="options">
     <!-- 自定标表头job(职业)的插槽内容，展示为下拉菜单 -->
     <template #head-job="item">
-      <m-dropdown :title="item.scope.title" :options="dorpoptions" @change="dropchange" size="mini"></m-dropdown>
+      <l-dropdown :title="item.scope.title" :options="dorpoptions" @change="dropchange"></l-dropdown>
     </template>
     <!-- 自定义id列，插槽名为id，并接受item作为行数据 -->
     <template #id="item">
@@ -11,8 +11,8 @@
     </template>
     <!-- 自定义操作列，插槽名为action，并接受item作为行数据 (操作类的列固定插槽名为action)-->
     <template #action="item">
-      <m-button type="text" leftIcon="m-icon-edit" size="small" :disabled="item.scope.rowIndex % 2 == 0">编辑</m-button>
-      <m-button type="text" leftIcon="m-icon-ashbin" style="color: #ec3437" size="small">删除</m-button>
+      <l-button type="default" sizes="small">编辑</l-button>
+      <l-button type="danger" sizes="small">删除</l-button>
     </template>
   </l-table>
 </template>
@@ -28,7 +28,7 @@ const state = reactive({
       { field: 'job', title: '职业', align: 'center' },
       { field: 'salary', title: '薪资', align: 'center' },
       { field: 'from', title: '籍贯', align: 'center' },
-      {field:'action',title:'操作',align:'center'}
+      { field: 'action', title: '操作', align: 'center' }
     ],
     datas: [
       { id: 1, name: '张三', job: '前端开发工程师', salary: '18k', from: "北京" },
@@ -45,7 +45,7 @@ const state = reactive({
   ],
 });
 const dropchange = (item, index) => {
-  console.log(item, index);
+  // console.log(item, index);
 };
 const { options, dorpoptions } = state;
 </script>

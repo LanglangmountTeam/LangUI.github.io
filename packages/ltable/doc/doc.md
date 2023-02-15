@@ -25,7 +25,7 @@ const propDoc =  [
 </div>
 
 <div class="tabdoc1">不同大小的表格</div>
-通过size属性设置表格的大小
+<div class="tabdoc1">通过size属性设置表格的大小</div>
 <div class="tabdoc2">
 <demo2></demo2>
 <Suspense><codeds compname="ltable" demoname="demo2"></codeds></Suspense>

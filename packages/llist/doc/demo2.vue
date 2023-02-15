@@ -1,13 +1,7 @@
 <template>
-  <l-list :block="true">
-    <l-list-item
-      v-for="(item, idx) in data.list"
-      @detail="onDetail"
-      @item-click="onClick"
-      :key="idx"
-      :title="item.title"
-      :detail="item.detail"
-    ></l-list-item>
+  <l-list>
+    <l-list-item v-for="(item, idx) in data.list" @detail="onDetail" @item-click="onClick" :key="idx"
+      :title="item.title" :detail="item.detail"></l-list-item>
   </l-list>
 </template>
 
@@ -35,5 +29,6 @@ const onClick = () => {
     text: "您点击了列表",
   });
 };
+
 
 </script>

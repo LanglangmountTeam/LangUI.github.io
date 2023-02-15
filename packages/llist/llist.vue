@@ -1,5 +1,5 @@
 <template>
-    <div :class="['l-list', block ? 'l-list-block' : '', 'l-list-' + props.size]">
+    <div :class="['l-list']">
         <slot></slot>
     </div>
 </template>
@@ -11,8 +11,7 @@ export default {
 <script lang="ts" setup>
 import { defineProps, PropType } from 'vue'
 const props = defineProps({
-    block: Boolean,
-    size: String as PropType<'small' | 'normal' | 'large'>
+
 })
 </script>
 <style lang="scss">
@@ -23,9 +22,7 @@ const props = defineProps({
     border-radius: 4px;
     margin-bottom: 16px;
     font-size: 16px;
-    --l-li-brt: 2px 2px 0 0;
-    --l-li-brl: 0 0 2px 2px;
-    --l-li-blr: 1px;
+
     margin: 16px;
     margin-top: 0;
     line-height: 24px;
@@ -36,15 +33,15 @@ const props = defineProps({
     }
 
     &-small {
-        --l-glist-h: 38px;
+        min-height: 38px;
     }
 
     &-normal {
-        --l-glist-h: 46px;
+        min-height: 46px;
     }
 
     &-large {
-        --l-glist-h: 54px;
+        min-height: 54px;
     }
 }
 </style>

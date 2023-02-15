@@ -1,7 +1,7 @@
 <template>
     <l-list>
-        <l-list-item v-for="(item, idx) in data.list" @detail="onDetail" @left-click="onLeftClick" @item-click="onClick"
-            :key="idx" :title="item.title" :detail="item.detail" :iconLeft="item.iconLeft"
+        <l-list-item v-for="(item, idx) in data.list" @detail="onDetail" @item-click="onClick" :key="idx"
+            :title="item.title" :desc="item.desc" :detail="item.detail" :iconLeft="item.iconLeft"
             iconLeftColor="#595959"></l-list-item>
     </l-list>
 </template>
@@ -14,25 +14,22 @@ const data = reactive({
         {
             title: "列表1",
             detail: true,
+            desc: "描述内容",
             iconLeft: true,
         },
         {
             title: "列表2",
             detail: true,
+            desc: "描述内容",
             iconLeft: true,
         },
-        { title: "列表3", detail: true, iconLeft: true, },
+        { title: "列表3", detail: true, desc: "描述内容", iconLeft: true, },
     ],
 });
 
 const onClick = () => {
     Message({
         text: "您点击了列表",
-    });
-};
-const onDetail = () => {
-    Message({
-        text: "详情事件",
     });
 };
 </script>

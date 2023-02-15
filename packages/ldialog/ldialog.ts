@@ -1,6 +1,5 @@
-import ldialog from "./index.vue";
+import ldialog from "./ldialog.vue";
 import { createApp, h } from "vue";
-
 export const openDialog = (
   options = {
     title: () => "我是标题",
