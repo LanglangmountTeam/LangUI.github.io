@@ -26,7 +26,7 @@ const router=createRouter({
 					component:()=>import('../../packages/licon/doc/doc.md'),
 				},{
 					path:"ltable",
-					name:"表格",
+					name:"table 表格",
 					component:()=>import('../../packages/ltable/doc/doc.md'),
 				},
 				{
@@ -43,6 +43,41 @@ const router=createRouter({
 					path:"ldivider",
 					name:"Divider 分割线",
 					component:()=>import('../../packages/ldivider/doc/doc.md')
+				},
+				{
+					path:"linput",
+					name:"input 输入框",
+					component:()=>import('../../packages/linput/doc/doc.md')
+				},
+				{
+					path:"ltextarea",
+					name:"textarea 文本框",
+					component:()=>import('../../packages/textarea/doc/doc.md')
+				},
+				{
+					path:"lform",
+					name:"from 表单",
+					component:()=>import('../../packages/lform/doc/doc.md')
+				},
+				{
+					path:"lselect",
+					name:"select 下拉选择器",
+					component:()=>import('../../packages/lselect/doc/doc.md')
+				},
+				{
+					path:"lradio",
+					name:"radio 单选框",
+					component:()=>import('../../packages/lradio/doc/doc.md')
+				},
+				{
+					path:"lswitch",
+					name:"switch 开关",
+					component:()=>import('../../packages/lswitch/doc/doc.md')
+				},
+				{
+					path:"lupload",
+					name:"upload 文件上传",
+					component:()=>import('../../packages/lupload/doc/doc.md')
 				}
 			]
 		}

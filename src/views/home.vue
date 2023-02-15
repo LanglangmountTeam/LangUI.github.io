@@ -21,8 +21,14 @@
 	arr1.push(leftlist[0].children[2]);
 	arr1.push(leftlist[0].children[3]);
 	arr1.push(leftlist[0].children[4]);
-	arr1.push(leftlist[0].children[5]);
-	console.log(arr1);
+	arr1.push(leftlist[0].children[6]);
+	arr1.push(leftlist[0].children[7]);
+	arr1.push(leftlist[0].children[8]);
+	arr1.push(leftlist[0].children[9]);
+	arr1.push(leftlist[0].children[10]);
+	arr1.push(leftlist[0].children[11]);
+	arr1.push(leftlist[0].children[12]);
+	console.log(leftlist);
 	const router=useRouter();
 	const actind=ref(0);
 	const jump=function(item:any,index:any){

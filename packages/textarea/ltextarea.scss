@@ -1,0 +1,44 @@
+.l-textarea {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  textarea {
+    outline: none;
+    padding: 0;
+    border: 2px solid $inputBorder;
+    padding: 8px 8px 10px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    &:hover {
+      border-color: $primary;
+    }
+    &:focus {
+      border-color: $primary;
+      box-shadow: $boxShadowColor;
+    }
+    &::placeholder {
+      color: $info;
+    }
+  }
+}
+
+
+.l-textarea-disabled {
+  textarea {
+    cursor: no-drop;
+    &:hover {
+      border-color: $inputBorder;
+    }
+  }
+}
+
+.max-length {
+  line-height: 20px;
+  font-size: 12px;
+  position: absolute;
+  color: $info;
+  bottom: 5%;
+  right: 5%;
+}
