@@ -1,0 +1,54 @@
+
+
+.l-select {
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  input {
+    border: 1px solid $inputBorder;
+    padding: 8px 10px;
+    outline: none;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    &:focus {
+      border: 1px solid $primary;
+      box-shadow: $boxShadowColor;
+    }
+  }
+  .l-position-box{
+    z-index: 9;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 42px;
+    border: 1px solid $inputBorder;
+    background-color: $backGroundColor;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    li {
+      list-style: none;
+      line-height: 40px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      font-size: 14px;
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+    .item-disabled-li{ 
+      cursor: no-drop;
+      color: #808080;
+      background: #f0f0f0;
+    }
+  }
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}

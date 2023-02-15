@@ -1,10 +1,9 @@
 <template>
-	<l-button type="default" icon="true"></l-button>
-	<l-button type="success" icon=true></l-button>
-	<l-button type="primary" icon=true></l-button>
-	<l-button type="info" icon=true></l-button>
-	<l-button type="warning" icon=true></l-button>
-	<l-button type="danger" icon=true></l-button>
+	<lbutton type="success" icon=true></lbutton>
+	<lbutton type="primary" icon=true></lbutton>
+	<lbutton type="info" icon=true></lbutton>
+	<lbutton type="warning" icon=true></lbutton>
+	<lbutton type="danger" icon=true></lbutton>
 </template>
 
 <script>
