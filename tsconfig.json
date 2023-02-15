@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2015",
     "useDefineForClassFields": true,
-    "module": "ESNext",
+    "module": "ES2015",
     "lib": [ /* 指定引用的标准库 */
-      "esnext",
+      "ES2015",
       "dom",
       "dom.iterable",
     ],
