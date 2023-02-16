@@ -201,7 +201,7 @@
 		&.dis{cursor: not-allowed;opacity: .5;}
 	}
 	.lbutton-default{
-		border: 1px solid #f0f0f0;
+		border: 1px solid $info;
 		background: none;
 		&.lbutton-tsy{
 			border: 1px dashed $info;

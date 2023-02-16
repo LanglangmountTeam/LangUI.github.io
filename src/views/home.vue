@@ -1,5 +1,17 @@
 <template>
 	<div class="con">
+	<div class="nb">
+		<div class="nb-Nb">
+		   <div class="iconNb" @click="jumpindex">
+			<img src="@/assets/img/logo.jpg">
+			<div class="iconNbp">LANG-UI</div>
+		   </div>
+		   <div class="left-itm"> 
+		        <div class="itemNb" @click="jump1()"  :class="itemNbsta1">首页</div>
+		        <div class="itemNb" @click="jump2()"  :class="itemNbsta2">组件</div>
+	        </div>
+		</div>
+	</div>
 	<div class="left">
 		<template v-for="item in state">
 			<div class="dhtitle">{{item.title}}</div>
@@ -15,15 +27,39 @@
 <script setup lang="ts">
 import { routers } from '../router/page-router';
 import { useRouter } from 'vue-router';
-import { ref,reactive, onMounted } from 'vue';
+import { ref,reactive, onMounted ,computed} from 'vue';
 
 const router = useRouter()
 const titleList: any = ref([])
 const state: any = reactive([
 
 ])
-
-
+const jumpindex=function(){
+	router.push({
+		path:'/'
+	})
+}
+let itemNbsta1=computed(()=>{
+	if(sss1.value==true){return 'irmNbactive'}
+})
+let itemNbsta2=computed(()=>{
+	if(sss2.value==true){return 'irmNbactive'}
+})
+let sss1=ref(false);
+let sss2=ref(true);
+const jump1=function(){
+	sss2.value=false,
+	router.push({
+		path:'/'
+	})
+}
+const jump2=function(){
+	sss1.value=false,
+	sss2.value=true,
+	router.push({
+		path:'/home'
+	})
+}
 onMounted(() => {
 	const title = []
 	for(let i = 0; i < routers.children.length; i++) {
@@ -60,7 +96,7 @@ const listClick = (path: any, name: string) => {
 	
 </script>
 
-<style>
+<style lang="scss" scoped>
 	.con{
 		width: 100vw;
 		height: 100vh;
@@ -71,14 +107,17 @@ const listClick = (path: any, name: string) => {
 		height: auto;
 		border: 1px solid #f0f0f0;
 		overflow-y: scroll;
+		border-top: none;
+		margin-top: 8vh;
 		
 	}
 	.right{
-		flex: 1;
+		width: 85vw;
 		overflow: hidden;
 		padding: 20px;
 		height: auto;
 		overflow-y: scroll;
+		margin-top: 8vh;
 	}
 	li{
 		list-style-type: none;
@@ -94,14 +133,14 @@ const listClick = (path: any, name: string) => {
 	.dhtitle{
 		color: lightslategrey;
 		font-size: small;
-		margin: 3vh 2vw;
+		margin: 3vh 1vw;
 		border-bottom: 1px solid #f0f0f0;
 	}
 
 
 .left::-webkit-scrollbar {
 	/*滚动条整体样式*/
-	width: 0.3vw; /*高宽分别对应横竖滚动条的尺寸*/
+	width: 0.2vw; /*高宽分别对应横竖滚动条的尺寸*/
 	height: 1px;
 }
 
@@ -155,5 +194,47 @@ const listClick = (path: any, name: string) => {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   background: #ededed;
 }
-
+.nb{
+	height:8vh;
+	box-shadow: 0 0.5vh 1vh #f0f0f0;
+	position: fixed;
+	width: 100vw;
+	margin: 0;
+}
+.nb-Nb{
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.left-itm{
+	display: flex;
+	flex-direction: row;
+	margin-right: 4vw;
+}
+.iconNb{
+	margin-left: 1vw;
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+}
+.iconNbp{
+	margin-left: 0.5vw;
+	line-height: 4vh;
+}
+img{
+	width: 3vw;
+	height: 4vh;
+}
+.itemNb{
+	margin-right: 3vw;
+	cursor: pointer;
+}
+.irmNbactive{
+	border-bottom:0.3vw solid #0e80eb;
+	color: #0e80eb;
+	background-color: white;
+}
 </style>
