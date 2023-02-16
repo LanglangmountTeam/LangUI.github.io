@@ -108,7 +108,7 @@ const listClick = (path: any, name: string) => {
 		border: 1px solid #f0f0f0;
 		overflow-y: scroll;
 		border-top: none;
-		margin-top: 8vh;
+		margin-top: 10vh;
 		
 	}
 	.right{
@@ -117,7 +117,7 @@ const listClick = (path: any, name: string) => {
 		padding: 20px;
 		height: auto;
 		overflow-y: scroll;
-		margin-top: 8vh;
+		margin-top: 10vh;
 	}
 	li{
 		list-style-type: none;
