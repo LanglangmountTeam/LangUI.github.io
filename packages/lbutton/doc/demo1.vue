@@ -5,7 +5,6 @@
 	<l-button type="info">信息按钮</l-button>
 	<l-button type="warning">提醒按钮</l-button>
 	<l-button type="danger">危险按钮</l-button>
-	
 </template>
 
 <script>

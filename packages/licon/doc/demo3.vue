@@ -11,6 +11,5 @@
     <l-icon :size=30 color="green" :del=10><Camera/></l-icon>
 </template>
 <script setup>
-import {Camera,ChevronDown} from '@vicons/ionicons5';
-
+import {Camera} from '@vicons/ionicons5';
 </script>

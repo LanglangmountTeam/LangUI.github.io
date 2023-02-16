@@ -7,6 +7,7 @@ import demo5 from './demo5.vue';
 import demo6 from './demo6.vue';
 import demo7 from './demo7.vue';
 import DOC from '@/components/docview.vue';
+import codeds from '@/components/codeds.vue';
 const propDoc =  [
   [ "percent","百分比进度","number","1-100","-"],
   ["length", "进度条长度", "Number", "1开始", "10"],
@@ -28,7 +29,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo1></demo1>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo1"></codeds></Suspense>
 <br/>
 
 进度条长短
@@ -38,7 +39,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo2></demo2>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo2"></codeds></Suspense>
 <br/>
 
 百分比跟随进度条或者隐藏
@@ -48,7 +49,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo3></demo3>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo3"></codeds></Suspense>
 <br/>
 
 动态进度条演示
@@ -58,7 +59,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo4></demo4>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo4"></codeds></Suspense>
 <br/>
 
 圆形进度条
@@ -68,7 +69,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo5></demo5>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo5"></codeds></Suspense>
 <br/>
 
 动态绑定进度条
@@ -78,7 +79,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo6></demo6>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo6"></codeds></Suspense>
 <br/>
 
 自动进度条
@@ -88,7 +89,7 @@ const propDoc =  [
 <div class="lprogressdeom1">
 <demo7></demo7>
 </div>
-
+<Suspense><codeds compname="lprogress" demoname="demo7"></codeds></Suspense>
 <br/>
 
 <div class="lprogressdeom1">

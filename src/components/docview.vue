@@ -44,7 +44,7 @@
         case "slot":
           return ["插槽名", "说明"];
         case "event":
-          return ["事件名", "说明", "回调参数",'示例'];
+          return ["事件名", "说明", "回调参数"];
         case "methods":
           return ["方法", "说明", "参数"];
       }

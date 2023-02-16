@@ -6,6 +6,14 @@ import lgrid from './lgrid/lgrid.vue';
 import mrow from './lgrid/mrow.vue';
 import lprogress from './lprogress/lprogress.vue';
 import ldivider from './ldivider/ldivider.vue';
+import ltextarea from './textarea/ltextarea.vue';
+import lformItem from './lform/lform-item.vue';
+import lform from './lform/lform.vue';
+import lselect from './lselect/lselect.vue';
+import lradio from './lradio/lradio.vue';
+import lswitch from './lswitch/lswitch.vue';
+import lupload from './lupload/lupload.vue';
+import linput from './linput/linput.vue';
 import ldrawer from './drawer/index.vue'
 import lmessage from './message/index.vue'
 import ldropdown from './dropDown/index.vue'
@@ -16,30 +24,67 @@ import lavatar from './lavatar/lavatar.vue';
 import ldialog from './ldialog/ldialog.vue';
 import llist from './llist/llist.vue';
 import llistitem from './llist/llistitem.vue';
-const allcom=[
+
+const allcom = [
 	lbutton,
 	licon,
-	ldrawer,
-	lmessage,
-	ldropdown,
-	ltable,
-	lgrid,
+	ltable, lgrid,
 	mrow,
 	lprogress,
 	ldivider,
+	linput,
+	ltextarea,
+	lformItem,
+	lform,
+	lselect,
+	lradio,
+	lswitch,
+	lupload,
+	ldrawer,
+	lmessage,
+	ldropdown,
 	lavatar,
 	ldialog,
 	lbreadcrumb,
 	lbreadcrumbitem,
 	lmenu,
 	llist,
-	llistitem
+	llistitem,
+
 ]
 
-const recom =function(app:App){
-	for(const allco of allcom){
-		app.component(allco.name,allco)
+const recom = function (app: App) {
+	for (const allco of allcom) {
+		app.component(allco.name, allco)
 	}
 };
-export {lbutton,licon,ltable,lgrid,mrow,lprogress,ldivider,lavatar,ldialog,lbreadcrumb,lbreadcrumbitem,lmenu,ldrawer,lmessage,ldropdown,llist,llistitem};
+export {
+	lbutton, 
+	licon, 
+	ltable, 
+	lgrid, 
+	mrow, 
+	lprogress, 
+	ldivider,
+	linput,
+	ltextarea,
+	lformItem,
+	lform,
+	lselect,
+	lradio,
+	lswitch,
+	lupload,
+	ldrawer,
+	lmessage,
+	ldropdown,
+	lavatar,
+	ldialog,
+	lbreadcrumb,
+	lbreadcrumbitem,
+	lmenu,
+	llist,
+	llistitem,
+
+
+};
 export default recom;

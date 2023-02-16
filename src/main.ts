@@ -8,11 +8,10 @@ import 'animate.css';
 const app=createApp(App);
 app.use(alloc);
 app.use(router);
-// app.use(animate);
 app.directive('highlight', function (el) {
     const blocks = el.querySelectorAll('pre code');
-    blocks.forEach((white: any) => {
-        hljs.highlightBlock(white)
+    blocks.forEach((block: HTMLElement) => {
+        hljs.highlightBlock(block)
     })
 })
 

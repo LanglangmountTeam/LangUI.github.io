@@ -7,7 +7,7 @@
         <div class="left">
             <div ref="ileft" :class="itemleftclass"></div>
         </div>
-        <div class="right">
+        <div class="rightt">
             <div ref="iright" :class="itemrightclass"></div>
         </div>
         <div class="white">{{percent}}%</div>
@@ -175,7 +175,7 @@ onMounted(() => {
 }
 
 .left,
-.right {
+.rightt {
     margin-left: 0;
     position: absolute;
     overflow: hidden;
@@ -197,7 +197,7 @@ onMounted(() => {
     animation-delay: 3s;
 }
 
-.right .itemright {
+.rightt .itemright {
     width: calc(v-bind(progresslength)/2);
     height: v-bind(progresslength);
     border-top-right-radius: v-bind(progresslength);
@@ -207,7 +207,7 @@ onMounted(() => {
     animation: proless2 3s;
 }
 
-.right {
+.rightt {
     right: 0;
 }
 
