@@ -21,9 +21,9 @@ const propDoc =  [
   ["resize", "是否可以拖拽", "boolean", "-", "-"],
 ];
 const eventDoc = [
-  ["input", "输入时行为","-"],
-  ["focus", "获取焦点","-"] ,
-  ["blur", "失去焦点","-"],
+  ["input", "输入时行为","input = (e) => console.log(e)"],
+  ["focus", "获取焦点","focus = (e) => console.log(e)"] ,
+  ["blur", "失去焦点","blur = (e) => console.log(e)"],
 ];
 </script>
 

@@ -40,7 +40,7 @@
 		
 		<li data-index=20 data-name='message 消息' @click="jump($event)" :class="li20" data-status=false><p style="font-size: small;">{{ arr1[20].name }}</p></li>
 	</div>
-	<div class="rigth">
+	<div class="right">
 		<router-view></router-view>
 	</div>
 	</div>
@@ -119,15 +119,15 @@
 		width: 15vw;
 		height: auto;
 		border: 1px solid #f0f0f0;
-		overflow-y: auto;
+		overflow-y: scroll;
+		
 	}
-	.rigth{
+	.right{
 		flex: 1;
-		margin-top: 10px;
-		margin-left: 10px;
+		overflow: hidden;
+		padding: 20px;
 		height: auto;
-		overflow-y: auto;
-		box-sizing: border-box;
+		overflow-y: scroll;
 	}
 	li{
 		list-style-type: none;
@@ -146,4 +146,63 @@
 		margin: 3vh 2vw;
 		border-bottom: 1px solid #f0f0f0;
 	}
+
+
+.left::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 7px; /*高宽分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+
+.left::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 10px;
+	background-color: #a8a7f4;
+	background-image: -webkit-linear-gradient(
+		45deg,
+		rgba(255, 255, 255, 0.2) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 255, 255, 0.2) 50%,
+		rgba(255, 255, 255, 0.2) 75%,
+		transparent 75%,
+		transparent
+	);
+}
+
+.left::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ededed;
+}
+
+
+.right::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 7px; /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+
+    .right::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      background-color: #f04a30;
+      background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+      );
+    }
+
+.right::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ededed;
+}
+
 </style>

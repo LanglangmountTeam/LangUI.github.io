@@ -1,4 +1,4 @@
-switch
+# switch开关
 
 <script setup>
 import demo1 from './demo1.vue';
@@ -7,6 +7,21 @@ import demo3 from './demo3.vue';
 import demo4 from './demo4.vue';
 import demo5 from './demo5.vue';
 import codeds from '@/components/codeds.vue';
+import DOC from '@/components/docview.vue';
+const propDoc =  [
+  ["v-model","开关状态","Boolean","true / false","-"],
+  ["disabled", "是否禁用，详细规则参考async-validator", "Boolean", "true / false", "-"],
+  ["closeColor", "关闭状态时的背景色", "String", "-", "#BFBFBF"],
+  ["activeColor", "开启状态时的背景色", "String", "-", "#74baff"],
+  ["closeText", "关闭状态时辅助文字", "String", "-", "-"],
+  ["activeText", "开启状态时辅助文字", "String", "-", "-"],
+  ["textAlign", "辅助文字位置", "String", "left / right", "left"],
+  ["showTipsText", "是否显示提示信息", "Boolean", "true / false", "false"],
+  ["customClass", "自定义整体的Class类名", "String", "-", "-"],
+];
+const eventDoc = [
+  ["change", "开关事件","change = (e) =>{console.log(e)}"],
+];
 </script>
 
 
@@ -35,6 +50,13 @@ import codeds from '@/components/codeds.vue';
   <demo5></demo5>
 </div>
 <Suspense><codeds compname="lswitch" demoname="demo5"></codeds></Suspense>
+
+<DOC title="属性" type=prop :body="propDoc"></DOC>
+
+<br/>
+
+<DOC title="input 事件" type=event :body="eventDoc"></DOC>
+
 <style>
 .doc2{
     display:"block";

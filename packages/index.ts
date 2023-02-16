@@ -24,6 +24,7 @@ import lavatar from './lavatar/lavatar.vue';
 import ldialog from './ldialog/ldialog.vue';
 import llist from './llist/llist.vue';
 import llistitem from './llist/llistitem.vue';
+
 const allcom = [
 	lbutton,
 	licon,

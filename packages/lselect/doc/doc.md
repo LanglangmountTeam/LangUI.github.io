@@ -1,4 +1,4 @@
-下拉选择器
+# 下拉选择器
 <script setup>
 import demo1 from './demo1.vue';
 import demo2 from './demo2.vue';
@@ -9,6 +9,28 @@ import demo6 from './demo6.vue';
 import demo7 from './demo7.vue';
 import demo8 from './demo8.vue';
 import codeds from '@/components/codeds.vue';
+
+
+import DOC from '@/components/docview.vue';
+const propDoc =  [
+  ["v-model","下拉框绑定值，开启多选时类型为Array","String || Array","-","-"],
+  ["size","尺寸大小","String","default / small / mini","default"],
+  ["placeholder","下拉框占位字符","String","-","-"],
+  ["options","下拉框数据配置label、value","Array","-","-"],
+  ["disabled","是否为禁用状态","Boolean","true / false","false"],
+  ["width","自定义宽度","String","-","260px"],
+  ["height","自定义高度","String","-","-"],
+  ["searchable","是否开启过滤搜索","Boolean","true / false","false"],
+  ["multiple","是否开启多选","Boolean","true / false","false"],
+  ["labelFiled","自定义替换lable的字段名","String","-","label"],
+  ["valueFiled","自定义替换value的字段名","String","-","value"],
+
+];
+
+
+const eventDoc = [
+  ["change", "下拉框选中事件","change = (files) =>{console.log(files)}"],
+];
 </script>
 
 <div class="doc1">
@@ -80,7 +102,11 @@ select 下拉框基本使用示例,需要一个主要的 options 参数
 </div>
 <Suspense><codeds compname="lselect" demoname="demo7"></codeds></Suspense>
 
+<DOC title="属性" type=prop :body="propDoc"></DOC>
 
+<br/>
+
+<DOC title="input 事件" type=event :body="eventDoc"></DOC>
 
 <style>
     .doc2{

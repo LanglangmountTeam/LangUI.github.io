@@ -4,7 +4,7 @@
       type="file" 
       :accept="accept" 
       :multiple="multiple" 
-      @change:any="testChange" 
+      @change="testChange" 
       hidden 
       ref="refInp"
     >
@@ -24,13 +24,13 @@
           </div>
         </template>
       </transition-group>
-      <lbutton 
+      <l-button 
         :type="type ? type : 'primary'"  
         @click="changeFile" 
         v-if="targetType=='btn'"
         >
         {{label}}
-      </lbutton>
+      </l-button>
       <div :class="[
         'l-upload-area',
         {'l-upload-area-big':size=='big',
@@ -95,7 +95,7 @@ const changeFile = () =>{
   refInp.value.click()
 }
 
-const testChange = (e: { target: { files: any; }; }) =>{
+const testChange = (e) =>{
   File.unshift(...e.target.files)
   FileList.unshift(...e.target.files)
   File.forEach((item,index)=>{
@@ -105,7 +105,7 @@ const testChange = (e: { target: { files: any; }; }) =>{
   emit('update:fileList',File)
 }
 
-const deleteImg = (index: number) =>{
+const deleteImg = (index) =>{
   File.splice(index,1)
   FileList.splice(index,1)
   emit('update:fileList',File)
@@ -115,7 +115,7 @@ const deleteImg = (index: number) =>{
 onMounted(()=>{
   if(props.drop&&props.targetType=='box'){
     let dropArea = refDiv.value
-    dropArea.addEventListener('drop',(e: { stopPropagation: () => void; preventDefault: () => void; dataTransfer: { files: any; }; })=>{
+    dropArea.addEventListener('drop',(e)=>{
       e.stopPropagation()
       e.preventDefault()
       File.unshift(...e.dataTransfer.files)
@@ -128,20 +128,20 @@ onMounted(()=>{
       lableText.value = props.label
       activeFile.value = false
     }, false)
-    dropArea.addEventListener('dragleave', (e: { stopPropagation: () => void; preventDefault: () => void; }) => {
+    dropArea.addEventListener('dragleave', (e) => {
       e.stopPropagation()
       e.preventDefault()
       activeFile.value = false
       lableText.value = props.label
     })
-    dropArea.addEventListener('dragenter', (e: { stopPropagation: () => void; preventDefault: () => void; }) => {
+    dropArea.addEventListener('dragenter', (e) => {
       e.stopPropagation()
       e.preventDefault()
       activeFile.value = true
       lableText.value = "松开鼠标完成"
       emit('beforeChange')
     })
-    dropArea.addEventListener('dragover', (e: { stopPropagation: () => void; preventDefault: () => void; }) => {
+    dropArea.addEventListener('dragover', (e) => {
       e.stopPropagation()
       e.preventDefault()
       activeFile.value = true

@@ -9,7 +9,7 @@
 			:placeholder="placeholder"
 			:maxLength="maxLength"
 			:style="lStyle"
-			@input:any="handleInput"
+			@input="handleInput"
 			@focus="handleFocus"
 			@blur="handleBlur"
 			@change="handleChange"
@@ -37,7 +37,7 @@ const {
 	lStyle
 } = useTextarea(props, emits);
 
-const handleInput = (e: { target: { value: string | any[]; }; }) => {
+const handleInput: any = (e: { target: { value: string | any[]; }; }) => {
 	// console.log(e.target.value)
 	count.value = e.target.value.length
 	if(props.maxLength) {

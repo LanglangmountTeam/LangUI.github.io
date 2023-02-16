@@ -10,7 +10,7 @@
       :readonly="readonly"
       :maxLength="maxLength"
       autocomplete="on"
-      @input:any="input"
+      @input="input"
       @focus="handleFocus"
       @blur="handleBlur"
       @change="handleChange"
@@ -21,10 +21,10 @@
     <span v-if="props.clearable && props.modelValue" class="clearInput" @click="clearInput"><img src="./doc/inputImg/clear_input.png" alt=""></span>
   
     <div class="l-input__prefix" v-if="isShowPrefixIcon">
-      {{prefixIcon}}
+      <l-icon><component :is="prefixIcon"></component></l-icon>
     </div>
     <div class="l-input__suffix no-cursor" v-if="isShowSuffixIcon">
-      {{suffixIcon}}
+      <l-icon><component :is="suffixIcon"></component></l-icon>
     </div>
   </div>
 </template>
@@ -61,7 +61,7 @@ watch(
   }
 )
 
-const input = (e: { target: { value: string | any[]; }; }) => {
+const input: any = (e: { target: { value: string | any[]; }; }) => {
   emits('update:modelValue', e.target.value)
   emits('input',e)
   count.value = e.target.value.length

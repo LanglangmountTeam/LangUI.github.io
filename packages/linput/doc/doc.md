@@ -1,10 +1,4 @@
-<h1>input<h1>
-
-# input 输入框
-属性          说明            类型              可选值                默认值            
-clearable     是否可清除        boolean           - false or            false
-prefixIcon    前面添加icon      string            -                     -
-suffixIcon    后面添加icon      string            -                     -
+# input 输入框         
 <script setup>
 import demo1 from './demo1.vue';
 import demo2 from './demo2.vue';
@@ -21,18 +15,18 @@ const propDoc =  [
   ["size", "大小", "string", "", "medium"],
   ["maxLength", "输入最大长度", "number", "-", "-"],
   ["placeholder", "提示内容", "string", "-", "Basic usage"],
-  ["showpwd", "是否显示密码", "boolean", "-", "fasle"],
+  ["showpwd", "是否显示密码", "boolean", "false/true", "fasle"],
   ["v-model", "双向绑定", "string/number", "-", "-"],
-  ["clearable", "是否可清除", "boolean", "false/or", "false"],
+  ["clearable", "是否可清除", "boolean", "false/true", "false"],
   ["prefixIcon", "前面添加icon", "string", "-", "-"],
   ["suffixIcon", "后面添加icon", "string", "-", "-"],
 ];
 const eventDoc = [
-  ["input", "输入时行为","-"],
-  ["focus", "获取焦点","-"] ,
-  ["blur", "失去焦点","-"],
-   ["clear", "清楚input","-"],
-    ["change", "输入结束时触发","-"],
+  ["input", "输入时行为","input=(e)=>{console.log(e)}"],
+  ["focus", "获取焦点","focus=(e)=>{console.log(e)}"] ,
+  ["blur", "失去焦点","blur=(e)=>{console.log(e}"],
+  ["clear", "清除input","clear=(e)=>{console.log(e)}"],
+  ["change", "输入结束时触发","change=(e)=>{console.log(e)}"],
 ];
 </script>
 

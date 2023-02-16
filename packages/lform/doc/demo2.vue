@@ -18,7 +18,7 @@
     }"
   >
     <l-form-item 
-    hideRequiredAsterisk
+      hideRequiredAsterisk
       prop="username" 
       labelWidth="80px"
       labelPosition="start"
@@ -59,14 +59,13 @@
       :options="state.radioOptions"
       @change="radioChange"
     ></l-radio>
-    <lbutton class="item" type="primary" @click="validateForm" >按钮</lbutton>
+    <l-button class="item" type="primary" @click="validateForm" >按钮</l-button>
   </l-form>
 
 </template>
 
 <script lang="ts" setup>
 import { ref, reactive } from 'vue';
-import { FormInstance } from '../../index';
 const radioVal = ref("python");
 const switchVal = ref(false);
 const state = reactive({
@@ -80,7 +79,7 @@ const state = reactive({
   ],
 })
 
-const formRef = ref<FormInstance>()
+const formRef = ref()
 
 const validateForm = () => {
   const form = formRef.value
