@@ -44,7 +44,7 @@ const props = defineProps(formItemProps);
 const {
   lClass,
   labelStyle
-} = useFormItem(props, emits)
+} = useFormItem(props)
 
 const formContext = inject(FormContextKey)
 

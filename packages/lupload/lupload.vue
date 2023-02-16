@@ -24,13 +24,13 @@
           </div>
         </template>
       </transition-group>
-      <lbutton 
+      <l-button 
         :type="type ? type : 'primary'"  
         @click="changeFile" 
         v-if="targetType=='btn'"
         >
         {{label}}
-      </lbutton>
+      </l-button>
       <div :class="[
         'l-upload-area',
         {'l-upload-area-big':size=='big',

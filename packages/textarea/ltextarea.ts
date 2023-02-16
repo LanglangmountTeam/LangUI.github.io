@@ -43,7 +43,7 @@ export const textareaEmit = [
 ];
 
 
-export const useTextarea = (props, emits) => {
+export const useTextarea = (props:any, emits:any) => {
 
   const lClass = computed(() => {
     return [

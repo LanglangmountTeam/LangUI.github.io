@@ -74,11 +74,11 @@ const {
   selectInputClass
 } = useSelect(props,emit, fixIcon)
 
-props.options.forEach((item, index) => {
+props.options.forEach((item: { [x: string]: any; selected: boolean; }, index: any) => {
   if (!props.multiple) {
     item.selected = false
   } else {
-    props.modelValue.forEach((item1, index1) => {
+    props.modelValue.forEach((item1: any, index1: any) => {
       if (item[props.valueFiled] == item1) {
         item.selected = true
       }
@@ -95,7 +95,7 @@ const selVal = ref(
   props.multiple
     ? props.modelValue
     : props.modelValue != ""
-    ? props.options.filter((item) => {
+    ? props.options.filter((item: { [x: string]: any; }) => {
         return item[props.valueFiled] == props.modelValue
       })[0][props.labelFiled]
     : ""
@@ -107,20 +107,20 @@ const blur = () => {
   rotate.value = "rotate(0deg)"
 }
 
-const input = (e) => {
+const input = (e:any) => {
   selVal.value = e.target.value
   optionsData.value = []
-  let filterList = props.options.filter((item) => {
+  let filterList = props.options.filter((item: { [x: string]: string | any[]; }) => {
     return item[props.labelFiled].indexOf(e.target.value) != -1
   });
-  filterList.forEach((item, index) => {
+  filterList.forEach((item: any, index: any) => {
     optionsData.value.push(item)
   });
 }
 
 const vClickOutside = {
-  beforeMount(el) {
-    let handler = (e) => {
+  beforeMount(el:any) {
+    let handler = (e:any) => {
       if (!props.disabled) {
         if (!props.multiple) {
           if (
@@ -163,7 +163,7 @@ const vClickOutside = {
       document.addEventListener("click", handler)
     }
   },
-  unmounted(el) {
+  unmounted(el: { handler: (this: Document, ev: MouseEvent) => any; }) {
     if (typeof document !== "undefined") {
       document.removeEventListener("click", el.handler)
     }
@@ -174,7 +174,7 @@ const vClickOutside = {
 let labels: any = []
 let indexs: any = []
 
-const selChange = (item, index) => {
+const selChange = (item:any, index:any) => {
   if (!props.multiple) {
     if (!item.disabled) {
       activeIndex.value = index

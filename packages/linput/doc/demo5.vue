@@ -6,7 +6,7 @@
     />
     <br>
     <div class="inputValue">
-      value--{{Val}}
+      value：{{Val}}
     </div>
   </div>
 </template>

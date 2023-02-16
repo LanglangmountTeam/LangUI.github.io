@@ -55,7 +55,7 @@ export const formItemEmit = [
 ];
 
 
-export const useFormItem = (props, emits) => {
+export const useFormItem = (props:any) => {
 const lClass = computed(() => {
   return [
     'l-from-item',

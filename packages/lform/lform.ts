@@ -25,7 +25,7 @@ export const formEmit = [
 
 ];
 
-export const useForm = (props, emits) => {
+export const useForm = (props:any, emits:any) => {
   const lClass = computed(() => {
     return [
       'l-from',

@@ -43,7 +43,7 @@ export const radioEmit = [
 ];
 
 
-export const useRadio= (props, emits) => {
+export const useRadio= (props:any, emits:any) => {
   return {
   }
 }

@@ -54,7 +54,7 @@ export const inputEmit = [
 ];
 
 
-export const useInput = (props, emits) => {
+export const useInput = (props:any, emits:any) => {
   const lClass = computed(() => {
     return [
       `${props.disabled ? 'input l-input-disabled' : 'input'}`

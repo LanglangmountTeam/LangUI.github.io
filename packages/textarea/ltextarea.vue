@@ -37,7 +37,7 @@ const {
 	lStyle
 } = useTextarea(props, emits);
 
-const handleInput = (e) => {
+const handleInput: any = (e: { target: { value: string | any[]; }; }) => {
 	// console.log(e.target.value)
 	count.value = e.target.value.length
 	if(props.maxLength) {
@@ -49,15 +49,15 @@ const handleInput = (e) => {
 	emits('input', e)
 }
 
-const handleFocus = (e) => {
+const handleFocus = (e:any) => {
 	emits('focus', e)
 }
 
-const handleBlur = (e) => {
+const handleBlur = (e:any) => {
 	emits('blur', e)
 }
 
-const handleChange = (e) => {
+const handleChange = (e:any) => {
 	emits('change', e)
 }
 

@@ -21,10 +21,10 @@
     <span v-if="props.clearable && props.modelValue" class="clearInput" @click="clearInput"><img src="./doc/inputImg/clear_input.png" alt=""></span>
   
     <div class="l-input__prefix" v-if="isShowPrefixIcon">
-      {{prefixIcon}}
+      <l-icon><component :is="prefixIcon"></component></l-icon>
     </div>
     <div class="l-input__suffix no-cursor" v-if="isShowSuffixIcon">
-      {{suffixIcon}}
+      <l-icon><component :is="suffixIcon"></component></l-icon>
     </div>
   </div>
 </template>
@@ -57,11 +57,11 @@ const {
 watch(
   () => props.modelValue,
   () => {
-    ;(formItemContext as any)?.validate('change').catch((err) => {}) 
+    ;(formItemContext as any)?.validate('change').catch((err: any) => {}) 
   }
 )
 
-const input = (e) => {
+const input: any = (e: { target: { value: string | any[]; }; }) => {
   emits('update:modelValue', e.target.value)
   emits('input',e)
   count.value = e.target.value.length
@@ -70,10 +70,10 @@ const input = (e) => {
 			count.value = 100
 		}
 	}
-  formItemContext?.validate('blur').then((res) => {
+  formItemContext?.validate('blur').then((res: any) => {
     rulesClass.value = false
     
-  }).catch((err) => {
+  }).catch((err: { errors: string | any[]; }) => {
     // console.log(err.errors.length)
     if(err.errors.length === 1) {
       rulesClass.value = true
@@ -93,10 +93,10 @@ const handleFocus = (e: Event) => {
 //input 失去焦点时
 const handleBlur = (e: Event) => {
   emits('blur', e)
-  formItemContext?.validate('blur').then((res) => {
+  formItemContext?.validate('blur').then((res: any) => {
     rulesClass.value = false
     
-  }).catch((err) => {
+  }).catch((err: { errors: string | any[]; }) => {
     // console.log(err.errors.length)
     if(err.errors.length === 1) {
       rulesClass.value = true

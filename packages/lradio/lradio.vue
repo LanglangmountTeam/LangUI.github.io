@@ -46,7 +46,7 @@ const {
 // console.log(props.options)
 
 const modelVal = ref(props.modelValue || '')
-const change = (item,index)=>{
+const change = (item: { [x: string]: any; disabled: any; },index: any)=>{
   if(!item.disabled){
     modelVal.value = item[props.valueFiled]
     emits('update:modelValue',item[props.valueFiled])

@@ -43,7 +43,7 @@ export const selectEmit = [
   "change"
 ]
 
-export const useSelect = (props, emits, fixIcon) => {
+export const useSelect = (props:any, emits:any, fixIcon:any) => {
   const iconClass = computed(() => {
     return ["select-icon iconfont m-icon-arrow-down"]
   })
@@ -53,13 +53,13 @@ export const useSelect = (props, emits, fixIcon) => {
     let styles = {}
     if (props.height) {
       let height = parseInt(props.height) < 25 ? "25px" : props.height
-      styles.height = height
+      props.height = height
       fixIcon.lineHeight = height
       fixIcon.top = 0
       fixIcon.height = "100%"
     }
     return styles
-  });
+  })
 
   const selectClass = computed(() => {
     return [

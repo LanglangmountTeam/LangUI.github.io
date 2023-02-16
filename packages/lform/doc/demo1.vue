@@ -12,20 +12,20 @@
       <l-input placeholder="请输入密码" type="password"   v-model="state.password"/>
       <template #label>密码</template>
     </l-form-item>
-    <lbutton class="btn" type="primary" @click="validateForm" >按钮</lbutton>
+    <l-button class="btn" type="primary" @click="validateForm" >按钮</l-button>
   </l-form>
 
 </template>
 
 <script lang="ts" setup>
 import { ref, reactive } from 'vue';
-import { FormInstance } from '../../index';
+// import { FormInstance } from '../../index';
 const state = reactive({
   username: '',
   password: ''
 })
 
-const formRef = ref<FormInstance>()
+const formRef = ref()
 
 const validateForm = () => {
   console.log(state)
