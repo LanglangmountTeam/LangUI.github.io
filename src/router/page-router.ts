@@ -19,113 +19,133 @@ import lmessage from "../../packages/message/doc/doc.md";
 import ldropdown from "../../packages/dropDown/doc/doc.md";
 import lbreadcrumb from "../../packages/breadcrumb/doc/doc.md";
 import lmenu from "../../packages/menu/doc/doc.md";
-export default[
-	{
-		children:[
-			{
-				path:"",
-				name:"button 按钮",
-				component:lbuttondoc,
-			},
-			{
-				path:"licon",
-				name:"icon 图标",
-				component:licon,
-			},{
-				path:"ltable",
-				name:"table 表格",
-				component:ltable,
-			},
-			{
-				path:"lgrid",
-				name:"grid 布局",
-				component:lgrid,
-			},
-			{
-				path:"lprogress",
-				name:"progress 进度条",
-				component:lprogress,
-			},
-			{
-				path:"ldivider",
-				name:"Divider 分割线",
-				component:ldivider
-			},
-			{
-				path:"linput",
-				name:"input 输入框",
-				component:linput
-			},
-			{
-				path:"ltextarea",
-				name:"textarea 文本框",
-				component:ltextarea
-			},
-			{
-				path:"lform",
-				name:"from 表单",
-				component:lform
-			},
-			{
-				path:"lselect",
-				name:"select 下拉选择器",
-				component:lselect
-			},
-			{
-				path:"lradio",
-				name:"radio 单选框",
-				component:lraido
-			},
-			{
-				path:"lswitch",
-				name:"switch 开关",
-				component:lswitch
-			},
-			{
-				path:"lupload",
-				name:"upload 文件上传",
-				component:lupload
-			},
-			{
-				path:"llist",
-				name:"list 列表",
-				component:llist,
-			},
-			{
-				path:"lavatar",
-				name:"avatar 头像",
-				component:lavatar,
-			},
-			{
-				path:"ldialog",
-				name:"dialog 对话框",
-				component:ldialog,
-			},
-			{
-				path:"lbreadcrumb",
-				name:"breadcrumb 面包屑",
-				component:lbreadcrumb
-			},
-			{
-				path:"lmenu",
-				name:"menu 菜单",
-				component:lmenu
-			},
-			{
-				path:"ldrawer",
-				name:"drawer 抽屉",
-				component:ldrawer
-			},
-			{
-				path:"ldropdown",
-				name:"dropdown 下拉菜单",
-				component:ldropdown
-			},
-			{
-				path:"lmessage",
-				name:"message 消息",
-				component:lmessage
-			},
-		]
-	}
-]
+
+export const routers: any = {
+	children:[
+		{
+			path:"/lbutton",
+			name:"button 按钮",
+			component:lbuttondoc,
+			title:"通用组件"
+		},
+		{
+			path:"/licon",
+			name:"icon 图标",
+			component:licon,
+			title:"通用组件"
+		},{
+			path:"/ltable",
+			name:"table 表格",
+			component:ltable,
+			title:"数据展示型组件"
+		},
+		{
+			path:"/lgrid",
+			name:"grid 布局",
+			component:lgrid,
+			title:"布局组件"
+		},
+		{
+			path:"/lprogress",
+			name:"progress 进度条",
+			component:lprogress,
+			title: "反馈型组件"
+		},
+		{
+			path:"/ldivider",
+			name:"Divider 分割线",
+			component:ldivider,
+			title:"布局组件"
+		},
+		{
+			path:"/linput",
+			name:"input 输入框",
+			component:linput,
+			title:"数据展示型组件"
+		},
+		{
+			path:"/ltextarea",
+			name:"textarea 文本框",
+			component:ltextarea,
+			title:"数据展示型组件"
+		},
+		{
+			path:"/lform",
+			name:"from 表单",
+			component:lform,
+			title: "数据录入型组件"
+		},
+		{
+			path:"/lselect",
+			name:"select 下拉选择器",
+			component:lselect,
+			title: "数据录入型组件"
+		},
+		{
+			path:"/lradio",
+			name:"radio 单选框",
+			component:lraido,
+			title:"数据展示型组件"
+		},
+		{
+			path:"/lswitch",
+			name:"switch 开关",
+			component:lswitch,
+			title: "数据录入型组件"
+		},
+		{
+			path:"/lupload",
+			name:"upload 文件上传",
+			component:lupload,
+			title: "数据录入型组件"
+		},
+		{
+			path:"/llist",
+			name:"list 列表",
+			component:llist,
+			title:"数据展示型组件"
+		},
+		{
+			path:"/lavatar",
+			name:"avatar 头像",
+			component:lavatar,
+			title:"数据展示型组件"
+		},
+		{
+			path:"/ldialog",
+			name:"dialog 对话框",
+			component:ldialog,
+			title: "反馈型组件"
+		},
+		{
+			path:"/lbreadcrumb",
+			name:"breadcrumb 面包屑",
+			component:lbreadcrumb,
+			title: "导航组件"
+		},
+		{
+			path:"/lmenu",
+			name:"menu 菜单",
+			component:lmenu,
+			title: "导航组件"
+		},
+		{
+			path:"/ldrawer",
+			name:"drawer 抽屉",
+			component:ldrawer,
+			title: "反馈型组件"
+		},
+		{
+			path:"/ldropdown",
+			name:"dropdown 下拉菜单",
+			component:ldropdown,
+			title: "导航组件"
+		},
+		{
+			path:"/lmessage",
+			name:"message 消息",
+			component:lmessage,
+			title: "反馈型组件"
+		},
+	]
+}
