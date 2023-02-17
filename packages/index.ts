@@ -24,6 +24,7 @@ import lavatar from './lavatar/lavatar.vue';
 import ldialog from './ldialog/ldialog.vue';
 import llist from './llist/llist.vue';
 import llistitem from './llist/llistitem.vue';
+import ldatePicker from './ldatePicker/ldatePicker.vue'
 
 const allcom = [
 	lbutton,
@@ -50,7 +51,7 @@ const allcom = [
 	lmenu,
 	llist,
 	llistitem,
-
+	ldatePicker
 ]
 
 const recom = function (app: App) {
@@ -84,7 +85,7 @@ export {
 	lmenu,
 	llist,
 	llistitem,
-
+	ldatePicker
 
 };
 export default recom;

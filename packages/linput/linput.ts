@@ -36,10 +36,10 @@ export const inputProps = {
     default: false
   },
   prefixIcon: {
-    type: String,
+    type: Object,
   },
   suffixIcon:{
-    type: String,
+    type: Object,
   }
 }
 

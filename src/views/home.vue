@@ -124,6 +124,9 @@ const listClick = (path: any, name: string) => {
 		line-height: 5vh;
 		padding: 0 1vw;
 		cursor: pointer;
+		&:hover {
+			color: #0e80eb;
+		}
 	}
 	li.active{
 		border-right:0.3vw solid #0e80eb;
