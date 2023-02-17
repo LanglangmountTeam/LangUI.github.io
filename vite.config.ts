@@ -1,9 +1,17 @@
+/// <reference types="vitest"/>
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue"
 import Markdown from "vite-plugin-md"
 import {resolve} from "path"
 // https://vitejs.dev/config/
 export default defineConfig({
+	test:{
+		globals:true,
+		environment:"jsdom",
+		coverage: {
+			provider: 'c8', // or 'c8'
+		  },
+	},
 	plugins: [
 		vue({
 			include: [/\.vue$/, /\.md$/], 
