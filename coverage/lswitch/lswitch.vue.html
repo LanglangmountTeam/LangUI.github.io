@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">89.47% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>68/76</span>
+                <span class='fraction'>76/76</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.38% </span>
+                <span class="strong">86.95% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/13</span>
+                <span class='fraction'>20/23</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">89.47% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>68/76</span>
+                <span class='fraction'>76/76</span>
             </div>
         
             
@@ -143,25 +143,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -196,16 +177,35 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -217,10 +217,10 @@
   &lt;div :class="['l-switch-default', customClass]"&gt;
     &lt;span 
       class="l-switch-left-text"  
-      v-if="textAlign=='left' &amp;&amp; closeText<span class="branch-0 cbranch-no" title="branch not covered" >!='' &amp;&amp; activeText<span class="branch-0 cbranch-no" title="branch not covered" >!=''" </span></span>
-<span class="cstat-no" title="statement not covered" >      :style="{'color': modelValue ? activeColor : closeColor}"</span>
-<span class="cstat-no" title="statement not covered" >    &gt;</span>
-<span class="cstat-no" title="statement not covered" >      {{switchText}}</span>
+      v-if="textAlign=='left' &amp;&amp; closeText!='' &amp;&amp; activeText!=''" 
+      :style="{'color': <span class="branch-0 cbranch-no" title="branch not covered" >modelValue ? activeColor : c</span>loseColor}"
+    &gt;
+      {{switchText}}
     &lt;/span&gt;
     &lt;div 
       class="l-switch-content"  
@@ -233,10 +233,10 @@
     &lt;/div&gt;
     &lt;span 
       class="l-switch-right-text" 
-      v-if="textAlign<span class="branch-0 cbranch-no" title="branch not covered" > == 'right' &amp;&amp; closeText<span class="branch-0 cbranch-no" title="branch not covered" > != '' &amp;&amp; a</span>ctiveText<span class="branch-0 cbranch-no" title="branch not covered" > != ''" </span></span>
-<span class="cstat-no" title="statement not covered" >      :style="{'color': modelValue ? activeColor : closeColor}"</span>
-<span class="cstat-no" title="statement not covered" >      &gt;</span>
-<span class="cstat-no" title="statement not covered" >      {{switchText}}</span>
+      v-if="textAlign == 'right' &amp;&amp; closeText != '' &amp;&amp; activeText != ''" 
+      :style="{'color': <span class="branch-0 cbranch-no" title="branch not covered" >modelValue ? activeColor : c</span>loseColor}"
+      &gt;
+      {{switchText}}
     &lt;/span&gt;
   &lt;/div&gt;
 &lt;/template&gt;
@@ -258,7 +258,7 @@ const roundStyle = reactive({"left":'2px'})
 const flagTextStyle = reactive({"left":props.width-20+'px'})
 const switchStyle = reactive({"background":props.closeColor})
 const flagText = ref('关')
-const switchText = ref(props.<span class="branch-0 cbranch-no" title="branch not covered" >modelValue?props.activeText:p</span>rops.closeText)
+const switchText = ref(props.modelValue?props.activeText:props.closeText)
 const flag = ref(props.modelValue)
 &nbsp;
 const handleSwitch = () =&gt;{
@@ -271,12 +271,12 @@ const handleSwitch = () =&gt;{
 }
 &nbsp;
 watchEffect(()=&gt;{
-  roundStyle.left = props.<span class="branch-0 cbranch-no" title="branch not covered" >modelValue?props.width-20+'px':'</span>2px'
-  flagTextStyle.left = props.<span class="branch-0 cbranch-no" title="branch not covered" >modelValue?'6px':p</span>rops.width-20+'px'
-  switchStyle.background = props.<span class="branch-0 cbranch-no" title="branch not covered" >modelValue?props.activeColor:p</span>rops.closeColor
-  if(props.modelValue)<span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >    flagText.value = "开"</span>
-<span class="cstat-no" title="statement not covered" >    switchText.value = props.activeText</span>
+  roundStyle.left = props.modelValue?props.width-20+'px':'2px'
+  flagTextStyle.left = props.modelValue?'6px':props.width-20+'px'
+  switchStyle.background = props.modelValue?props.activeColor:props.closeColor
+  if(props.modelValue){
+    flagText.value = "开"
+    switchText.value = props.activeText
   }else{
     flagText.value = "关"
     switchText.value = props.closeText
@@ -295,7 +295,7 @@ watchEffect(()=&gt;{
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-18T16:17:21.086Z
+                at 2023-02-18T17:24:51.586Z
             </div>
         <script src="../prettify.js"></script>
         <script>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">79.25% </span>
+                <span class="strong">85.92% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>107/135</span>
+                <span class='fraction'>116/135</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">31.25% </span>
+                <span class="strong">78.26% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/16</span>
+                <span class='fraction'>18/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">79.25% </span>
+                <span class="strong">85.92% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>107/135</span>
+                <span class='fraction'>116/135</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -309,22 +309,22 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -348,10 +348,10 @@
       @blur="handleBlur"
       @change="handleChange"
     &gt;
-    &lt;div v-if="<span class="branch-0 cbranch-no" title="branch not covered" >maxLength" class="max-length"&gt;{{count}} / {{maxLength}}&lt;/div&gt;</span>
-    &lt;div v-if="<span class="branch-0 cbranch-no" title="branch not covered" >showpwd &amp;&amp; <span class="branch-0 cbranch-no" title="branch not covered" >showPassword" c</span>lass="clearInput" @click="showPasswordClick"&gt;&lt;</span>img src="./doc/inputImg/open_eyes.png" alt=""&gt;&lt;/div&gt;
-    &lt;div v-if="<span class="branch-0 cbranch-no" title="branch not covered" >showpwd &amp;&amp; !<span class="branch-0 cbranch-no" title="branch not covered" >showPassword" c</span>lass="clearInput" @click="showPasswordClick"&gt;&lt;</span>img src="./doc/inputImg/close_eyes.png" alt=""&gt;&lt;/div&gt;
-    &lt;span v-if="props.<span class="branch-0 cbranch-no" title="branch not covered" >clearable &amp;&amp; props.<span class="branch-0 cbranch-no" title="branch not covered" >modelValue" c</span>lass="clearInput" @click="clearInput"&gt;&lt;</span>img src="./doc/inputImg/clear_input.png" alt=""&gt;&lt;/span&gt;
+    &lt;div v-if="maxLength" class="max-length"&gt;{{count}} / {{maxLength}}&lt;/div&gt;
+    &lt;div v-if="showpwd &amp;&amp; showPassword" class="clearInput" @click="showPasswordClick"&gt;&lt;img src="./doc/inputImg/open_eyes.png" alt=""&gt;&lt;/div&gt;
+    &lt;div v-if="showpwd &amp;&amp; !showPassword" class="clearInput" @click="showPasswordClick"&gt;&lt;img src="./doc/inputImg/close_eyes.png" alt=""&gt;&lt;/div&gt;
+    &lt;span v-if="props.clearable &amp;&amp; props.modelValue" class="clearInput" @click="clearInput"&gt;&lt;img src="./doc/inputImg/clear_input.png" alt=""&gt;&lt;/span&gt;
   
     &lt;div class="l-input__prefix" v-if="isShowPrefixIcon"&gt;
       &lt;l-icon&gt;&lt;component :is="prefixIcon"&gt;&lt;/component&gt;&lt;/l-icon&gt;
@@ -442,23 +442,23 @@ const handleChange = (e: Event) =&gt; {
 &nbsp;
 }
 &nbsp;
-const clearInput = <span class="fstat-no" title="function not covered" >(e: Event) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  emits('update:modelValue', '')</span>
-<span class="cstat-no" title="statement not covered" >  emits("clear", e)</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+const clearInput = (e: Event) =&gt; {
+  emits('update:modelValue', '')
+  emits("clear", e)
+}
 &nbsp;
 &nbsp;
 const showPassword = ref(true)
 const inputType = ref()
 inputType.value = props.type
-const showPasswordClick = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  showPassword.value = !showPassword.value</span>
-<span class="cstat-no" title="statement not covered" >  if(showPassword.value) {</span>
+const showPasswordClick = () =&gt; {
+  showPassword.value = !showPassword.value
+  if(showPassword.value) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >    inputType.value = 'text'</span>
-<span class="cstat-no" title="statement not covered" >  }else {</span>
-<span class="cstat-no" title="statement not covered" >    inputType.value = 'password'</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+  }else {
+    inputType.value = 'password'
+  }
+}
 &nbsp;
 &lt;/script&gt;
 &nbsp;
@@ -472,7 +472,7 @@ const showPasswordClick = <span class="fstat-no" title="function not covered" >(
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-18T16:17:21.086Z
+                at 2023-02-18T17:24:51.586Z
             </div>
         <script src="../prettify.js"></script>
         <script>

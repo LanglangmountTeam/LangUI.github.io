@@ -29,4 +29,36 @@ test('事件测试',async()=>{
   let sf=wrapper.find('.m-icon-close')
   await sf.trigger('click')
 })
+test('属性测试',()=>{
+  const wrapper=mount(drawer,{
+    props:{
+      direction:'top',
+    }
+  })
+  expect(wrapper.html()).toContain('')
+})
+test('属性测试',()=>{
+  const wrapper=mount(drawer,{
+    props:{
+      direction:'right',
+    }
+  })
+  expect(wrapper.html()).toContain('')
+})
+test('属性测试',()=>{
+  const wrapper=mount(drawer,{
+    props:{
+      direction:'bottom',
+    }
+  })
+  expect(wrapper.html()).toContain('')
+})
+test('属性测试',()=>{
+  const wrapper=mount(drawer,{
+    props:{
+      direction:'',
+    }
+  })
+  expect(wrapper.html()).toContain('')
+})
 })

@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75.31% </span>
+                <span class="strong">81.64% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>119/158</span>
+                <span class='fraction'>129/158</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">36.36% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/11</span>
+                <span class='fraction'>6/12</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75.31% </span>
+                <span class="strong">81.64% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>119/158</span>
+                <span class='fraction'>129/158</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -335,7 +335,9 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -347,29 +349,27 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -424,7 +424,7 @@
             &lt;i class="icon-file"&gt;
               &lt;img src="./img/upload.png" style="width: 30px; height: 30px;" alt=""&gt;
             &lt;/i&gt;
-            &lt;p v-if="label!=''"&gt;{{lableText}}&lt;/p&gt;
+            &lt;p v-if="label<span class="branch-0 cbranch-no" title="branch not covered" >!=''"&gt;{{lableText}}&lt;/p&gt;</span>
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -492,9 +492,9 @@ const deleteImg = <span class="fstat-no" title="function not covered" >(index) =
 &nbsp;
 &nbsp;
 onMounted(()=&gt;{
-  if(props.<span class="branch-0 cbranch-no" title="branch not covered" >drop&amp;&amp;props.targetType=='box')<span class="branch-0 cbranch-no" title="branch not covered" >{</span></span>
-<span class="cstat-no" title="statement not covered" >    let dropArea = refDiv.value</span>
-<span class="cstat-no" title="statement not covered" >    dropArea.addEventListener('drop',(e)=&gt;{</span>
+  if(props.drop&amp;&amp;props.targetType=='box'){
+    let dropArea = refDiv.value
+    dropArea.addEventListener('drop',(e)=&gt;{
 <span class="cstat-no" title="statement not covered" >      e.stopPropagation()</span>
 <span class="cstat-no" title="statement not covered" >      e.preventDefault()</span>
 <span class="cstat-no" title="statement not covered" >      File.unshift(...e.dataTransfer.files)</span>
@@ -506,27 +506,27 @@ onMounted(()=&gt;{
 <span class="cstat-no" title="statement not covered" >      emit('update:fileList',File)</span>
 <span class="cstat-no" title="statement not covered" >      lableText.value = props.label</span>
 <span class="cstat-no" title="statement not covered" >      activeFile.value = false</span>
-<span class="cstat-no" title="statement not covered" >    }, false)</span>
-<span class="cstat-no" title="statement not covered" >    dropArea.addEventListener('dragleave', (e) =&gt; {</span>
+    }, false)
+    dropArea.addEventListener('dragleave', (e) =&gt; {
 <span class="cstat-no" title="statement not covered" >      e.stopPropagation()</span>
 <span class="cstat-no" title="statement not covered" >      e.preventDefault()</span>
 <span class="cstat-no" title="statement not covered" >      activeFile.value = false</span>
 <span class="cstat-no" title="statement not covered" >      lableText.value = props.label</span>
-<span class="cstat-no" title="statement not covered" >    })</span>
-<span class="cstat-no" title="statement not covered" >    dropArea.addEventListener('dragenter', (e) =&gt; {</span>
+    })
+    dropArea.addEventListener('dragenter', (e) =&gt; {
 <span class="cstat-no" title="statement not covered" >      e.stopPropagation()</span>
 <span class="cstat-no" title="statement not covered" >      e.preventDefault()</span>
 <span class="cstat-no" title="statement not covered" >      activeFile.value = true</span>
 <span class="cstat-no" title="statement not covered" >      lableText.value = "松开鼠标完成"</span>
 <span class="cstat-no" title="statement not covered" >      emit('beforeChange')</span>
-<span class="cstat-no" title="statement not covered" >    })</span>
-<span class="cstat-no" title="statement not covered" >    dropArea.addEventListener('dragover', (e) =&gt; {</span>
+    })
+    dropArea.addEventListener('dragover', (e) =&gt; {
 <span class="cstat-no" title="statement not covered" >      e.stopPropagation()</span>
 <span class="cstat-no" title="statement not covered" >      e.preventDefault()</span>
 <span class="cstat-no" title="statement not covered" >      activeFile.value = true</span>
 <span class="cstat-no" title="statement not covered" >      lableText.value = "松开鼠标完成"</span>
-<span class="cstat-no" title="statement not covered" >    })</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+    })
+  }
 })
 &nbsp;
 &lt;/script&gt;
@@ -541,7 +541,7 @@ onMounted(()=&gt;{
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-18T16:17:21.086Z
+                at 2023-02-18T17:24:51.586Z
             </div>
         <script src="../prettify.js"></script>
         <script>

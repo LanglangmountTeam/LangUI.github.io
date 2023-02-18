@@ -29,4 +29,28 @@ test('input组件应该可以被渲染', () => {
     const sf=wrapper.find('input')
     await sf.trigger('focus')
   })
+  test('事件测试',async()=>{
+    const wrapper=mount(input,{
+      props:{
+        maxLength:10,
+        showpwd:true,
+        showPassword:true,
+
+      }
+    })
+    const sf=wrapper.find('.clearInput')
+    await sf.trigger('click')
+  })
+  test('事件测试',async()=>{
+    const wrapper=mount(input,{
+      props:{
+        maxLength:10,
+        clearable:true,
+        modelValue:10
+
+      }
+    })
+    const sf=wrapper.find('.clearInput')
+    await sf.trigger('click')
+  })
 })

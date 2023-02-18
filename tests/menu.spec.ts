@@ -9,5 +9,13 @@ test('menu组件应该可以被渲染', () => {
     const wrapper = mount(menu)
     expect(wrapper.findComponent(menu).exists()).toBe(true)
   })
-
+test('属性测试',()=>{
+  const wrapper=mount(menu,{
+    props:{
+      type:'horizontal',
+      theme:'black',
+    }
+  })
+  expect(wrapper.html()).contain('')
+})
 })

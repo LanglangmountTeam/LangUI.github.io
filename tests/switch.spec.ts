@@ -14,4 +14,32 @@ test('事件测试',async()=>{
   const sf=wrapper.find('.l-switch-content')
   await sf.trigger('click')
 })
+test('属性测试',()=>{
+  const wrapper=mount(lswitch,{
+    props:{
+      textAlign:'left',
+      closeText:'123',
+      activeText:'234'
+    }
+  })
+  expect(wrapper.html()).contain('')
+})
+test('属性测试',()=>{
+  const wrapper=mount(lswitch,{
+    props:{
+      textAlign:'right',
+      closeText:'123',
+      activeText:'234'
+    }
+  })
+  expect(wrapper.html()).contain('')
+})
+test('属性测试',()=>{
+  const wrapper=mount(lswitch,{
+    props:{
+      modelValue:true
+    }
+  })
+  expect(wrapper.html()).contain('')
+})
 })

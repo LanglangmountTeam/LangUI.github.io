@@ -27,4 +27,13 @@ test('upload组件应该可以被渲染', () => {
     })
     expect(wrapper.html()).toContain('')
   })
+  test('属性测试',()=>{
+    const wrapper=mount(upload,{
+      props:{
+        drop:true,
+        targetType:'box'
+      }
+    })
+    expect(wrapper.html()).contain('')
+  })
 })
