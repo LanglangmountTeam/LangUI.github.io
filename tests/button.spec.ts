@@ -6,6 +6,10 @@ describe('button组件初始化',()=>{
     test('button组件应该存在',()=>{
         expect(button).toBeTruthy()
     }),
+    test('button组件应该可以被渲染', () => {
+      const wrapper = mount(button)
+      expect(wrapper.findComponent(button).exists()).toBe(true)
+    })
     test('测试button插槽是否正常', () => {
         const wrapper = mount(button, {
           slots: {
