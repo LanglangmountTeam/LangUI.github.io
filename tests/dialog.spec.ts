@@ -9,4 +9,5 @@ test('dialog组件应该可以被渲染', () => {
     const wrapper = mount(dialog)
     expect(wrapper.findComponent(dialog).exists()).toBe(true)
   })
+  
 })

@@ -9,5 +9,9 @@ test('radio组件应该可以被渲染', () => {
     const wrapper = mount(radio)
     expect(wrapper.findComponent(radio).exists()).toBe(true)
   })
-
+  test('测试事件是否正常',async () => {
+    const wrapper = mount(radio)
+    const text=wrapper.find('div')
+    await text.trigger('click')
+  })
 })

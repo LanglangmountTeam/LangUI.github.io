@@ -9,4 +9,9 @@ test('lswitch组件应该可以被渲染', () => {
     const wrapper = mount(lswitch)
     expect(wrapper.findComponent(lswitch).exists()).toBe(true)
   })
+test('事件测试',async()=>{
+  const wrapper=mount(lswitch)
+  const sf=wrapper.find('.l-switch-content')
+  await sf.trigger('click')
+})
 })

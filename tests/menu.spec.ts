@@ -9,4 +9,5 @@ test('menu组件应该可以被渲染', () => {
     const wrapper = mount(menu)
     expect(wrapper.findComponent(menu).exists()).toBe(true)
   })
+
 })

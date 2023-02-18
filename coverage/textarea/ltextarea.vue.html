@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.81% </span>
+                <span class="strong">94.2% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>53/69</span>
+                <span class='fraction'>65/69</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>6/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.81% </span>
+                <span class="strong">94.2% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>53/69</span>
+                <span class='fraction'>65/69</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -171,28 +171,28 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -216,7 +216,7 @@
 			@change="handleChange"
 		&gt;
 		&lt;/textarea&gt;
-		&lt;div v-if="<span class="branch-0 cbranch-no" title="branch not covered" >maxLength" class="max-length"&gt;{{count}} / {{maxLength}}&lt;/div&gt;</span>
+		&lt;div v-if="maxLength" class="max-length"&gt;{{count}} / {{maxLength}}&lt;/div&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 &nbsp;
@@ -238,29 +238,29 @@ const {
 	lStyle
 } = useTextarea(props, emits);
 &nbsp;
-const handleInput: any = <span class="fstat-no" title="function not covered" >(e: { target: { value: string | any[]; }; }) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >	// console.log(e.target.value)</span>
-<span class="cstat-no" title="statement not covered" >	count.value = e.target.value.length</span>
-<span class="cstat-no" title="statement not covered" >	if(props.maxLength) {</span>
+const handleInput: any = (e: { target: { value: string | any[]; }; }) =&gt; {
+	// console.log(e.target.value)
+	count.value = e.target.value.length
+	if(props.maxLength) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >		if(e.target.value.length &gt; props.maxLength) {</span>
 <span class="cstat-no" title="statement not covered" >			count.value = 100</span>
 <span class="cstat-no" title="statement not covered" >		}</span>
 <span class="cstat-no" title="statement not covered" >	}</span>
-<span class="cstat-no" title="statement not covered" >	emits('update:modelValue', e.target.value)</span>
-<span class="cstat-no" title="statement not covered" >	emits('input', e)</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+	emits('update:modelValue', e.target.value)
+	emits('input', e)
+}
 &nbsp;
-const handleFocus = <span class="fstat-no" title="function not covered" >(e:any) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >	emits('focus', e)</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+const handleFocus = (e:any) =&gt; {
+	emits('focus', e)
+}
 &nbsp;
-const handleBlur = <span class="fstat-no" title="function not covered" >(e:any) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >	emits('blur', e)</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+const handleBlur = (e:any) =&gt; {
+	emits('blur', e)
+}
 &nbsp;
-const handleChange = <span class="fstat-no" title="function not covered" >(e:any) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >	emits('change', e)</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+const handleChange = (e:any) =&gt; {
+	emits('change', e)
+}
 &nbsp;
 &lt;/script&gt;
 &nbsp;
@@ -274,7 +274,7 @@ const handleChange = <span class="fstat-no" title="function not covered" >(e:any
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-18T06:13:11.322Z
+                at 2023-02-18T16:17:21.086Z
             </div>
         <script src="../prettify.js"></script>
         <script>

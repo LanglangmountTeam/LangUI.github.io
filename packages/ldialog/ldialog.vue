@@ -1,7 +1,7 @@
 <template>
   <template v-if="modelValue">
     <Teleport to="body">
-      <div class="l-dialog-overlay" v-if="overlay" @click="onOverlayClick"></div>
+      <div v-if="overlay" class="l-dialog-overlay"  @click="onOverlayClick"></div>
       <div class="l-dialog">
         <div class="l-dialog-wrapper animate__animated animate__zoomIn animate__faster">
           <header>
@@ -15,8 +15,8 @@
           </main>
           <footer>
             <slot name="footer">
-              <lbutton @click="cancel">取消</lbutton>
-              <lbutton type="primary" @click="confirm">确认</lbutton>
+              <l-button @click="cancel">取消</l-button>
+              <l-button type="primary" @click="confirm">确认</l-button>
             </slot>
           </footer>
         </div>
@@ -33,7 +33,7 @@ const props = defineProps({
     default: false,
   },
   overlay: {
-    type: true,
+    type: Boolean,
     default: true,
   },
   title: {

@@ -9,10 +9,24 @@ test('drawer组件应该可以被渲染', () => {
     const wrapper = mount(drawer)
     expect(wrapper.findComponent(drawer).exists()).toBe(true)
   })
-// test('测试',async()=>{
-//     const wrapper=mount(drawer,{
-//     })
-    
-// })
-
+test('事件测试',async()=>{
+  const wrapper=mount(drawer,{
+    props:{
+      modelValue:true
+    }
+  })
+  let sf=wrapper.find('.mzl-drawer-pupop')
+  await sf.trigger('click')
+})
+test('事件测试',async()=>{
+  const wrapper=mount(drawer,{
+    props:{
+      modelValue:true,
+      showHeader:true,
+      showClose:true
+    }
+  })
+  let sf=wrapper.find('.m-icon-close')
+  await sf.trigger('click')
+})
 })

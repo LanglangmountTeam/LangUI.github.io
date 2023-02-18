@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.67% </span>
+                <span class="strong">98.89% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>436/451</span>
+                <span class='fraction'>446/451</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.67% </span>
+                <span class="strong">98.89% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>436/451</span>
+                <span class='fraction'>446/451</span>
             </div>
         
             
@@ -568,24 +568,24 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -1017,25 +1017,25 @@ const state = reactive({
 		display:"none"
 	}
 })
-const mouseover = <span class="fstat-no" title="function not covered" >() =&gt;{</span>
-<span class="cstat-no" title="statement not covered" >	if(proprs.trigger=='hover'){</span>
-<span class="cstat-no" title="statement not covered" >		isShow.value = true</span>
-<span class="cstat-no" title="statement not covered" >	}</span>
-<span class="cstat-no" title="statement not covered" >}</span>
-const mouseleave = <span class="fstat-no" title="function not covered" >() =&gt;{</span>
-<span class="cstat-no" title="statement not covered" >	if(proprs.trigger=='hover'){</span>
-<span class="cstat-no" title="statement not covered" >		isShow.value = false</span>
-<span class="cstat-no" title="statement not covered" >	}</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+const mouseover = () =&gt;{
+	if(proprs.trigger=='hover'){
+		isShow.value = true
+	}
+}
+const mouseleave = () =&gt;{
+	if(proprs.trigger=='hover'){
+		isShow.value = false
+	}
+}
 const handleChange = <span class="fstat-no" title="function not covered" >(item,index)=&gt;{</span>
 <span class="cstat-no" title="statement not covered" >	emit('change',item,index)</span>
 <span class="cstat-no" title="statement not covered" >	isShow.value = false</span>
 <span class="cstat-no" title="statement not covered" >}</span>
-const handleClick = <span class="fstat-no" title="function not covered" >() =&gt;{</span>
-<span class="cstat-no" title="statement not covered" >	if(proprs.trigger=='click'){</span>
+const handleClick = () =&gt;{
+	if(proprs.trigger=='click')<span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >		isShow.value = !isShow.value</span>
 <span class="cstat-no" title="statement not covered" >	}</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+}
 const { isOpenStyles } = state
 &lt;/script&gt;
 &nbsp;
@@ -1420,7 +1420,7 @@ const { isOpenStyles } = state
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-18T06:13:11.322Z
+                at 2023-02-18T16:17:21.086Z
             </div>
         <script src="../prettify.js"></script>
         <script>

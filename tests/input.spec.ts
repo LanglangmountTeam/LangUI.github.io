@@ -9,4 +9,24 @@ test('input组件应该可以被渲染', () => {
     const wrapper = mount(input)
     expect(wrapper.findComponent(input).exists()).toBe(true)
   })
+  test('事件测试',async()=>{
+    const wrapper=mount(input)
+    const sf=wrapper.find('input')
+    await sf.trigger('input')
+  })
+  test('事件测试',async()=>{
+    const wrapper=mount(input)
+    const sf=wrapper.find('input')
+    await sf.trigger('blur')
+  })
+  test('事件测试',async()=>{
+    const wrapper=mount(input)
+    const sf=wrapper.find('input')
+    await sf.trigger('change')
+  })
+  test('事件测试',async()=>{
+    const wrapper=mount(input)
+    const sf=wrapper.find('input')
+    await sf.trigger('focus')
+  })
 })
