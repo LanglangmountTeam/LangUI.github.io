@@ -41,7 +41,7 @@ Lang-UI 目前还处于快速开发迭代中
 
 推荐使用 npm 的方式安装，它能更好地和 rollup 打包工具配合使用
 <pre>
-  <code >npm i lang-ui -S
+  <code >npm install lang-ui 
   </code>
 </pre>
 
@@ -50,7 +50,7 @@ Lang-UI 目前还处于快速开发迭代中
 
 
 <style lang="scss" scoped>
-
+@import "../../assets/styles/markdown.css";
 .pic-plus {
   display: flex;
   img {

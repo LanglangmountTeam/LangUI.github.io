@@ -30,5 +30,5 @@ Lang-Ui 致力于开源学习,欢迎使用
 现在你可以启动项目了。 对于每个组件的用法，请参考单个组件对应的文档。
 
 <style lang="scss" scoped>
-
+@import "../../assets/styles/markdown.css";
 </style>
