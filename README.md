@@ -1,8 +1,8 @@
-<div class="pic-plus" stlye="align:center;">
+<div align="center">
   <img src='/src/assets/img/logo.jpg'/>
 </div>
 
-<div class="title">致力于开源学习的UI组件库</div>
+<div align="center">致力于开源学习的UI组件库</div>
 
 <div class="summary">
   <div class="summary-item">
