@@ -4,8 +4,8 @@
 
 <div align="center">致力于开源学习的UI组件库</div>
 
-<div class="summary">
-  <div class="summary-item">
+<div class="summary" align="center">
+  <div align="center">
     <a>
       <img src="https://camo.githubusercontent.com/cdc69c438472be59734e5d67d12533d15e48bc94b27429f31b2d3b7d88b6639a/68747470733a2f2f7472617669732d63692e6f72672f456c656d6546452f656c656d656e742e7376673f6272616e63683d6d6173746572"/>
     </a>
