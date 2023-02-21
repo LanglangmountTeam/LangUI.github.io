@@ -13,7 +13,7 @@
       <img src="https://camo.githubusercontent.com/78f47a09877ba9d28da1887a93e5c3bc2efb309c1e910eb21135becd2998238a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d79656c6c6f772e737667"/>
     </a>
     <a>
-      <img src="/src/assets/img/coberageLabel.jpg" stly="max-width: 82px !important;height: 15px;"/>
+      <img src="[/src/assets/img/coberageLabel.jpg](https://camo.githubusercontent.com/c6968b5bf076df338c58769c51590f2fd8a072a6787292b4c2f557ee9b43cd36/687474703a2f2f696d672e736869656c64732e696f2f6e706d2f762f616e74642e7376673f7374796c653d666c61742d737175617265)" />
     </a>
     <a>
       <img src="./src/assets/img/npmLabel.jpg"/>
