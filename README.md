@@ -16,7 +16,7 @@
       <img src="https://stone-1315935641.cos.ap-chengdu.myqcloud.com/img/coberageLabel.jpg?q-sign-algorithm=sha1&q-ak=AKIDQ9RtyzysZEIeeWBYGFzqSE2Vt_jucXVFhk9gikshBbkmL2PruadVC3fiZk_6pQzx&q-sign-time=1676987432;1676991032&q-key-time=1676987432;1676991032&q-header-list=host&q-url-param-list=&q-signature=2c5010581e697b883c666540ff90315b93c992d9&x-cos-security-token=26A9Y1tsN317DmRxi0ufi9ncme5SZ7Ka8ccb655dee8803c31abf2dbcef9175a9XdBH_zIhcNgARZUG3FnRX8AMTwy1JhfpNiyhdrCptMIIFScjKu0HKx423kYhMhK3mSa7L35ebSrdQXfaAaA26yw4sO63JoYvF1yNZ_Z2AW6HJx1wiMwDq6nriiCOH7j-8zr19s7GxFriTKgOvm8BNh3pZMqUzIjloGfZGLtZYoZjk7oB02cwjgcrXhEpBeU1" />
     </a>
     <a>
-      <img src="./src/assets/img/npmLabel.jpg"/>
+      <img src="https://stone-1315935641.cos.ap-chengdu.myqcloud.com/img/npmLabel.jpg?q-sign-algorithm=sha1&q-ak=AKIDd09j7ujK9S5KU8N3lnIA9iOUBipwnJ4Dq-ZDLsffolhI7AIpwhHkGJks40YlO5fw&q-sign-time=1676987485;1676991085&q-key-time=1676987485;1676991085&q-header-list=host&q-url-param-list=&q-signature=6843a3e218264cb3542cf64e26b693568d6d0e23&x-cos-security-token=26A9Y1tsN317DmRxi0ufi9ncme5SZ7Ka742a80b3bb51690ad3086cdcb25babfbXdBH_zIhcNgARZUG3FnRX5l5CbSfL33WX0Vbp1NSB_CEXQs6nSKzmwBF_rz_ZYlO0eEadMWc-6QpRA0W5q2N2jjUoXO889nR2ip3bqgpXD1rMnaQTL0MfQd3SjgFzU5YbJYtRZyYwQ08N7ZNVWd-5ZH6CRbQm4GjGuzRb8Op1JQHqO2XlO9EandpFMcXZaAh"/>
     </a>
 
 
