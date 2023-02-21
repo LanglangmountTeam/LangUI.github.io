@@ -1,0 +1,186 @@
+
+.l-upload-default{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  .l-preview-img-box{
+    width:auto;
+    height:auto;
+    overflow: hidden;
+    .l-preview-img-img{
+      width:130px;
+      height:130px;
+      float: left;
+      margin:0 4px;
+      border:1px solid rgb(217,217,217);
+      border-radius: 3px;
+      padding:10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin-bottom:10px;
+      .l-previre-img-actions{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        img{
+          width: 100%;
+          object-fit: scale-down;
+        }
+        .customArea{
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: absolute;
+          top:0;
+          left:0;
+          transition: all .4s;
+          color: #fff;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: none;
+          i{
+            font-size:18px;
+          }
+          &:hover{
+            background:rgba(0,0,0,.6)
+          }
+        }
+        &:hover{
+          .customArea{
+            display: flex;
+          }
+        }
+      }
+    }
+    .l-upload-area{
+      width:130px;
+      height: 130px;
+      border:1px dashed  rgb(217,217,217);
+      border-radius: 2px;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: all .4s;
+      float: left;
+      &:hover{
+        transition: all .4s;
+        border-color: #74baff;
+      }
+      .l-upload-area-text{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        color: #909399;
+        font-size:14px;
+        text-align: center;
+        position: relative;
+        .l-upload-text-pos{
+          width:100%;
+          height:auto;
+          position: absolute;
+          top: 48%;
+          left: 50%;
+          padding: 10px;
+          box-sizing: border-box;
+          transform: translate(-50%, -50%);
+          .icon-file{
+            color: #74baff;
+            font-size:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          p{
+            width:100%;
+            margin:0;
+            text-align: center;
+            margin-top:5px;
+          }
+        }
+        
+      }
+    }
+    .l-upload-area-big{
+      width:300px;
+      height: 130px;
+      .l-upload-area-text{
+        .l-upload-text-pos{
+          .icon-file{
+            font-size:28px;
+            margin:0 auto;
+          }
+        }
+        
+      }
+    }
+    .l-upload-area-active{
+      transition: all .4s;
+      border-color: #74baff;
+    }
+  }
+  .l-upload-filelist{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top:2px;
+      ul{
+        margin:0;
+        padding:0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding:5px 0;
+        box-sizing: border-box;
+        li{
+          list-style: none;
+          line-height: 28x;
+          padding:0 10px 0 5px;
+          box-sizing: border-box;
+          font-size:14px;
+          color:#606255;
+          cursor: pointer;
+          &:hover{
+            background: rgba(167, 164, 164, 0.1);
+            i.delete{
+              display: flex;
+            }
+          }
+        div{
+            display: flex;
+            justify-content: space-between;
+            span{
+              display: inline-block;
+              width:90%;
+            }
+            i.delete{
+              margin-right: 5px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              display: none;
+            }
+        }
+        }
+      }
+    }
+}
+.list-enter-active,
+.list-leave-active {
+  transition: all .5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+}
+.list-img-enter-active,
+.list-img-leave-active {
+  transition: all 1s ease;
+}
+.list-img-enter-from,
+.list-img-leave-to {
+  opacity: 0;
+}

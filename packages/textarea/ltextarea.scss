@@ -1,0 +1,44 @@
+.l-textarea {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  textarea {
+    outline: none;
+    padding: 0;
+    border: 2px solid rgb(217,217,217);
+    padding: 8px 8px 10px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    &:hover {
+      border-color: #74baff;
+    }
+    &:focus {
+      border-color: #74baff;
+      box-shadow: 0 0 10px rgba(70, 70, 216, 0.352);
+    }
+    &::placeholder {
+      color: #909399;
+    }
+  }
+}
+
+
+.l-textarea-disabled {
+  textarea {
+    cursor: no-drop;
+    &:hover {
+      border-color: rgb(217,217,217);
+    }
+  }
+}
+
+.max-length {
+  line-height: 20px;
+  font-size: 12px;
+  position: absolute;
+  color: #909399;
+  bottom: 5%;
+  right: 5%;
+}

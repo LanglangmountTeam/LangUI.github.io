@@ -1,0 +1,146 @@
+body {
+  font-family: Microsoft JhengHei;
+}
+
+.markdown-body {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 2;
+  padding: 0 20px;
+}
+
+.markdown-body h1, h2, h3, h4, h5, h6 {
+  margin: 30px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; 
+}
+
+
+.markdown-body p, pre {
+  margin: 15px 0;
+  
+}
+
+.markdown-body h1 {
+  font-size: 28px;
+  color: #2B3F52; 
+  border-bottom: 1px solid #DDE4E9;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+  color: #2B3F52; 
+  border-bottom: 1px solid #DDE4E9;
+}
+
+.markdown-body h3 {
+  font-size: 18px;
+  color: #2B3F52;  }
+
+.markdown-body h4 {
+  font-size: 16px;
+  color: #2B3F52;  }
+
+.markdown-body h5 {
+  font-size: 14px;
+  color: #2B3F52;  }
+
+.markdown-body h6 {
+  color: #2B3F52;
+  font-size: 14px;
+}
+
+
+
+.markdown-body code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; 
+}
+
+.markdown-body pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; 
+}
+
+.markdown-body .highlight pre {
+  background-color: #f6f8fa;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 18px;
+  overflow: auto;
+  padding: 0 10px;
+  border-radius: 5px; 
+}
+
+.markdown-body pre {
+  background-color: #f6f8fa;
+  font-size: 13px;
+  overflow: auto;
+  padding: 0 10px;
+  border-radius: 3px; 
+}
+
+
+.markdown-body pre::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 0.2vw; /*高宽分别对应横竖滚动条的尺寸*/
+	height: 7px;
+}
+
+.markdown-body pre::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 10px;
+	background-color: #6cc5f8;
+	background-image: -webkit-linear-gradient(
+		45deg,
+		rgba(255, 255, 255, 0.2) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255, 255, 255, 0.2) 50%,
+		rgba(255, 255, 255, 0.2) 75%,
+		transparent 75%,
+		transparent
+	);
+} 
+.markdown-body pre::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #ededed;
+}
+
+.markdown-body pre code, pre tt {
+  background-color: transparent;
+  border: none; 
+}
+
+.markdown-body sup {
+  font-size: 0.83em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.markdown-body code {
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  padding: 20px;
+  color: #24292F;
+  display: block;
+}
+.markdown-body blockquote {
+  padding-left: 15px;
+  border-left: 5px solid #cccccc;
+  color: #979899;
+}
