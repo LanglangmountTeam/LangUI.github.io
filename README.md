@@ -37,13 +37,13 @@
 
 ## 安装
 <pre>
-  <code >npm i lang-ui -S</code>
+  <code >npm i lang-ui </code>
 </pre>
 
 ## 快速开始
 <pre>
   <code>import LangUi from 'lang-ui';</code>
-  <code>import 'ang-ui/es/style.css';</code>
+  <code>import 'lang-ui/dist/lib/assets/(请前往node_module/lang-ui/dist/lib/assets/查看css文件名字)';</code>
   <code>const app = createApp(App);</code>
   <code>app.use(LangUi).mount('#app');</code>
 </pre>

@@ -11,15 +11,15 @@ export default {
     globals: {
       vue: 'Vue', // 指明global.Vue即是外部依赖vue
     },
-    name: 'lang-uiss',
-    file: 'dist/lib/lang-uiss.js', // 输出文件
+    name: 'lang-ui',
+    file: 'dist/lib/lang-ui.js', // 输出文件
     format: 'umd', // 使用什么样的模块化机制
     exports: 'named',
     plugins: [terser()],
   },
   {
-    name: 'lang-uiss',
-    file: 'dist/lib/lang-uiss.esm.js',
+    name: 'lang-ui',
+    file: 'dist/lib/lang-ui.esm.js',
     format: 'es',
     plugins: [terser()]
   }
