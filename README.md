@@ -1,4 +1,4 @@
-<div class="pic-plus">
+<div class="pic-plus" stlye="align:center;">
   <img src='/src/assets/img/logo.jpg'/>
 </div>
 
