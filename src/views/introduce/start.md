@@ -18,7 +18,7 @@ Lang-Ui 致力于开源学习,欢迎使用
 
 <pre>
   <code>import LangUi from 'lang-ui';</code>
-  <code>import 'ang-ui/es/style.css';</code>
+  <code>import 'lang-ui/dist/lib/assets/(请前往node_module/lang-ui/dist/lib/assets查看css文件名)';</code>
   <code>const app = createApp(App);</code>
   <code>app.use(LangUi).mount('#app');</code>
 </pre>
