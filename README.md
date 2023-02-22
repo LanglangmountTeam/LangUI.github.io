@@ -13,7 +13,7 @@
       <img src="https://camo.githubusercontent.com/78f47a09877ba9d28da1887a93e5c3bc2efb309c1e910eb21135becd2998238a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d79656c6c6f772e737667"/>
     </a>
     <a>
-      <img src="https://stone-1315935641.cos.ap-chengdu.myqcloud.com/img/coberageLabel.jpg?q-sign-algorithm=sha1&q-ak=AKIDQ9RtyzysZEIeeWBYGFzqSE2Vt_jucXVFhk9gikshBbkmL2PruadVC3fiZk_6pQzx&q-sign-time=1676987432;1676991032&q-key-time=1676987432;1676991032&q-header-list=host&q-url-param-list=&q-signature=2c5010581e697b883c666540ff90315b93c992d9&x-cos-security-token=26A9Y1tsN317DmRxi0ufi9ncme5SZ7Ka8ccb655dee8803c31abf2dbcef9175a9XdBH_zIhcNgARZUG3FnRX8AMTwy1JhfpNiyhdrCptMIIFScjKu0HKx423kYhMhK3mSa7L35ebSrdQXfaAaA26yw4sO63JoYvF1yNZ_Z2AW6HJx1wiMwDq6nriiCOH7j-8zr19s7GxFriTKgOvm8BNh3pZMqUzIjloGfZGLtZYoZjk7oB02cwjgcrXhEpBeU1" />
+      <img src="https://img.shields.io/badge/coverage-72%25-lightgrey" />
     </a>
     <a>
       <img src="https://img.shields.io/badge/npm-v8.11.0-blue"/>
