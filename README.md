@@ -1,11 +1,11 @@
-<div class="pic-plus">
-  <img src='/src/assets/img/logo.jpg'/>
+<div align="center">
+  <img src='https://stone-1315935641.cos.ap-chengdu.myqcloud.com/img%2Flogo.png'/>
 </div>
 
-<div class="title">致力于开源学习的UI组件库</div>
+<div align="center">致力于开源学习的UI组件库</div>
 
-<div class="summary">
-  <div class="summary-item">
+<div class="summary" align="center">
+  <div align="center">
     <a>
       <img src="https://camo.githubusercontent.com/cdc69c438472be59734e5d67d12533d15e48bc94b27429f31b2d3b7d88b6639a/68747470733a2f2f7472617669732d63692e6f72672f456c656d6546452f656c656d656e742e7376673f6272616e63683d6d6173746572"/>
     </a>
@@ -13,10 +13,10 @@
       <img src="https://camo.githubusercontent.com/78f47a09877ba9d28da1887a93e5c3bc2efb309c1e910eb21135becd2998238a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d79656c6c6f772e737667"/>
     </a>
     <a>
-      <img src="/src/assets/img/coberageLabel.jpg"/>
+      <img src="https://img.shields.io/badge/coverage-72%25-lightgrey" />
     </a>
     <a>
-      <img src="./src/assets/img/npmLabel.jpg"/>
+      <img src="https://img.shields.io/badge/npm-v8.11.0-blue"/>
     </a>
 
 
