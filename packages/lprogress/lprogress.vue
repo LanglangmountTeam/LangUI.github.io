@@ -55,7 +55,8 @@ const progclass = computed(() => {
     return ['progclass', `progress-${props.color}`]
 });
 const percentage = computed(() => {
-    return [(props.percent / 100) * props.length]
+    let ss=(props.percent / 100) * props.length
+    return (`${ss}vw`)
 });
 const intext = computed(() => {
     return [props.intext ? "progresstextcenter" : "progresstext"]
@@ -68,6 +69,18 @@ const itemleftclass = computed(() => {
 })
 const itemrightclass = computed(() => {
     return ['itemright', `circle-${props.color}`]
+})
+const lr=computed(()=>{
+    let s3=props.length/2;
+    return (`${s3}vw`)
+})
+const white1=computed(()=>{
+    let s4=props.length*0.8
+    return (`${s4}vw`)
+})
+const white2=computed(()=>{
+    let s4=props.length*0.1
+    return (`${s4}vw`)
 })
 const ileft = ref()
 const iright = ref()
@@ -92,7 +105,7 @@ onMounted(() => {
     })
 })
 </script>
-<style lang="scss" scoped>
+<style  scoped>
 .progclass {
     display: block;
     width: v-bind(progresslength);
@@ -103,67 +116,58 @@ onMounted(() => {
     position: relative;
 }
 
-.progress-default {
-    &:before {
+
+.progress-default:before {
         content: "";
         position: absolute;
-        width: calc(1vw * v-bind(percentage));
+        width:v-bind(percentage);
         height: 3vh;
         border-radius: 3vh;
         background-color: blue;
     }
-}
 
-.progress-success {
-    &:before {
-        content: "";
+.progress-success::before{
+    content: "";
         position: absolute;
-        width: calc(1vw * v-bind(percentage));
+        width: v-bind(percentage);
         height: 3vh;
         border-radius: 3vh;
         background-color: #67c23a;
-    }
+
 }
 
-.progress-primary {
-    &:before {
-        content: "";
+.progress-primary::before{
+    content: "";
         position: absolute;
-        width: calc(1vw * v-bind(percentage));
+        width: v-bind(percentage);
         height: 3vh;
         border-radius: 3vh;
         background-color: #74baff;
-    }
 }
 
-.progress-warning {
-    &:before {
-        content: "";
+.progress-warning::before{
+    content: "";
         position: absolute;
-        width: calc(1vw * v-bind(percentage));
+        width: v-bind(percentage);
         height: 3vh;
         border-radius: 3vh;
         background-color: #e6a23c;
-    }
 }
 
-.progress-danger {
-    &:before {
-        content: "";
+.progress-danger::before{
+    content: "";
         position: absolute;
-        width: calc(1vw * v-bind(percentage));
+        width: v-bind(percentage);
         height: 3vh;
         border-radius: 3vh;
         background-color: #f56c6c;
-    }
 }
-
 .progresstext {
     margin-left: v-bind(progresslength);
 }
 
 .progresstextcenter {
-    margin-left: calc(1vw * v-bind(percentage));
+    margin-left: v-bind(percentage);
 }
 
 .circle {
@@ -179,7 +183,7 @@ onMounted(() => {
     margin-left: 0;
     position: absolute;
     overflow: hidden;
-    width: calc(v-bind(progresslength)/2);
+    width: v-bind(lr);
     height: v-bind(progresslength);
     overflow: hidden;
     opacity: 0.8;
@@ -187,7 +191,7 @@ onMounted(() => {
 }
 
 .left .itemleft {
-    width: calc(v-bind(progresslength)/2);
+    width:v-bind(lr) ;
     height: v-bind(progresslength);
     border-top-left-radius: v-bind(progresslength);
     border-bottom-left-radius: v-bind(progresslength);
@@ -198,7 +202,7 @@ onMounted(() => {
 }
 
 .rightt .itemright {
-    width: calc(v-bind(progresslength)/2);
+    width: v-bind(lr);
     height: v-bind(progresslength);
     border-top-right-radius: v-bind(progresslength);
     border-bottom-right-radius: v-bind(progresslength);
@@ -215,13 +219,13 @@ onMounted(() => {
     position: absolute;
     top: 10%;
     left: 10%;
-    width: calc(v-bind(progresslength)*(0.8));
-    height: calc(v-bind(progresslength)*(0.8));
+    width:v-bind(white1);
+    height:v-bind(white1);
     background-color: white;
-    border-radius: calc(v-bind(progresslength)*(0.8));
+    border-radius:v-bind(white1);
     text-align: center;
-    line-height: calc(v-bind(progresslength)*(0.8));
-    font-size: calc(v-bind(progresslength)*(0.1));
+    line-height: v-bind(white1);
+    font-size: v-bind(white2);
 }
 
 .circle-danger {
