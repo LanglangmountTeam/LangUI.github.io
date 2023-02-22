@@ -1,5 +1,5 @@
 <div align="center">
-  <img src='/src/assets/img/logo.jpg'/>
+  <img src='https://stone-1315935641.cos.ap-chengdu.myqcloud.com/img%2Flogo.png'/>
 </div>
 
 <div align="center">致力于开源学习的UI组件库</div>
