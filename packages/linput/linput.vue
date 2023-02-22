@@ -1,5 +1,5 @@
 <template>
-  <div class="l-input" :class="inputClass">
+  <div class="l-input" :class="inputClass" >
     <input 
       :type="inputType" 
       :class="rulesClass  ? `ruler-input ${lClass}` : `${lClass}`" 
@@ -41,8 +41,10 @@ import { ref, inject, watch } from 'vue'
 import  Icon  from '../licon/licon.vue'
 import {Close, EyeOff, Eye} from '@vicons/ionicons5';
 //拿到from表单的上下文
-const formItemContext: any = inject(FormItemContextKey)
 
+// console.dir(inject)
+// const formItemContext: any = inject('key')
+// console.log(formItemContext)
 
 const count = ref(0)
 const rulesClass = ref(false)
@@ -54,6 +56,11 @@ const {
   isShowSuffixIcon,
   isShowPrefixIcon
 } = useInput(props, emits);
+
+
+
+// console.log(props.context)
+const formItemContext: any = props.context
 
 watch(
   () => props.modelValue,

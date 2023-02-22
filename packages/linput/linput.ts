@@ -40,6 +40,9 @@ export const inputProps = {
   },
   suffixIcon:{
     type: Object,
+  },
+  context: {
+    type: Object,
   }
 }
 

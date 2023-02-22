@@ -6,7 +6,7 @@
     </label>
     
     <div class="content">
-      <slot ></slot>
+      <slot name="default" :context="context"></slot>
       <div class="error">
         <slot name="error">
           {{validateMessage}}
@@ -130,7 +130,9 @@ const context: FormItemContext = reactive({
   validate
 })
 
-provide(FormItemContextKey, context)
+// console.log(context)
+
+provide('key', context)
 
 onMounted(() => {
   formContext?.addField(context) //将自己的上下文传递给父级

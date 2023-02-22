@@ -30,7 +30,9 @@
         }
       ]"
     >
-      <l-input  placeholder="请输入用户名" v-model="state.username"/>
+    <template #default = {context}>
+      <l-input :context="context" placeholder="请输入用户名" v-model="state.username"/>
+    </template>
       <template #label>用户名</template>
       
     </l-form-item>
@@ -48,7 +50,10 @@
         }
       ]"
     >
-      <l-input placeholder="请输入密码" type="password" showpwd v-model="state.password"/>
+      <template #default = {context}>
+        <l-input :context="context"  placeholder="请输入密码" type="password" showpwd v-model="state.password"/>
+      </template>
+      
       <template #label>密码</template>
       
     </l-form-item>
