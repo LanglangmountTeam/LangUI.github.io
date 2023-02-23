@@ -62,12 +62,12 @@ const jump2=function(){
 }
 onMounted(() => {
 	const title = []
-	for(let i = 0; i < routers.children.length; i++) {
+	for(let i = 0; i < routers.children.length - 1; i++) {
 		title.push(routers.children[i].title)
 	}
 	const newTitle = new Set(title)
 	titleList.value = [...newTitle]
-	for(let i = 0; i < titleList.value.length; i++) {
+	for(let i = 0; i < titleList.value.length - 1; i++) {
 		state.push({
 			title: titleList.value[i],
 			list: []
@@ -75,7 +75,7 @@ onMounted(() => {
 	}
 
 
-	for(let i = 0; i < routers.children.length; i++) {
+	for(let i = 0; i < routers.children.length - 1; i++) {
 		for(let j = 0 ;j < state.length; j ++) {
 			if(routers.children[i].title === state[j].title) {
 				state[j].list.push({
