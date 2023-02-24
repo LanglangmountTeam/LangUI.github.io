@@ -9,10 +9,10 @@
             <div class="l-date-date-box">
               <div :class="['l-date-header',`l-date-header-${size}`]">
                 <div class="l-date-btn-left">
-                  <span v-if="monthShow"><i class="m-icon-arrow-double-left" @click="onlyYearPrev"></i></span>
-                  <span v-if="!dateShow&&!monthShow"><i class="m-icon-arrow-double-left" @click="getPrevYear"></i></span>
-                  <span v-if="dateShow"><i class="m-icon-arrow-double-left" @click="prevYear"></i></span>
-                  <span v-if="dateShow&&type=='date'" class="l-i-rotate"><i class="m-icon-arrow-right" @click="prevMonth"></i></span>
+                  <span v-if="monthShow"><l-icon class="m-icon-arrow-double-left" @click="onlyYearPrev"><CaretBack /></l-icon></span>
+                  <span v-if="!dateShow&&!monthShow"><l-icon class="m-icon-arrow-double-left" @click="getPrevYear"><CaretBack /></l-icon></span>
+                  <span v-if="dateShow"><l-icon class="m-icon-arrow-double-left" @click="prevYear"><CaretBack /></l-icon></span>
+                  <span v-if="dateShow&&type=='date'" class="l-i-rotate"><l-icon class="m-icon-arrow-right" @click="prevMonth"><ChevronBack /></l-icon></span>
                 </div>
                 <div class="l-date-btn-center">
                   <span class="chooseYear" @click="chooseYear" v-show="dateShow&&type=='date'">{{selDate.year}} 年 </span>
@@ -21,10 +21,10 @@
                   <span v-show="!dateShow&&!monthShow||type=='year'">{{yearList[0]+' 年 - '+yearList[yearList.length-1]+' 年'}}</span>
                 </div>
                 <div class="l-date-btn-right">
-                  <span v-if="dateShow&&type=='date'"><i class="m-icon-arrow-right" @click="nextMonth"></i></span>
-                  <span v-if="dateShow"><i class="m-icon-arrow-double-right" @click="nextYear"></i></span>
-                  <span v-if="!dateShow&&!monthShow"><i class="m-icon-arrow-double-right" @click="getNextYear"></i></span>
-                  <span v-if="monthShow"><i class="m-icon-arrow-double-right" @click="onlyYearNext"></i></span>
+                  <span v-if="dateShow&&type=='date'"><l-icon class="m-icon-arrow-right" @click="nextMonth"><ChevronForward/></l-icon></span>
+                  <span v-if="dateShow"><l-icon class="m-icon-arrow-double-right" @click="nextYear"><CaretForward/></l-icon></span>
+                  <span v-if="!dateShow&&!monthShow"><l-icon class="m-icon-arrow-double-right" @click="getNextYear"><CaretForward/></l-icon></span>
+                  <span v-if="monthShow"><l-icon class="m-icon-arrow-double-right" @click="onlyYearNext"><CaretForward/></l-icon></span>
                 </div>
               </div>
               <div :class="['l-date-content-box',`l-date-content-box-${size}`]" v-show="dateShow&&type=='date'">
@@ -115,7 +115,7 @@ export default {
 </script>
 
 <script lang="ts" setup>
-import {Calendar} from '@vicons/ionicons5';
+import {Calendar, ChevronBack, ChevronForward, CaretForward, CaretBack} from '@vicons/ionicons5';
 import { ref,onMounted } from 'vue'
 import {
   datePickerProps,
