@@ -34,5 +34,5 @@ export default defineConfig({
 			replacement: 'langui-main/dist/lang-uiss.js',
 		},
 	},
-	base:'./',
+	base:"./",
 });
