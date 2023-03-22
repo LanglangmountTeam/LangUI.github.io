@@ -54,7 +54,7 @@
 <a target="_blank" href="https://langlangmountteam.github.io/lang-ui-docs/">https://langlangmountteam.github.io/lang-ui-docs/</a>
 
 ## 在线演示站点
-- <a target="_blank" href="https://407zk09371.oicp.vip/">https://407zk09371.oicp.vip/</a>
+- <a target="_blank" href="https://407zk09371.oicp.vip/">https://jinyia.github.io/</a>
 
 ## 使用仓库相关命令
 
