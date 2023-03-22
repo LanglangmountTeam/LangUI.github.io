@@ -34,7 +34,4 @@ export default defineConfig({
 			replacement: 'langui-main/dist/lang-uiss.js',
 		},
 	},
-	return{
-		base:env.VITE_PUBLIC_PATH
-	}
 });
